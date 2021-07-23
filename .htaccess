@@ -1,0 +1,13 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+ #Send request via index.php
+ RewriteCond %{REQUEST_FILENAME} !-f
+ RewriteCond %{REQUEST_FILENAME} !-d
+ RewriteCond $1 !^(index\.php|images|robots\.txt|assets|js|uploads)
+ RewriteRule ^(.*)$ index.php/$1 [L]
+</IfModule>
+<IfModule !authz_core_module>
+    Deny from all
+</IfModule>
+
+SetEnv CI_ENVIRONMENT development
