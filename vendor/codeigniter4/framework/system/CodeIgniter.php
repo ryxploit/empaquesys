@@ -44,11 +44,8 @@ class CodeIgniter
 	/**
 	 * The current version of CodeIgniter Framework
 	 */
-	const CI_VERSION = '4.1.2';
+	const CI_VERSION = '4.1.3';
 
-	/**
-	 * @var string
-	 */
 	private const MIN_PHP_VERSION = '7.3';
 
 	/**
@@ -187,7 +184,6 @@ class CodeIgniter
 		if( function_exists('locale_set_default' ) ) :
 		locale_set_default($this->config->defaultLocale ?? 'en');
 		endif;
-
 		// Set default timezone on the server
 		date_default_timezone_set($this->config->appTimezone ?? 'UTC');
 
@@ -476,7 +472,7 @@ class CodeIgniter
 
 		// Save our current URI as the previous URI in the session
 		// for safer, more accurate use with `previous_url()` helper function.
-		$this->storePreviousURL((string) current_url(true));
+		$this->storePreviousURL(current_url(true));
 
 		unset($uri);
 
@@ -1082,7 +1078,7 @@ class CodeIgniter
 
 		if (isset($_SESSION))
 		{
-			$_SESSION['_ci_previous_url'] = (string) $uri;
+			$_SESSION['_ci_previous_url'] = URI::createURIString($uri->getScheme(), $uri->getAuthority(), $uri->getPath(), $uri->getQuery(), $uri->getFragment());
 		}
 	}
 
