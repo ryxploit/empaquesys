@@ -21,7 +21,7 @@
                             <img src="assets/images/faces/1.jpg" alt="Face 1">
                         </div>
                         <div class="ms-3 name">
-                            <h5 class="font-bold">Melisa</h5>
+                            <h5 class="font-bold"><?php echo session('usuario'); ?></h5>
                             <h6 class="text-muted mb-0">@melisajuarez</h6>
                         </div>
                     </div>

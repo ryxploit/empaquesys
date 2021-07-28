@@ -34,6 +34,8 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Login::index');
 $routes->get('/', 'Embarques::agregarembarque');
+$routes->post('/Login', 'Login::session');
+$routes->get('/Login', 'Login::destroy_session');
 
 /*
  * --------------------------------------------------------------------
