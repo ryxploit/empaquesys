@@ -21,7 +21,7 @@ class Login extends BaseController
 
 	$datosUsuario = $Modelo->session_data(["usuario" => $usuario]);
 
-	if (count($datosUsuario) > 0) {
+	if (count($datosUsuario) > 0 && password_verify($password , $datosUsuario[0]['password'])) { 
 		// code...
 		$data = [
 			"usuario" => $datosUsuario[0]['usuario'],
