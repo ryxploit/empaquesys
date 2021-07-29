@@ -107,4 +107,19 @@
                 <a href="#" class="burger-btn d-block d-xl-none">
                     <i class="bi bi-justify fs-3"></i>
                 </a>
+                <div class="col-12 col-lg-3 float-end">
+                    <div class="card">
+                        <div class="card-body py-4 px-5">
+                            <div class="d-flex align-items-center">
+                                <div class="avatar avatar-xl">
+                                    <img src="<?= base_url('assets/images/faces/1.jpg');  ?> " alt="Face 1">
+                                </div>
+                                <div class="ms-3 name">
+                                    <h5 class="font-bold"><?php echo session('usuario'); ?></h5>
+                                    <h6 class="text-muted mb-0"><a href="<?php echo base_url('Login/destroy_session'); ?>">Salir </a></h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </header>

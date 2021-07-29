@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'ecdc9b863e29f5fbc0fe95425ecdb7acd63715d7',
+        'reference' => 'bc2694805ae9f9cdad9daec3f13dfa3ddb7a7c23',
         'name' => 'codeigniter4/appstarter',
         'dev' => true,
     ),
@@ -16,7 +16,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'ecdc9b863e29f5fbc0fe95425ecdb7acd63715d7',
+            'reference' => 'bc2694805ae9f9cdad9daec3f13dfa3ddb7a7c23',
             'dev_requirement' => false,
         ),
         'codeigniter4/framework' => array(
@@ -392,12 +392,12 @@
             'dev_requirement' => true,
         ),
         'theseer/tokenizer' => array(
-            'pretty_version' => '1.2.0',
-            'version' => '1.2.0.0',
+            'pretty_version' => '1.2.1',
+            'version' => '1.2.1.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../theseer/tokenizer',
             'aliases' => array(),
-            'reference' => '75a63c33a8577608444246075ea0af0d052e452a',
+            'reference' => '34a41e998c2183e22995f158c581e7b5e755ab9e',
             'dev_requirement' => true,
         ),
         'webmozart/assert' => array(

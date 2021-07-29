@@ -17,11 +17,16 @@ class Login extends BaseController
 	$usuario =	$this->request->getPost('usuario');
 	$password = sha1($this->request->getPost('password'));
 
+
 	$Modelo = new Mlogin();
+	$data = array(
+						 'usuario' => $usuario,
+						 'password' => $password
+						 );
 
-	$datosUsuario = $Modelo->session_data(["usuario" => $usuario]);
+	$datosUsuario = $Modelo->session_data($data);
 
-	if (count($datosUsuario) > 0 && password_verify($password , $datosUsuario[0]['password'])) { 
+	if (count($datosUsuario) > 0) {
 		// code...
 		$data = [
 			"usuario" => $datosUsuario[0]['usuario'],
