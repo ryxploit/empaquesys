@@ -1,17 +1,5 @@
 <div class="page-heading">
-                <section class="row">
-                    <div class="col-12 col-lg-9">
-                        <div class="row">
-                            <div class="col-6 col-lg-3 col-md-6">
-                                <div class="card tex-center">
-                                    <div class="card-body px-3 py-4-5">
-                                        <i class="bi bi-clipboard-plus"><span>Agregar embarque</span></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                
 
 
                 <!-- // Basic multiple Column Form section start -->

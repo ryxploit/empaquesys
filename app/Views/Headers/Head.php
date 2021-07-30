@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap.css');?>">
+      <link rel="stylesheet" href="<?php echo base_url('assets/css/sweetalert2.min.css');?>">
 
     <link rel="stylesheet" href="<?php echo base_url('assets/vendors/iconly/bold.css');?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/vendors/simple-datatables/style.css');?>">
@@ -44,6 +45,22 @@
                                 <i class="bi bi-grid-fill"></i>
                                 <span>Dashboard</span>
                             </a>
+                        </li>
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="bi bi-bag-check"></i>
+                                <span>Pedidos</span>
+                            </a>
+                            <ul class="submenu ">
+
+                            <li class="submenu-item ">
+                                    <a href="<?php echo base_url('Pedidos') ?>"><i class="bi bi bi-card-list"></i> <span>Ver Pedidos</span></a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="<?php echo base_url('Pedidos/Agregarpedido') ?>"><i class="bi bi-clipboard-plus"></i> <span>Crear Pedido</span></a>
+                                </li>
+
+                            </ul>
                         </li>
                         <li class="sidebar-item  has-sub">
                             <a href="#" class='sidebar-link'>
@@ -107,7 +124,22 @@
                 <a href="#" class="burger-btn d-block d-xl-none">
                     <i class="bi bi-justify fs-3"></i>
                 </a>
-                <div class="col-12 col-lg-3 float-end">
+
+            </header>
+
+            <section class="row">
+                <div class="col-12 col-lg-9">
+                    <div class="row">
+                        <div class="col-6 col-lg-3 col-md-6">
+                            <div class="card tex-center">
+                                <div class="card-body px-3 py-4-5">
+                                    <i class="bi bi-grid-fill"><span><?= $title; ?></span></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 ">
                     <div class="card">
                         <div class="card-body py-4 px-5">
                             <div class="d-flex align-items-center">
@@ -122,4 +154,4 @@
                         </div>
                     </div>
                 </div>
-            </header>
+            </section>

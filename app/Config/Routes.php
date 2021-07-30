@@ -36,6 +36,7 @@ $routes->get('/', 'Login::index');
 $routes->get('/', 'Embarques::agregarembarque');
 $routes->post('/Login', 'Login::session');
 $routes->get('/Login', 'Login::destroy_session');
+$routes->post('/Pedidos', 'Pedidos::Insertar');
 
 /*
  * --------------------------------------------------------------------

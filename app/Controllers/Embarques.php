@@ -7,7 +7,10 @@ class Embarques extends BaseController
     public function index()
     {
       # code...
-      echo view('Headers/Head');
+      $data = array(
+    						 'title' => 'PACKING LIST'
+    						 );
+      echo view('Headers/Head', $data);
   echo view('Embarques/Vpackinglist');
   echo view('Footers/Foot');
     }
@@ -15,7 +18,10 @@ class Embarques extends BaseController
     public function Agregarembarque()
     {
         # code...
-        echo view('Headers/Head');
+        $data = array(
+      						 'title' => 'Agregar embarque'
+      						 );
+        echo view('Headers/Head', $data);
 		echo view('Embarques/Vaddembarques');
 		echo view('Footers/Foot');
     }

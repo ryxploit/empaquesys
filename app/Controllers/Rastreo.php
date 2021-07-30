@@ -7,7 +7,10 @@ class Rastreo extends BaseController
     public function index()
     {
       # code...
-      echo view('Headers/Head');
+      $data = array(
+    						 'title' => 'Hoja de rastreo'
+    						 );
+      echo view('Headers/Head', $data);
   echo view('Rastreo/Vhrastreo');
   echo view('Footers/Foot');
     }
@@ -15,7 +18,10 @@ class Rastreo extends BaseController
     public function Agregarhrastreo()
     {
         # code...
-        echo view('Headers/Head');
+        $data = array(
+      						 'title' => 'Agregar Hoja de rastreo'
+      						 );
+        echo view('Headers/Head', $data);
 		echo view('Rastreo/Vaddhrastreo');
 		echo view('Footers/Foot');
     }
