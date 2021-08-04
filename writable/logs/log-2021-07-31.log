@@ -1,0 +1,100 @@
+CRITICAL - 2021-07-31 14:23:52 --> You must set the database table to be used with your query.
+#0 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/Model.php(602): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/Model.php(798): CodeIgniter\Model->builder()
+#2 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/app/Controllers/Pedidos.php(94): CodeIgniter\Model->__call('Pedidoobtener', Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(929): App\Controllers\Pedidos->Obtenerpedido('1')
+#4 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(437): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+#5 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(337): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-07-31 14:24:39 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResult()
+#0 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/app/Controllers/Pedidos.php(94): App\Models\Mpedidos->Pedidoobtener(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(929): App\Controllers\Pedidos->Obtenerpedido('1')
+#2 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(437): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+#3 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(337): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-31 14:35:38 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResult()
+#0 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/app/Controllers/Pedidos.php(94): App\Models\Mpedidos->Pedidoobtener(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(929): App\Controllers\Pedidos->Obtenerpedido('1')
+#2 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(437): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+#3 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(337): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-31 14:36:07 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResultArray()
+#0 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/app/Controllers/Pedidos.php(94): App\Models\Mpedidos->Pedidoobtener(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(929): App\Controllers\Pedidos->Obtenerpedido('1')
+#2 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(437): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+#3 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(337): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-31 14:36:11 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResultArray()
+#0 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/app/Controllers/Pedidos.php(94): App\Models\Mpedidos->Pedidoobtener(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(929): App\Controllers\Pedidos->Obtenerpedido('1')
+#2 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(437): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+#3 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(337): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-31 14:38:50 --> Undefined variable $title
+#0 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/app/Views/Headers/Head.php(136): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Applications/X...', 136)
+#1 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/View/View.php(230): include('/Applications/X...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render('Headers/Head', Array, true)
+#4 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/app/Controllers/Pedidos.php(100): view('Headers/Head', Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(929): App\Controllers\Pedidos->Obtenerpedido('1')
+#6 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(437): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+#7 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(337): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-07-31 15:11:50 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResult()
+#0 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/app/Controllers/Pedidos.php(94): App\Models\Mpedidos->Pedidoobtener(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(929): App\Controllers\Pedidos->Obtenerpedido('1')
+#2 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(437): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+#3 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(337): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-07-31 17:32:27 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1 = ''
+WHERE `id_pedidos` = ('SEA045','SEDIFEL','PARIS','SAMANTA','KENT','DEL...' at line 1
+CRITICAL - 2021-07-31 17:32:27 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1 = ''
+WHERE `id_pedidos` = ('SEA045','SEDIFEL','PARIS','SAMANTA','KENT','DEL...' at line 1
+#0 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(329): mysqli->query('UPDATE `t_pedid...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `t_pedid...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `t_pedid...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2482): CodeIgniter\Database\BaseConnection->query('UPDATE `t_pedid...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/app/Models/Mpedidos.php(40): CodeIgniter\Database\BaseBuilder->update()
+#5 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/app/Controllers/Pedidos.php(126): App\Models\Mpedidos->Actualizarpedido(Array, '1')
+#6 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(929): App\Controllers\Pedidos->Actualizar()
+#7 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(437): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+#8 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(337): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-07-31 17:34:08 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1 = ''
+WHERE `id_pedidos` = ('SEA045','SEDIFEL','PARIS','SAMANTA','KENT','DEL...' at line 1
+CRITICAL - 2021-07-31 17:34:08 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1 = ''
+WHERE `id_pedidos` = ('SEA045','SEDIFEL','PARIS','SAMANTA','KENT','DEL...' at line 1
+#0 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(329): mysqli->query('UPDATE `t_pedid...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `t_pedid...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `t_pedid...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2482): CodeIgniter\Database\BaseConnection->query('UPDATE `t_pedid...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/app/Models/Mpedidos.php(40): CodeIgniter\Database\BaseBuilder->update()
+#5 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/app/Controllers/Pedidos.php(126): App\Models\Mpedidos->Actualizarpedido(Array, '1')
+#6 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(929): App\Controllers\Pedidos->Actualizar()
+#7 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(437): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+#8 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(337): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-07-31 17:35:27 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1 = ''
+WHERE `id_pedidos` = ('SEA045','SEDIFEL','PARIS','SAMANTA','KENT','DEL...' at line 1
+CRITICAL - 2021-07-31 17:35:27 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1 = ''
+WHERE `id_pedidos` = ('SEA045','SEDIFEL','PARIS','SAMANTA','KENT','DEL...' at line 1
+#0 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(329): mysqli->query('UPDATE `t_pedid...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `t_pedid...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `t_pedid...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2482): CodeIgniter\Database\BaseConnection->query('UPDATE `t_pedid...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/app/Models/Mpedidos.php(40): CodeIgniter\Database\BaseBuilder->update()
+#5 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/app/Controllers/Pedidos.php(126): App\Models\Mpedidos->Actualizarpedido(Array, '1')
+#6 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(929): App\Controllers\Pedidos->Actualizar()
+#7 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(437): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+#8 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(337): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}

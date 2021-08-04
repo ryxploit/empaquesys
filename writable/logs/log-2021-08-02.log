@@ -1,0 +1,38 @@
+CRITICAL - 2021-08-02 22:14:55 --> Undefined variable $listarpedidos
+#0 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/app/Views/Rastreo/Vaddhrastreo.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Applications/X...', 18)
+#1 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/View/View.php(230): include('/Applications/X...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render('Rastreo/Vaddhra...', Array, true)
+#4 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/app/Controllers/Rastreo.php(26): view('Rastreo/Vaddhra...')
+#5 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(929): App\Controllers\Rastreo->Agregarhrastreo()
+#6 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(437): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+#7 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(337): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-08-02 22:15:55 --> Undefined variable $Modelo
+#0 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/app/Controllers/Rastreo.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Applications/X...', 24)
+#1 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(929): App\Controllers\Rastreo->Agregarhrastreo()
+#2 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(437): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+#3 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(337): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-08-02 22:16:53 --> Class "App\Controllers\Mpedidos" not found
+#0 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(929): App\Controllers\Rastreo->Agregarhrastreo()
+#1 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(437): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+#2 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(337): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-08-02 23:23:31 --> syntax error, unexpected single-quoted string "listarhrastreo", expecting ")"
+#0 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/Router/Router.php(169): CodeIgniter\Router\Router->autoRoute('/Rastreo')
+#1 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(810): CodeIgniter\Router\Router->handle('/Rastreo')
+#2 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(390): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(337): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-08-02 23:23:59 --> Undefined variable $Modelo
+#0 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/app/Controllers/Rastreo.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Applications/X...', 13)
+#1 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(929): App\Controllers\Rastreo->index()
+#2 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(437): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+#3 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(337): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}

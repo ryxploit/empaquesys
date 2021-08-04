@@ -4,47 +4,47 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class Mpedidos extends Model
+class Mlotes extends Model
 {
     // ...
 
-    public function listarpedidos()
+    public function listarlotes()
     {
       // code...
-      $query = $this->db->query("SELECT * FROM t_pedidos");
+      $query = $this->db->query("SELECT * FROM t_lotes");
       return  $query->getResult();
     }
 
-    public function insertar_datos($data)
+    public function insertar_lote($data)
     {
       // code...
-      $query = $this->db->table('t_pedidos');
+      $query = $this->db->table('t_lotes');
       $query->insert($data);
       return  $this->db->insertID();
     }
 
-    public function Pedidoobtener($data)
+    public function loteobtener($data)
     {
       // code...
-      $query = $this->db->table('t_pedidos');
+      $query = $this->db->table('t_lotes');
       $query->where($data);
       return  $query->get()->getResult();
     }
 
-    public function Actualizarpedido($data,$id)
+    public function Actualizarlote($data,$id)
     {
       // code...
-      $query = $this->db->table('t_pedidos');
+      $query = $this->db->table('t_lotes');
       $query->set($data);
-      $query->where('id_pedidos',$id);
+      $query->where('id_lotes',$id);
       return $query->update();
     }
 
-    public function Eliminarpedido($data)
+    public function Eliminarlote($data)
     {
       // code...
       // code...
-      $query = $this->db->table('t_pedidos');
+      $query = $this->db->table('t_lotes');
       $query->where($data);
       return $query->delete();
     }

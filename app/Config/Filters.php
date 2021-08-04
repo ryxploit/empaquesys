@@ -66,7 +66,8 @@ class Filters extends BaseConfig
 				'/Home',
 				'/Embarques',
 				'/Lotes',
-				'/Rastreo'
+				'/Rastreo',
+				'/Pedidos'
 			]
 		]
 	];

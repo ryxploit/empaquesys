@@ -32,11 +32,27 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
+
+//Login
 $routes->get('/', 'Login::index');
-$routes->get('/', 'Embarques::agregarembarque');
 $routes->post('/Login', 'Login::session');
 $routes->get('/Login', 'Login::destroy_session');
+//pedidos
 $routes->post('/Pedidos', 'Pedidos::Insertar');
+$routes->get('/Pedidos/Obtenerpedido/(:any)', 'Pedidos::Obtenerpedido/$1');
+$routes->post('/Pedidos', 'Pedidos::Actualizar');
+$routes->get('/Pedidos/Eliminar/(:any)', 'Pedidos::Eliminar/$1');
+//Rastreo
+$routes->post('/Rastreo', 'Rastreo::Insertarhrastreo');
+$routes->get('/Rastreo/Obtenerrastreo/(:any)', 'Rastreo::Obtenerrastreo/$1');
+$routes->post('/Rastreo', 'Rastreo::Insertarpallet');
+//Lotes
+$routes->post('/Lotes', 'Lotes::Insertar');
+$routes->get('/Lotes/Obtenerlote/(:any)', 'Lotes::Obtenerlote/$1');
+$routes->post('/Lotes', 'Lotes::Actualizar');
+$routes->get('/Lotes/Eliminar/(:any)', 'Lotes::Eliminar/$1');
+//Embarques
+$routes->get('/', 'Embarques::agregarembarque');
 
 /*
  * --------------------------------------------------------------------

@@ -1,5 +1,5 @@
 <div class="page-content">
-    
+
     <section class="section">
         <div class="card">
             <div class="card-header">
@@ -10,39 +10,22 @@
                     <thead>
                         <tr>
                             <th>Fecha</th>
+                            <th>Codigo</th>
                             <th>Destino</th>
                             <th>Accion</th>
                         </tr>
                     </thead>
                     <tbody>
+                      <?php foreach ($listarhrastreo as $key): ?>
                         <tr>
-                            <td>02/06/2021</td>
-                            <td>C0543</td>
+                            <td><?php echo $key->fecha;?></td>
+                            <td><?php echo $key->codigo;?></td>
+                            <td><?php echo $key->destino;?></td>
                             <td>
-                                <span class="badge bg-success">Ver</span>
+                              <a class="btn btn-warning" href="<?php echo base_url('Rastreo/Obtenerrastreo/'.$key->id_rastreo); ?>" role="button">Ver</a>
                             </td>
                         </tr>
-                        <tr>
-                          <td>02/06/2021</td>
-                          <td>C0543</td>
-                          <td>
-                              <span class="badge bg-success">Ver</span>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>02/06/2021</td>
-                          <td>C0543</td>
-                          <td>
-                              <span class="badge bg-success">Ver</span>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>02/06/2021</td>
-                          <td>C0543</td>
-                          <td>
-                              <span class="badge bg-success">Ver</span>
-                          </td>
-                        </tr>
+                          <?php endforeach; ?>
                     </tbody>
                 </table>
             </div>

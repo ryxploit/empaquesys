@@ -1,5 +1,5 @@
 <div class="page-content">
-    
+
     <section class="section">
         <div class="card">
             <div class="card-header">
@@ -10,49 +10,25 @@
                     <thead>
                         <tr>
                             <th>Fecha</th>
+                            <th>Lote</th>
                             <th>Folio</th>
-                            <th>ubicacion</th>
-                            <th>Productor</th>
+                            <th>Ubicacion</th>
                             <th>Accion</th>
                         </tr>
                     </thead>
                     <tbody>
+                      <?php foreach ($listarlotes as $key): ?>
                         <tr>
-                            <td>02/06/2021</td>
-                            <td>C0543</td>
-                            <td>Chametlan</td>
-                            <td>C0543MUY</td>
+                            <td><?php echo $key->fecha;?></td>
+                            <td><?php echo $key->lote;?></td>
+                            <td><?php echo $key->folio;?></td>
+                            <td><?php echo $key->ubicacion;?></td>
                             <td>
-                                <span class="badge bg-warning">Ver</span>
+                              <a class="btn btn-warning" href="<?php echo base_url('Lotes/Obtenerlote/'.$key->id_lotes); ?>" role="button">Ver</a>
+                              <a class="btn btn-danger" href="<?php echo base_url('Lotes/Eliminar/'.$key->id_lotes); ?>" role="button">Borrar</a>
                             </td>
                         </tr>
-                        <tr>
-                          <td>02/06/2021</td>
-                          <td>C0543</td>
-                          <td>Chametlan</td>
-                          <td>C0543MUY</td>
-                          <td>
-                              <span class="badge bg-warning">Ver</span>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>02/06/2021</td>
-                          <td>C0543</td>
-                          <td>Chametlan</td>
-                          <td>C0543MUY</td>
-                          <td>
-                              <span class="badge bg-warning">Ver</span>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>02/06/2021</td>
-                          <td>C0543</td>
-                          <td>Chametlan</td>
-                          <td>C0543MUY</td>
-                          <td>
-                              <span class="badge bg-warning">Ver</span>
-                          </td>
-                        </tr>
+                      <?php endforeach; ?>
                     </tbody>
                 </table>
             </div>

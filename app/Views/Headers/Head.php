@@ -13,7 +13,7 @@
 
     <link rel="stylesheet" href="<?php echo base_url('assets/vendors/iconly/bold.css');?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/vendors/simple-datatables/style.css');?>">
-
+    
 
     <link rel="stylesheet" href="<?php echo base_url('assets/vendors/perfect-scrollbar/perfect-scrollbar.css');?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/vendors/bootstrap-icons/bootstrap-icons.css');?>">
