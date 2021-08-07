@@ -4,7 +4,7 @@
             <div class="card-header text-center " style="background-color:#2AE28D;" >
             <p class="h2 text-primary"> <strong class="h3 text-white badge rounded-pill bg-primary ">Pedido:</strong> <?php echo $dato[0]['codigo'];  ?></p>
           </div>
-          <form class="" action="<?php echo base_url('Rastreo/Insertarpallet'); ?> " method="post">
+          <form class="addpallet"  method="post">
               <div class="row">
                   <div class="col-md-4">
                     <div class="form-group">
@@ -60,7 +60,7 @@
                                                       </fieldset>
                                             </div>
                                             <input type="hidden" name="codigo_rastreo" value="<?php echo $dato[0]['codigo'];?>">
-                                            <input type="hidden" name="codigo_rastreo" value="<?php echo $dato[0]['id_rastreo'];?>">
+
                                                       </div>
 
                               <div class="form-group">
@@ -80,24 +80,124 @@
              <h3 class="text-white">Lista de Pallets en  Hojas de rastreo</h3>
           </div>
           <div class="card-body text-white">
+            <div class="table-responsive">
               <table class="table text-white" >
                   <thead>
                       <tr>
                           <th>Fecha</th>
-                          <th>Destino</th>
+                          <th>Variedad</th>
+                          <th>Marca</th>
+                          <th>Pallet</th>
+                          <th>Tamaño</th>
+                          <th>Hidrotermico</th>
+                          <th>Total</th>
+                          <th>Folio</th>
+                          <th>Rastreo</th>
                           <th>Accion</th>
                       </tr>
                   </thead>
                   <tbody>
+                    <?php foreach ($listarpallet as $key): ?>
                       <tr>
-                          <td>02/06/2021</td>
-                          <td>C0543</td>
+                          <td><?php echo $key->fecha;?></td>
+                          <td><?php echo $key->variedad;?></td>
+                          <td><?php echo $key->marca;?></td>
+                          <td><?php echo $key->pallet;?></td>
+                          <td><?php echo $key->tamaño;?></td>
+                          <td><?php echo $key->hidrotermico;?></td>
+                          <td><?php echo $key->total;?></td>
+                          <td><?php echo $key->folio;?></td>
+                          <td><?php echo $key->rastreo;?></td>
                           <td>
-                            <a class="btn btn-warning" href="<?php echo base_url('Rastreo/Agregarpallet'); ?>" role="button">Ver</a>
+                            <a type="button" class="btn btn-primary update" id="<?php echo $key->id_pallet; ?>" data-bs-toggle="modal" data-bs-target="#exampleModal">Actualizar</a>
+                            <a class="btn btn-danger delete" href="#" id="<?php echo $key->id_pallet; ?>" role="button">Borrar</a>
                           </td>
                       </tr>
+                        <?php endforeach; ?>
                   </tbody>
               </table>
+            </div>
           </div>
       </div>
   </section>
+
+
+  <div class="modal"  id="exampleModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Modificar</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form method="post" id="upadte_pallet">
+          <div class="row">
+            <div class="col-md-6">
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">Fecha:</label>
+              <input type="date" name="fecha" class="form-control" id="fecha">
+            </div>
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">Variedad:</label>
+              <input type="text" name="variedad"  class="form-control" id="variedad">
+            </div>
+            </div>
+            <div class="col-md-6">
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">Marca:</label>
+              <input type="text" name="marca" class="form-control" id="marca">
+            </div>
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">Pallet:</label>
+              <input type="text" name="pallet" class="form-control" id="pallet">
+            </div>
+            </div>
+            <div class="col-md-6">
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">Tamaño:</label>
+              <input type="text" name="tamaño" class="form-control" id="tamaño">
+            </div>
+            <div class="form-group">
+              <h6 class="">Hidrotermico</h6>
+                      <fieldset class="form-group">
+                          <select name="hidrotermico" class="form-select" >
+                            <option id="hidrotermico"></option>
+                              <option>si</option>
+                              <option>no</option>
+                          </select>
+                      </fieldset>
+                </div>
+            </div>
+            <div class="col-md-6">
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">Total:</label>
+              <input type="text" name="total" class="form-control" id="total">
+            </div>
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">Folio:</label>
+              <input type="text" name="folio" class="form-control" id="folio">
+            </div>
+            </div>
+            <div class="form-group">
+              <h6 class="">Rastreo</h6>
+                      <fieldset class="form-group">
+                          <select name="rastreo" class="form-select">
+                            <option id="rastreo"></option>
+                            <?php foreach ($listarlotes as $key): ?>
+                              <option><?php echo $key->lote;?></option>
+                              <?php endforeach; ?>
+                        </select>
+                  </fieldset>
+            </div>
+            <input type="hidden" name="id_pallet" id="id_pallet">
+          </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="submit" class="btn btn-primary">Guardar carmbios</button>
+      </div>
+        </form>
+    </div>
+  </div>
+</div>

@@ -12,7 +12,7 @@
                             <th>Fecha</th>
                             <th>Codigo</th>
                             <th>Destino</th>
-                            <th>Accion</th>
+                            <th class="text-center">Accion</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -21,8 +21,10 @@
                             <td><?php echo $key->fecha;?></td>
                             <td><?php echo $key->codigo;?></td>
                             <td><?php echo $key->destino;?></td>
-                            <td>
+                            <td class="text-center">
                               <a class="btn btn-warning" href="<?php echo base_url('Rastreo/Obtenerrastreo/'.$key->id_rastreo); ?>" role="button">Ver</a>
+                              <a class="btn btn-warning" href="<?php echo base_url('Rastreo/Obtenerhrastreo/'.$key->id_rastreo); ?>" role="button">Modificar</a>
+                              <a class="btn btn-danger" href="<?php echo base_url('Rastreo/Eliminarhrastreo/'.$key->id_rastreo); ?>" role="button">Borrar</a>
                             </td>
                         </tr>
                           <?php endforeach; ?>

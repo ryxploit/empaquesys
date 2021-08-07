@@ -46,6 +46,11 @@ $routes->get('/Pedidos/Eliminar/(:any)', 'Pedidos::Eliminar/$1');
 $routes->post('/Rastreo', 'Rastreo::Insertarhrastreo');
 $routes->get('/Rastreo/Obtenerrastreo/(:any)', 'Rastreo::Obtenerrastreo/$1');
 $routes->post('/Rastreo', 'Rastreo::Insertarpallet');
+$routes->get('/Rastreo/EliminarPallet/(:any)', 'Rastreo::EliminarPallet/$1');
+$routes->get('/Rastreo/Obtenerpallet/(:any)', 'Rastreo::Obtenerpallet/$1');
+$routes->post('/Rastreo', 'Rastreo::Actualizarpallet');
+$routes->post('/Rastreo', 'Rastreo::Actualizarhrastreo');
+$routes->get('/Rastreo/Eliminarhrastreo/(:any)', 'Rastreo::Eliminarhrastreo/$1');
 //Lotes
 $routes->post('/Lotes', 'Lotes::Insertar');
 $routes->get('/Lotes/Obtenerlote/(:any)', 'Lotes::Obtenerlote/$1');
