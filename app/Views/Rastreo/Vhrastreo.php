@@ -12,7 +12,7 @@
                             <th>Fecha</th>
                             <th>Codigo</th>
                             <th>Destino</th>
-                            <th class="text-end">Accion</th>
+                            <th class="text-end"></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -23,14 +23,11 @@
                             <td><?php echo $key->destino;?></td>
                             <td class="text-end">
                               <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-                                <a class="btn btn-warning" href="<?php echo base_url('Rastreo/Obtenerrastreo/'.$key->id_rastreo); ?>" role="button">Ver</a>
+                                <a class="btn btn-warning" href="<?php echo base_url('Rastreo/Obtenerrastreo/'.$key->id_rastreo); ?>" role="button">Agregar Pallets</a>
                                 <a class="btn btn-primary" href="<?php echo base_url('Rastreo/Obtenerhrastreo/'.$key->id_rastreo); ?>" role="button">Modificar</a>
-                                <a class="btn btn-danger" href="<?php echo base_url('Rastreo/Eliminarhrastreo/'.$key->id_rastreo); ?>" role="button">Borrar</a>
+                                <a class="btn btn-warning" href="<?php echo base_url('Rastreo/Eliminarhrastreo/'.$key->id_rastreo); ?>" role="button">Borrar</a>
                                 <a class="btn btn-primary" href="<?php echo base_url('Rastreo/pdf/'.$key->id_rastreo); ?>" role="button">Inprimir Hoja</a>
                               </div>
-
-
-
                             </td>
                         </tr>
                           <?php endforeach; ?>

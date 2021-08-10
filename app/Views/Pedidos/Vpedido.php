@@ -13,7 +13,7 @@
                             <th>sello de Cliente</th>
                             <th>Aeropuerto destino</th>
                             <th>Ejecutivo</th>
-                            <th>Accion</th>
+                            <th></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -23,9 +23,11 @@
                             <td><?php echo $key->sello_cliente;?></td>
                             <td><?php echo $key->aeropuerto_destino;?></td>
                             <td><?php echo $key->ejecutivo;?></td>
-                            <td>
-                              <a class="btn btn-warning" href="<?php echo base_url('Pedidos/Obtenerpedido/'.$key->id_pedidos); ?>" role="button">Ver</a>
-                              <a class="btn btn-danger" href="<?php echo base_url('Pedidos/Eliminar/'.$key->id_pedidos); ?>" role="button">Borrar</a>
+                            <td class="text-end">
+                              <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                              <a class="btn btn-primary" href="<?php echo base_url('Pedidos/Obtenerpedido/'.$key->id_pedidos); ?>" role="button">Modificar</a>
+                              <a class="btn btn-warning" href="<?php echo base_url('Pedidos/Eliminar/'.$key->id_pedidos); ?>" role="button">Borrar</a>
+                            </div>
                             </td>
                         </tr>
                       <?php endforeach; ?>

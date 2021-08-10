@@ -77,7 +77,7 @@
                             <input type="text" name="numero_cuadrilla" value="<?php echo $key->numero_cuadrilla;?>" class="form-control">
                         </div>
                         <div class="form-group">
-                            <button type="submit" class="btn btn-primary btn-lg">Actualizar</button>
+                            <button type="submit" class="btn btn-primary btn-lg">Guardar carmbios</button>
                         </div>
                       </div>
                   </div>

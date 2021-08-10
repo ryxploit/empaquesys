@@ -81,7 +81,7 @@
                             <input type="text" value="<?php echo $key->funda;?>" name="funda" class="form-control" id="helpInputTop">
                         </div>
                         <div class="form-group">
-                            <button type="submit" class="btn btn-primary btn-lg">Actualizar</button>
+                            <button type="submit" class="btn btn-primary btn-lg">Guardar carmbios</button>
                         </div>
                       </div>
                   </div>

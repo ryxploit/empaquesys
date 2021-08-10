@@ -13,7 +13,7 @@
                             <th>Lote</th>
                             <th>Folio</th>
                             <th>Ubicacion</th>
-                            <th>Accion</th>
+                            <th class="text-end"></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -23,9 +23,11 @@
                             <td><?php echo $key->lote;?></td>
                             <td><?php echo $key->folio;?></td>
                             <td><?php echo $key->ubicacion;?></td>
-                            <td>
-                              <a class="btn btn-warning" href="<?php echo base_url('Lotes/Obtenerlote/'.$key->id_lotes); ?>" role="button">Ver</a>
-                              <a class="btn btn-danger" href="<?php echo base_url('Lotes/Eliminar/'.$key->id_lotes); ?>" role="button">Borrar</a>
+                            <td class="text-end">
+                              <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                              <a class="btn btn-primary" href="<?php echo base_url('Lotes/Obtenerlote/'.$key->id_lotes); ?>" role="button">Modificar</a>
+                              <a class="btn btn-warning" href="<?php echo base_url('Lotes/Eliminar/'.$key->id_lotes); ?>" role="button">Borrar</a>
+                            </div>
                             </td>
                         </tr>
                       <?php endforeach; ?>
