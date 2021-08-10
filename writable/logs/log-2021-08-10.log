@@ -1,0 +1,284 @@
+CRITICAL - 2021-08-10 01:24:10 --> syntax error, unexpected token "}"
+#0 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/Router/Router.php(169): CodeIgniter\Router\Router->autoRoute('/Rastreo')
+#1 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(810): CodeIgniter\Router\Router->handle('/Rastreo')
+#2 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(390): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(337): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-08-10 01:24:12 --> syntax error, unexpected token "}"
+#0 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/Router/Router.php(169): CodeIgniter\Router\Router->autoRoute('/Rastreo')
+#1 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(810): CodeIgniter\Router\Router->handle('/Rastreo')
+#2 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(390): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(337): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-08-10 01:24:22 --> syntax error, unexpected token "}"
+#0 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/Router/Router.php(169): CodeIgniter\Router\Router->autoRoute('/Rastreo')
+#1 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(810): CodeIgniter\Router\Router->handle('/Rastreo')
+#2 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(390): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(337): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-08-10 01:25:03 --> Class "App\Controllers\FPDF" not found
+#0 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(929): App\Controllers\Rastreo->pdf('2')
+#1 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(437): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+#2 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(337): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-08-10 01:38:26 --> Attempt to read property "fecha" on array
+#0 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/app/Controllers/Rastreo.php(394): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', '/Applications/X...', 394)
+#1 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(929): App\Controllers\Rastreo->pdf('2')
+#2 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(437): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+#3 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(337): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-08-10 01:40:03 --> Undefined array key 0
+#0 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/app/Controllers/Rastreo.php(394): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Applications/X...', 394)
+#1 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(929): App\Controllers\Rastreo->pdf('2')
+#2 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(437): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+#3 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(337): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-08-10 03:17:00 --> Undefined variable $data
+#0 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/app/Models/Mrastreos.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Applications/X...', 70)
+#1 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/app/Controllers/Rastreo.php(467): App\Models\Mrastreos->listartotalpallet('2')
+#2 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(929): App\Controllers\Rastreo->pdf('2')
+#3 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(437): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+#4 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(337): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-10 03:17:13 --> Undefined property: stdClass::$pallet
+#0 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/app/Controllers/Rastreo.php(507): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/Applications/X...', 507)
+#1 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(929): App\Controllers\Rastreo->pdf('2')
+#2 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(437): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+#3 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(337): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-08-10 03:17:58 --> Undefined property: stdClass::$pallet
+#0 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/app/Controllers/Rastreo.php(507): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/Applications/X...', 507)
+#1 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(929): App\Controllers\Rastreo->pdf('2')
+#2 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(437): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+#3 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(337): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-08-10 03:17:59 --> Undefined property: stdClass::$pallet
+#0 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/app/Controllers/Rastreo.php(507): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/Applications/X...', 507)
+#1 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(929): App\Controllers\Rastreo->pdf('2')
+#2 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(437): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+#3 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(337): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-08-10 03:18:35 --> Undefined property: stdClass::$pallet
+#0 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/app/Controllers/Rastreo.php(507): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/Applications/X...', 507)
+#1 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(929): App\Controllers\Rastreo->pdf('2')
+#2 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(437): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+#3 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(337): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-08-10 03:18:36 --> Undefined property: stdClass::$pallet
+#0 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/app/Controllers/Rastreo.php(507): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/Applications/X...', 507)
+#1 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(929): App\Controllers\Rastreo->pdf('2')
+#2 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(437): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+#3 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(337): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-08-10 03:20:20 --> Undefined property: stdClass::$pallet
+#0 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/app/Controllers/Rastreo.php(507): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/Applications/X...', 507)
+#1 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(929): App\Controllers\Rastreo->pdf('2')
+#2 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(437): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+#3 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(337): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-08-10 03:21:14 --> Undefined property: stdClass::$pallet
+#0 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/app/Controllers/Rastreo.php(508): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/Applications/X...', 508)
+#1 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(929): App\Controllers\Rastreo->pdf('2')
+#2 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(437): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+#3 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(337): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-08-10 03:22:49 --> Undefined property: stdClass::$pallet
+#0 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/app/Controllers/Rastreo.php(508): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/Applications/X...', 508)
+#1 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(929): App\Controllers\Rastreo->pdf('2')
+#2 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(437): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+#3 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(337): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-08-10 03:23:20 --> Undefined property: stdClass::$pallet
+#0 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/app/Controllers/Rastreo.php(508): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/Applications/X...', 508)
+#1 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(929): App\Controllers\Rastreo->pdf('2')
+#2 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(437): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+#3 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(337): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-08-10 03:23:21 --> Undefined property: stdClass::$pallet
+#0 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/app/Controllers/Rastreo.php(508): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/Applications/X...', 508)
+#1 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(929): App\Controllers\Rastreo->pdf('2')
+#2 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(437): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+#3 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(337): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-08-10 03:24:20 --> Unknown column 'lote' in 'field list'
+CRITICAL - 2021-08-10 03:24:20 --> Unknown column 'lote' in 'field list'
+#0 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(329): mysqli->query('SELECT COUNT(`l...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(`l...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(`l...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`l...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/app/Models/Mrastreos.php(72): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/app/Controllers/Rastreo.php(467): App\Models\Mrastreos->listartotalpallet(Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(929): App\Controllers\Rastreo->pdf('2')
+#7 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(437): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+#8 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(337): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-08-10 03:25:23 --> Undefined property: stdClass::$pallet
+#0 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/app/Controllers/Rastreo.php(508): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/Applications/X...', 508)
+#1 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(929): App\Controllers\Rastreo->pdf('2')
+#2 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(437): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+#3 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(337): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-08-10 03:28:13 --> Array to string conversion
+#0 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/app/Models/Mrastreos.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', '/Applications/X...', 67)
+#1 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/app/Controllers/Rastreo.php(467): App\Models\Mrastreos->listartotalpallet(Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(929): App\Controllers\Rastreo->pdf('2')
+#3 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(437): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+#4 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(337): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-10 03:28:58 --> Array to string conversion
+#0 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/app/Models/Mrastreos.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', '/Applications/X...', 67)
+#1 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/app/Controllers/Rastreo.php(467): App\Models\Mrastreos->listartotalpallet(Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(929): App\Controllers\Rastreo->pdf('2')
+#3 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(437): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+#4 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(337): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-10 03:30:55 --> Undefined variable $dat02
+#0 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/app/Models/Mrastreos.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Applications/X...', 67)
+#1 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/app/Controllers/Rastreo.php(467): App\Models\Mrastreos->listartotalpallet('2')
+#2 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(929): App\Controllers\Rastreo->pdf('2')
+#3 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(437): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+#4 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(337): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-10 03:31:34 --> Undefined variable $dat02
+#0 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/app/Models/Mrastreos.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Applications/X...', 67)
+#1 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/app/Controllers/Rastreo.php(467): App\Models\Mrastreos->listartotalpallet('2')
+#2 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(929): App\Controllers\Rastreo->pdf('2')
+#3 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(437): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+#4 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(337): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-10 03:34:34 --> Array to string conversion
+#0 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/app/Models/Mrastreos.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', '/Applications/X...', 67)
+#1 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/app/Controllers/Rastreo.php(467): App\Models\Mrastreos->listartotalpallet(Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(929): App\Controllers\Rastreo->pdf('2')
+#3 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(437): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+#4 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(337): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-10 03:37:18 --> Array to string conversion
+#0 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/app/Models/Mrastreos.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', '/Applications/X...', 67)
+#1 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/app/Controllers/Rastreo.php(467): App\Models\Mrastreos->listartotalpallet(Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(929): App\Controllers\Rastreo->pdf('2')
+#3 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(437): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+#4 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(337): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-10 03:39:15 --> Array to string conversion
+#0 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/app/Models/Mrastreos.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', '/Applications/X...', 67)
+#1 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/app/Controllers/Rastreo.php(467): App\Models\Mrastreos->listartotalpallet(Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(929): App\Controllers\Rastreo->pdf('2')
+#3 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(437): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+#4 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(337): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-10 03:39:16 --> Array to string conversion
+#0 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/app/Models/Mrastreos.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', '/Applications/X...', 67)
+#1 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/app/Controllers/Rastreo.php(467): App\Models\Mrastreos->listartotalpallet(Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(929): App\Controllers\Rastreo->pdf('2')
+#3 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(437): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+#4 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(337): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-10 03:45:10 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+#0 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/app/Controllers/Rastreo.php(467): App\Models\Mrastreos->listartotalpallet(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(929): App\Controllers\Rastreo->pdf('2')
+#2 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(437): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+#3 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(337): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-08-10 03:46:50 --> Undefined variable $builder
+#0 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/app/Models/Mrastreos.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Applications/X...', 68)
+#1 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/app/Controllers/Rastreo.php(467): App\Models\Mrastreos->listartotalpallet(Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(929): App\Controllers\Rastreo->pdf('2')
+#3 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(437): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+#4 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(337): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-10 03:47:10 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::group_by()
+#0 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/app/Controllers/Rastreo.php(467): App\Models\Mrastreos->listartotalpallet(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(929): App\Controllers\Rastreo->pdf('2')
+#2 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(437): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+#3 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(337): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-08-10 03:51:23 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::group_by()
+#0 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/app/Controllers/Rastreo.php(467): App\Models\Mrastreos->listartotalpallet(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(929): App\Controllers\Rastreo->pdf('2')
+#2 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(437): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+#3 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(337): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-08-10 03:51:39 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::group_by()
+#0 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/app/Controllers/Rastreo.php(467): App\Models\Mrastreos->listartotalpallet(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(929): App\Controllers\Rastreo->pdf('2')
+#2 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(437): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+#3 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(337): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-08-10 03:51:41 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::group_by()
+#0 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/app/Controllers/Rastreo.php(467): App\Models\Mrastreos->listartotalpallet(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(929): App\Controllers\Rastreo->pdf('2')
+#2 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(437): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+#3 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(337): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-08-10 03:52:15 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::group_by()
+#0 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/app/Controllers/Rastreo.php(467): App\Models\Mrastreos->listartotalpallet(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(929): App\Controllers\Rastreo->pdf('2')
+#2 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(437): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+#3 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(337): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-08-10 04:00:59 --> Unknown column 'total_pallet' in 'field list'
+CRITICAL - 2021-08-10 04:00:59 --> Unknown column 'total_pallet' in 'field list'
+#0 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(329): mysqli->query('SELECT `p`.`pal...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.`pal...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.`pal...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`pal...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/app/Models/Mrastreos.php(72): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/app/Controllers/Rastreo.php(467): App\Models\Mrastreos->listartotalpallet(Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(929): App\Controllers\Rastreo->pdf('2')
+#7 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(437): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+#8 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(337): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-08-10 04:03:56 --> syntax error, unexpected identifier "t_rastreos", expecting ")"
+#0 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(273): CodeIgniter\Autoloader\Autoloader->includeFile('/Applications/X...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Mras...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/app/Controllers/Rastreo.php(374): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Mras...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(929): App\Controllers\Rastreo->pdf('2')
+#4 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(437): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+#5 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(337): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-08-10 04:16:58 --> syntax error, unexpected fully qualified name "\n", expecting ")"
+#0 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(273): CodeIgniter\Autoloader\Autoloader->includeFile('/Applications/X...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(886): class_exists('\\App\\Controller...', true)
+#4 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(422): CodeIgniter\CodeIgniter->startController()
+#5 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/vendor/codeigniter4/framework/system/CodeIgniter.php(337): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/XAMPP/xamppfiles/htdocs/empaquesys/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}

@@ -51,6 +51,7 @@ $routes->get('/Rastreo/Obtenerpallet/(:any)', 'Rastreo::Obtenerpallet/$1');
 $routes->post('/Rastreo', 'Rastreo::Actualizarpallet');
 $routes->post('/Rastreo', 'Rastreo::Actualizarhrastreo');
 $routes->get('/Rastreo/Eliminarhrastreo/(:any)', 'Rastreo::Eliminarhrastreo/$1');
+$routes->get('/Rastreo/pdf/(:any)', 'Rastreo::pdf/$1');
 //Lotes
 $routes->post('/Lotes', 'Lotes::Insertar');
 $routes->get('/Lotes/Obtenerlote/(:any)', 'Lotes::Obtenerlote/$1');

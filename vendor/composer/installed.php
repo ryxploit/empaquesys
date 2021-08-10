@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'bc2694805ae9f9cdad9daec3f13dfa3ddb7a7c23',
+        'reference' => '6207260d7afb11bed6a2bcb6007d34640976345e',
         'name' => 'codeigniter4/appstarter',
         'dev' => true,
     ),
@@ -16,7 +16,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'bc2694805ae9f9cdad9daec3f13dfa3ddb7a7c23',
+            'reference' => '6207260d7afb11bed6a2bcb6007d34640976345e',
             'dev_requirement' => false,
         ),
         'codeigniter4/framework' => array(
@@ -45,6 +45,15 @@
             'aliases' => array(),
             'reference' => '89c6201c74db25fa759ff16e78a4d8f32547770e',
             'dev_requirement' => true,
+        ),
+        'fpdf/fpdf' => array(
+            'pretty_version' => '1.83.2',
+            'version' => '1.83.2.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../fpdf/fpdf',
+            'aliases' => array(),
+            'reference' => '6aa31c9b70a3aef2a63f79144fec79b62bad4bb0',
+            'dev_requirement' => false,
         ),
         'kint-php/kint' => array(
             'pretty_version' => '3.3',

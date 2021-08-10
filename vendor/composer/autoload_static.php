@@ -50,6 +50,7 @@ class ComposerStaticInit6ff7808071d19fef7e663b9f19be59ba
         ),
         'F' => 
         array (
+            'Fpdf\\' => 5,
             'Faker\\' => 6,
         ),
         'D' => 
@@ -114,6 +115,10 @@ class ComposerStaticInit6ff7808071d19fef7e663b9f19be59ba
         'Kint\\' => 
         array (
             0 => __DIR__ . '/..' . '/kint-php/kint/src',
+        ),
+        'Fpdf\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/fpdf/fpdf/src/Fpdf',
         ),
         'Faker\\' => 
         array (

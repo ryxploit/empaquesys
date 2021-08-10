@@ -61,6 +61,29 @@ class Mrastreos extends Model
       return $query;
     }
 
+    public function listartotalpallet($data)
+    {
+      // code...
+      $builder = $this->db->table('t_rastreos');
+      $builder->select('p.pallet,count(*) as total_pallet');
+  $builder->from('t_rastreos r');
+  $builder->join('t_pallet p', 'p.codigo_rastreo=r.codigo');
+  $builder->groupBy('p.pallet');
+      $query = $builder->get()->getResult();
+      return $query;
+    }
+
+    public function listarlote($data)
+    {
+      // code...
+      $builder = $this->db->table('t_lotes');
+      $builder->select('*');
+      $builder->join('t_pallet', 't_lotes.lote = t_pallet.rastreo');
+      $builder->where('codigo_rastreo', $data);
+      $query = $builder->get()->getResult();
+      return $query;
+    }
+
     public function EliminarPallet($data)
     {
       // code...
