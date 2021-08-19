@@ -380,61 +380,62 @@ class Rastreo extends BaseController
 
               $pdf->SetMargins(10, 10, 10);
               $pdf->SetTitle("Hoja Rastreo");
-              $pdf->SetFont('Arial', 'B', 15);
+              $pdf->SetFont('Arial', 'B', 18);
 
               $pdf->Cell(195, 5, "Hoja de Rastreo", 0, 1, 'C');
               $pdf->SetFont('Arial', 'B', 10);
+              $pdf->SetTextColor(255, 184, 51 );
               $pdf->Cell(195, 5, 'Frutas y Legumbres El Rodeo S.P.R de R.I', 0, 1, 'C');
+              $pdf->SetTextColor(0, 0, 0);
               $pdf->Ln();
               $pdf->SetFont('Arial', 'B', 9);
               $pdf->image(base_url('assets/images/logo/logo.png'), 185, 25, 20, 20, 'PNG');
 
               $pdf->Cell(22, 8, utf8_decode('Fecha: '), 0, 0, 'L');
               $pdf->SetFont('Arial', '', 9);
-              $pdf->Cell(22, 8, $respuestaHrastreo[0]['fecha'], 1, 0, 'L');
+              $pdf->Cell(22, 8, $respuestaHrastreo[0]['fecha'], 2, 0, 'L');
               $pdf->SetFont('Arial', 'B', 9);
               $pdf->Cell(22, 8, utf8_decode('Codigo: '), 0, 0, 'L');
               $pdf->SetFont('Arial', '', 9);
-              $pdf->Cell(22, 8, $respuestaHrastreo[0]['codigo'], 1, 0, 'L');
+              $pdf->Cell(22, 8, $respuestaHrastreo[0]['codigo'], 2, 0, 'L');
               $pdf->SetFont('Arial', 'B', 9);
               $pdf->Cell(22, 8, utf8_decode('sello: '), 0, 0, 'L');
               $pdf->SetFont('Arial', '', 9);
-              $pdf->Cell(22, 8, $respuestaHrastreo[0]['sello'], 1, 1, 'L');
+              $pdf->Cell(22, 8, $respuestaHrastreo[0]['sello'], 2, 1, 'L');
               $pdf->SetFont('Arial', 'B', 9);
               $pdf->Cell(22, 8, utf8_decode('Capuchon: '), 0, 0, 'L');
               $pdf->SetFont('Arial', '', 9);
-              $pdf->Cell(22, 8, $respuestaHrastreo[0]['capuchon'], 1, 0, 'L');
+              $pdf->Cell(22, 8, $respuestaHrastreo[0]['capuchon'], 2, 0, 'L');
 
               $pdf->SetFont('Arial', 'B', 9);
               $pdf->Cell(22, 8, utf8_decode('Fondo: '), 0, 0, 'L');
               $pdf->SetFont('Arial', '', 9);
-              $pdf->Cell(22, 8, $respuestaHrastreo[0]['fondo'], 1, 0, 'L');
+              $pdf->Cell(22, 8, $respuestaHrastreo[0]['fondo'], 2, 0, 'L');
               $pdf->SetFont('Arial', 'B', 9);
               $pdf->Cell(22, 8, utf8_decode('Malla: '), 0, 0, 'L');
               $pdf->SetFont('Arial', '', 9);
-              $pdf->Cell(22, 8, $respuestaHrastreo[0]['malla'], 1, 1, 'L');
+              $pdf->Cell(22, 8, $respuestaHrastreo[0]['malla'], 2, 1, 'L');
 
               $pdf->SetFont('Arial', 'B', 9);
               $pdf->Cell(22, 8, utf8_decode('Termografo: '), 0, 0, 'L');
               $pdf->SetFont('Arial', '', 9);
-              $pdf->Cell(22, 8, $respuestaHrastreo[0]['termografo'], 1, 0, 'L');
+              $pdf->Cell(22, 8, $respuestaHrastreo[0]['termografo'], 2, 0, 'L');
               $pdf->SetFont('Arial', 'B', 9);
               $pdf->Cell(22, 8, utf8_decode('Destino: '), 0, 0, 'L');
               $pdf->SetFont('Arial', '', 9);
-              $pdf->Cell(22, 8, $respuestaHrastreo[0]['destino'], 1, 1, 'L');
+              $pdf->Cell(22, 8, $respuestaHrastreo[0]['destino'], 2, 1, 'L');
 
 
 
-              $pdf->Ln();
               $pdf->Ln();
 
 
               $pdf->SetFont('Arial', 'B', 15);
-              $pdf->Setfillcolor(0, 0, 0);
+              $pdf->Setfillcolor(255, 184, 51 );
               $pdf->SetTextColor(255, 255, 255);
-              $pdf->Cell(198, 5, 'Lista de pallet', 1, 1, 'C', 1);
-              $pdf->SetTextColor(0, 0, 0);
+              $pdf->Cell(198, 8, 'Lista de pallet', 2, 1, 'C', 1);
 
+              $pdf->SetTextColor(0, 0, 0);
               $pdf->SetFont('Arial', 'B', 9);
               $pdf->Cell(20, 8, 'Fecha', 1, 0, 'L');
               $pdf->Cell(22, 8, 'Variedad', 1,0,'L');
