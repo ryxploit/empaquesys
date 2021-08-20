@@ -91,7 +91,7 @@ class Rastreo extends BaseController
           ');
           return redirect()->to(base_url('/Rastreo'));
         }
-
+        
     }
 
     public function Obtenerhrastreo($id_rastreo)
@@ -381,10 +381,10 @@ class Rastreo extends BaseController
               $pdf->SetMargins(10, 10, 10);
               $pdf->SetTitle("Hoja Rastreo");
               $pdf->SetFont('Arial', 'B', 18);
-
+              $pdf->SetTextColor(19, 14, 94);
               $pdf->Cell(195, 5, "Hoja de Rastreo", 0, 1, 'C');
               $pdf->SetFont('Arial', 'B', 10);
-              $pdf->SetTextColor(255, 184, 51 );
+              $pdf->SetTextColor(255, 87, 51  );
               $pdf->Cell(195, 5, 'Frutas y Legumbres El Rodeo S.P.R de R.I', 0, 1, 'C');
               $pdf->SetTextColor(0, 0, 0);
               $pdf->Ln();
@@ -431,7 +431,7 @@ class Rastreo extends BaseController
 
 
               $pdf->SetFont('Arial', 'B', 15);
-              $pdf->Setfillcolor(255, 184, 51 );
+              $pdf->Setfillcolor(255, 87, 51  );
               $pdf->SetTextColor(255, 255, 255);
               $pdf->Cell(198, 8, 'Lista de pallet', 2, 1, 'C', 1);
 
@@ -471,9 +471,9 @@ class Rastreo extends BaseController
                 $respuestatotalpallet =  $Modelo->listartotalpallet($data);
 
                 $pdf->SetFont('Arial', 'B', 15);
-                $pdf->Setfillcolor(0, 0, 0);
+                $pdf->Setfillcolor(255, 87, 51  );
                 $pdf->SetTextColor(255, 255, 255);
-                $pdf->Cell(108, 5, 'Lista de Lotes', 1, 1, 'C', 1);
+                $pdf->Cell(108, 8, 'Lista de Lotes', 1, 1, 'C', 1);
                 $pdf->SetTextColor(0, 0, 0);
 
                 $pdf->SetFont('Arial', 'B', 9);
@@ -496,9 +496,9 @@ class Rastreo extends BaseController
                   $pdf->Ln();
 
                 $pdf->SetFont('Arial', 'B', 15);
-                $pdf->Setfillcolor(0, 0, 0);
+                $pdf->Setfillcolor(255, 87, 51 );
                 $pdf->SetTextColor(255, 255, 255);
-                $pdf->Cell(42, 5, 'Lista total pallet', 1, 1, 'C', 1);
+                $pdf->Cell(42, 8, 'Lista total pallet', 1, 1, 'C', 1);
                 $pdf->SetTextColor(0, 0, 0);
 
                 $pdf->SetFont('Arial', 'B', 9);
@@ -515,7 +515,7 @@ class Rastreo extends BaseController
                 endforeach;
 
                 $pdf->SetFont('Arial', 'B', 9);
-                $pdf->Setfillcolor(0, 0, 0);
+                $pdf->Setfillcolor(255, 87, 51 );
                 $pdf->SetTextColor(255, 255, 255);
                 $pdf->Cell(42, 5, ' total de pallet:  ' . $totalP, 1, 1, 'L', 1);
                 $pdf->SetTextColor(0, 0, 0);
