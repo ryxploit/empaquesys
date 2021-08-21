@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -29,13 +27,15 @@
 
                     <form method="post" action="<?php echo base_url('Login/session'); ?>">
                         <div class="form-group position-relative has-icon-left mb-4">
-                            <input type="text" name="usuario" autocomplete="off" required class="form-control form-control-xl" placeholder="Usuario">
+                            <input type="text" name="usuario" autocomplete="off" required
+                                class="form-control form-control-xl" placeholder="Usuario">
                             <div class="form-control-icon">
                                 <i class="bi bi-person"></i>
                             </div>
                         </div>
                         <div class="form-group position-relative has-icon-left mb-4">
-                            <input type="password" name="password" autocomplete="off" required class="form-control form-control-xl" placeholder="Contraseña">
+                            <input type="password" name="password" autocomplete="off" required
+                                class="form-control form-control-xl" placeholder="Contraseña">
                             <div class="form-control-icon">
                                 <i class="bi bi-shield-lock"></i>
                             </div>

@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap.css');?>">
-      <link rel="stylesheet" href="<?php echo base_url('assets/css/sweetalert2.min.css');?>">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/sweetalert2.min.css');?>">
 
     <link rel="stylesheet" href="<?php echo base_url('assets/vendors/iconly/bold.css');?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/vendors/simple-datatables/style.css');?>">
@@ -38,12 +38,12 @@
                 </div>
                 <div class="sidebar-menu">
                     <ul class="menu">
-                        <li class="sidebar-title">Menu</li>
+
 
                         <li class="sidebar-item active ">
                             <a href="<?php echo base_url('Home'); ?>" class='sidebar-link'>
                                 <i class="bi bi-grid-fill"></i>
-                                <span>Dashboard</span>
+                                <span>Menu</span>
                             </a>
                         </li>
                         <li class="sidebar-item  has-sub">
@@ -53,11 +53,13 @@
                             </a>
                             <ul class="submenu ">
 
-                            <li class="submenu-item ">
-                                    <a href="<?php echo base_url('Pedidos') ?>"><i class="bi bi bi-card-list"></i> <span>Ver Pedidos</span></a>
+                                <li class="submenu-item ">
+                                    <a href="<?php echo base_url('Pedidos') ?>"><i class="bi bi bi-card-list"></i>
+                                        <span>Ver Pedidos</span></a>
                                 </li>
                                 <li class="submenu-item ">
-                                    <a href="<?php echo base_url('Pedidos/Agregarpedido') ?>"><i class="bi bi-clipboard-plus"></i> <span>Crear Pedido</span></a>
+                                    <a href="<?php echo base_url('Pedidos/Agregarpedido') ?>"><i
+                                            class="bi bi-clipboard-plus"></i> <span>Crear Pedido</span></a>
                                 </li>
 
                             </ul>
@@ -69,11 +71,13 @@
                             </a>
                             <ul class="submenu ">
 
-                            <li class="submenu-item ">
-                                    <a href="<?php echo base_url('Rastreo') ?>"><i class="bi bi bi-card-list"></i> <span>Ver Hojas de rastreo</span></a>
+                                <li class="submenu-item ">
+                                    <a href="<?php echo base_url('Rastreo') ?>"><i class="bi bi bi-card-list"></i>
+                                        <span>Ver Hojas de rastreo</span></a>
                                 </li>
                                 <li class="submenu-item ">
-                                    <a href="<?php echo base_url('Rastreo/Agregarhrastreo') ?>"><i class="bi bi-clipboard-plus"></i> <span>Crear hoja de rastreo</span></a>
+                                    <a href="<?php echo base_url('Rastreo/Agregarhrastreo') ?>"><i
+                                            class="bi bi-clipboard-plus"></i> <span>Crear hoja de rastreo</span></a>
                                 </li>
 
                             </ul>
@@ -85,11 +89,13 @@
                             </a>
                             <ul class="submenu ">
 
-                            <li class="submenu-item ">
-                                    <a href="<?php echo base_url('Lotes') ?>"><i class="bi bi bi-card-list"></i> <span>Ver lotes</span></a>
+                                <li class="submenu-item ">
+                                    <a href="<?php echo base_url('Lotes') ?>"><i class="bi bi bi-card-list"></i>
+                                        <span>Ver lotes</span></a>
                                 </li>
                                 <li class="submenu-item ">
-                                    <a href="<?php echo base_url('Lotes/Agregarlote') ?>"><i class="bi bi-clipboard-plus"></i> <span>Crear lote</span></a>
+                                    <a href="<?php echo base_url('Lotes/Agregarlote') ?>"><i
+                                            class="bi bi-clipboard-plus"></i> <span>Crear lote</span></a>
                                 </li>
 
                             </ul>
@@ -102,11 +108,32 @@
                             </a>
                             <ul class="submenu ">
 
-                            <li class="submenu-item ">
-                                    <a href="<?php echo base_url('Embarques') ?>"><i class="bi bi-card-list"></i> <span>Ver Packing list</span></a>
+                                <li class="submenu-item ">
+                                    <a href="<?php echo base_url('Embarques') ?>"><i class="bi bi-card-list"></i>
+                                        <span>Ver Packing list</span></a>
                                 </li>
                                 <li class="submenu-item ">
-                                    <a href="<?php echo base_url('Embarques/Agregarembarque') ?>"><i class="bi bi-clipboard-plus"></i> <span>Crear embarque</span></a>
+                                    <a href="<?php echo base_url('Embarques/Agregarembarque') ?>"><i
+                                            class="bi bi-clipboard-plus"></i> <span>Crear embarque</span></a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="bi bi-person"></i>
+                                <span>Usuarios</span>
+                            </a>
+                            <ul class="submenu ">
+
+                                <li class="submenu-item ">
+                                    <a href="<?php echo base_url('Embarques') ?>"><i class="bi bi-people"></i> <span>Ver
+                                            Usuarios</span></a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="<?php echo base_url('Embarques/Agregarembarque') ?>"><i
+                                            class="bi bi-person-plus"></i></i> <span>Crear Usuario</span></a>
                                 </li>
 
                             </ul>
@@ -148,7 +175,8 @@
                                 </div>
                                 <div class="ms-3 name">
                                     <h5 class="font-bold"><?php echo session('usuario'); ?></h5>
-                                    <h6 class="text-muted mb-0"><a href="<?php echo base_url('Login/destroy_session'); ?>">Salir </a></h6>
+                                    <h6 class="text-muted mb-0"><a
+                                            href="<?php echo base_url('Login/destroy_session'); ?>">Salir </a></h6>
                                 </div>
                             </div>
                         </div>

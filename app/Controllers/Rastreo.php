@@ -389,7 +389,7 @@ class Rastreo extends BaseController
               $pdf->SetTextColor(0, 0, 0);
               $pdf->Ln();
               $pdf->SetFont('Arial', 'B', 9);
-              $pdf->image(base_url('assets/images/logo/logo.png'), 185, 25, 20, 20, 'PNG');
+              $pdf->image(base_url('assets/images/logo/logo.png'), 185, 25, 15, 15, 'PNG');
 
               $pdf->Cell(22, 8, utf8_decode('Fecha: '), 0, 0, 'L');
               $pdf->SetFont('Arial', '', 9);
@@ -431,7 +431,7 @@ class Rastreo extends BaseController
 
 
               $pdf->SetFont('Arial', 'B', 15);
-              $pdf->Setfillcolor(255, 87, 51  );
+              $pdf->Setfillcolor(42,226,141  );
               $pdf->SetTextColor(255, 255, 255);
               $pdf->Cell(198, 8, 'Lista de pallet', 2, 1, 'C', 1);
 
@@ -471,9 +471,9 @@ class Rastreo extends BaseController
                 $respuestatotalpallet =  $Modelo->listartotalpallet($data);
 
                 $pdf->SetFont('Arial', 'B', 15);
-                $pdf->Setfillcolor(255, 87, 51  );
+                $pdf->Setfillcolor(42,226,141  );
                 $pdf->SetTextColor(255, 255, 255);
-                $pdf->Cell(108, 8, 'Lista de Lotes', 1, 1, 'C', 1);
+                $pdf->Cell(108, 8, 'Lista de Lotes', 2, 1, 'C', 1);
                 $pdf->SetTextColor(0, 0, 0);
 
                 $pdf->SetFont('Arial', 'B', 9);
@@ -496,9 +496,9 @@ class Rastreo extends BaseController
                   $pdf->Ln();
 
                 $pdf->SetFont('Arial', 'B', 15);
-                $pdf->Setfillcolor(255, 87, 51 );
+                $pdf->Setfillcolor(42,226,141 );
                 $pdf->SetTextColor(255, 255, 255);
-                $pdf->Cell(42, 8, 'Lista total pallet', 1, 1, 'C', 1);
+                $pdf->Cell(42, 8, 'Lista total pallet', 2, 1, 'C', 1);
                 $pdf->SetTextColor(0, 0, 0);
 
                 $pdf->SetFont('Arial', 'B', 9);
@@ -515,14 +515,14 @@ class Rastreo extends BaseController
                 endforeach;
 
                 $pdf->SetFont('Arial', 'B', 9);
-                $pdf->Setfillcolor(255, 87, 51 );
+                $pdf->Setfillcolor(42,226,141 );
                 $pdf->SetTextColor(255, 255, 255);
-                $pdf->Cell(42, 5, ' total de pallet:  ' . $totalP, 1, 1, 'L', 1);
+                $pdf->Cell(42, 5, ' total de cajas:  ' . $totalP, 2, 1, 'L', 1);
                 $pdf->SetTextColor(0, 0, 0);
 
 
               $this->response->setHeader('Content-Type', 'application/pdf');
-              $pdf->Output("rastreo_pdf.pdf", "I");
+              $pdf->Output('rastreo_'.$respuestaHrastreo[0]['codigo'].'.pdf', "I");
 
 
       }

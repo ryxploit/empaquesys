@@ -62,7 +62,7 @@ class Filters extends BaseConfig
 	 */
 	public $filters = [
 		'Filtrologin'=>[
-			'before'=>[
+			'before'=>[ 
 				'/Home',
 				'/Embarques',
 				'/Lotes',
