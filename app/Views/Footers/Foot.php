@@ -94,7 +94,8 @@
           $('#total').val(obj[0].total);
           $('#folio').val(obj[0].folio);
           $('#rastreo').val(obj[0].rastreo);
-            $('#rastreo').html(obj[0].rastreo);
+            $('#lote').val(obj[0].lote);
+            $('#lote').html(obj[0].lote);
             $('#id_pallet').val(obj[0].id_pallet);
           });
         });

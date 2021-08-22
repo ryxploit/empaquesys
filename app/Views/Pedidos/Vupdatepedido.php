@@ -70,7 +70,7 @@
                                         <option value="<?php echo $key->fondo;?>"><?php echo $key->fondo;?></option>
                                         <option value="negro">negro</option>
                                         <option value="blanco">blanco</option>
-                                        <option value="convinado">convinado</option>
+                                        <option value="convinado">conbinado</option>
                                     </select>
                                 </fieldset>
                             </div>
@@ -86,8 +86,8 @@
                                 </fieldset>
                             </div>
                             <div class="form-group">
-                                <label for="helpInputTop">Funda</label>
-                                <input type="text" value="<?php echo $key->funda;?>" name="funda" class="form-control"
+                                <label for="helpInputTop">malla</label>
+                                <input type="text" value="<?php echo $key->malla;?>" name="malla" class="form-control"
                                     id="helpInputTop">
                             </div>
                             <div class="form-group">

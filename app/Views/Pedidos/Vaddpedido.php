@@ -60,7 +60,7 @@
                                         <option value="">seleccionar...</option>
                                         <option value="negro">negro</option>
                                         <option value="blanco">blanco</option>
-                                        <option value="convinado">convinado</option>
+                                        <option value="convinado">conbinado</option>
                                     </select>
                                 </fieldset>
                             </div>
@@ -75,8 +75,8 @@
                                 </fieldset>
                             </div>
                             <div class="form-group">
-                                <label for="helpInputTop">Funda</label>
-                                <input type="text" name="funda" class="form-control" id="helpInputTop">
+                                <label for="helpInputTop">Malla</label>
+                                <input type="text" name="malla" class="form-control" id="helpInputTop">
                             </div>
                             <div class="form-group">
                                 <button type="submit" class="btn btn-primary btn-lg">Guardar</button>
@@ -86,4 +86,5 @@
                 </form>
             </div>
         </div>
-    </section </div>
+    </section>
+</div>

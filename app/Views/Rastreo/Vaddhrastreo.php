@@ -1,11 +1,9 @@
 <div class="page-content">
     <section class="section ">
         <div class="card  text-white  " style="background-color:#2AE28D;">
-
             <div class="card-body">
                 <form class="" action="<?php echo base_url('Rastreo/Insertarhrastreo'); ?>" method="post">
                     <div class="row">
-
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label class="text-white">Fecha</label>
@@ -49,7 +47,6 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-
                             <div class="form-group">
                                 <h6 class="text-white">Malla</h6>
                                 <fieldset class="form-group">
@@ -76,7 +73,6 @@
                             <div class="form-group">
                                 <button type="submit" class="btn btn-primary btn-lg">Guardar</button>
                             </div>
-
                         </div>
 
                     </div>
@@ -84,6 +80,4 @@
             </div>
         </div>
     </section>
-
-
 </div>

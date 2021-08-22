@@ -2,9 +2,10 @@
     <div class="card Text-white" style="background-color:#2AE28D;">
         <div class="card-body">
             <div class="card-header text-center " style="background-color:#2AE28D;">
-                <p class="h2 text-primary"> <strong
-                        class="h3 text-white badge rounded-pill bg-primary ">Pedido:</strong>
-                    <?php echo $dato[0]['codigo'];  ?></p>
+                <p class="h2 text-primary">
+                    <strong class="h3 text-white badge rounded-pill bg-primary ">Pedido:</strong>
+                    <?php echo $dato[0]['codigo'];  ?>
+                </p>
             </div>
             <form class="addpallet" method="post">
                 <div class="row">
@@ -40,7 +41,6 @@
                                 </select>
                             </fieldset>
                         </div>
-
                     </div>
                     <div class="col-md-4">
                         <div class="form-group">
@@ -51,10 +51,14 @@
                             <label class="text-white">Folio</label>
                             <input type="text" name="folio" class="form-control">
                         </div>
+                         <div class="form-group">
+                            <label class="text-white">Rastreo</label>
+                            <input type="text" name="rastreo" class="form-control">
+                        </div>
                         <div class="form-group">
-                            <h6 class="text-white">Rastreo</h6>
+                            <h6 class="text-white">Lote</h6>
                             <fieldset class="form-group">
-                                <select name="rastreo" class="form-select">
+                                <select name="lote" class="form-select">
                                     <?php foreach ($listarlotes as $key): ?>
                                     <option><?php echo $key->lote;?></option>
                                     <?php endforeach; ?>
@@ -62,7 +66,6 @@
                             </fieldset>
                         </div>
                         <input type="hidden" name="codigo_rastreo" value="<?php echo $dato[0]['codigo'];?>">
-
                     </div>
 
                     <div class="form-group">
@@ -95,6 +98,7 @@
                             <th>Total</th>
                             <th>Folio</th>
                             <th>Rastreo</th>
+                            <th>Lote</th>
                             <th>Accion</th>
                         </tr>
                     </thead>
@@ -110,6 +114,7 @@
                             <td><?php echo $key->total;?></td>
                             <td><?php echo $key->folio;?></td>
                             <td><?php echo $key->rastreo;?></td>
+                            <td><?php echo $key->lote;?></td>
                             <td>
                                 <a type="button" class="btn btn-primary update" id="<?php echo $key->id_pallet; ?>"
                                     data-bs-toggle="modal" data-bs-target="#exampleModal">Actualizar</a>
@@ -181,12 +186,16 @@
                                 <label for="recipient-name" class="col-form-label">Folio:</label>
                                 <input type="text" name="folio" class="form-control" id="folio">
                             </div>
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Rastreo:</label>
+                                <input type="text" name="rastreo" class="form-control" id="rastreo">
+                            </div>
                         </div>
                         <div class="form-group">
-                            <h6 class="">Rastreo</h6>
+                            <h6 class="">Lote</h6>
                             <fieldset class="form-group">
-                                <select name="rastreo" class="form-select">
-                                    <option id="rastreo"></option>
+                                <select name="lote" class="form-select">
+                                    <option id="lote"></option>
                                     <?php foreach ($listarlotes as $key): ?>
                                     <option><?php echo $key->lote;?></option>
                                     <?php endforeach; ?>
@@ -195,7 +204,6 @@
                         </div>
                         <input type="hidden" name="id_pallet" id="id_pallet">
                     </div>
-
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
