@@ -23,7 +23,7 @@ class App extends BaseConfig
 	 *
 	 * @var string
 	 */
-	public $baseURL = 'http://192.168.100.55/empaquesys/';
+	public $baseURL = 'http://192.168.100.58/empaquesys/';
 
 	/**
 	 * --------------------------------------------------------------------------

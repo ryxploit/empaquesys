@@ -59,6 +59,7 @@ $routes->post('/Lotes', 'Lotes::Actualizar');
 $routes->get('/Lotes/Eliminar/(:any)', 'Lotes::Eliminar/$1');
 //Embarques
 $routes->get('/', 'Embarques::agregarembarque');
+$routes->post('/Embarques', 'Embarques::insertarhembarque');
 
 /*
  * --------------------------------------------------------------------

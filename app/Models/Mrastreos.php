@@ -65,7 +65,7 @@ class Mrastreos extends Model
     {
       // code...
       $builder = $this->db->table('t_rastreos');
-      $builder->select('p.pallet,count(*) as total_pallet');
+      $builder->select('p.pallet,p.total,count(*) as total_pallet');
   $builder->from('t_rastreos r');
   $builder->join('t_pallet p', 'p.codigo_rastreo=r.codigo');
   $builder->groupBy('p.pallet');

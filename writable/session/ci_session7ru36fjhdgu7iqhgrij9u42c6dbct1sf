@@ -1,0 +1,10 @@
+__ci_last_regenerate|i:1629763223;_ci_previous_url|s:67:"http://192.168.100.55/empaquesys/index.php/Rastreo/Obtenerrastreo/2";usuario|s:6:"carlos";type|s:6:"normal";mensaje|s:305:"
+              <script type="text/javascript">
+              $(document).ready(function(){
+                Swal.fire(
+                  "Buen trabajo!",
+                  "se modifico con exito el pallet!",
+                  "success")
+                });
+                </script>
+              ";__ci_vars|a:1:{s:7:"mensaje";s:3:"old";}
