@@ -1,0 +1,22 @@
+CRITICAL - 2021-09-05 23:02:29 --> Maximum execution time of 120 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-09-05 23:20:43 --> Maximum execution time of 120 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-09-05 23:22:26 --> Maximum execution time of 120 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2021-09-05 23:38:15 --> Unknown column 'malla' in 'field list'
+CRITICAL - 2021-09-05 23:38:15 --> Unknown column 'malla' in 'field list'
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(329): mysqli->query('INSERT INTO `t_...')
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2277): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Mpedidos.php(22): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Pedidos.php(56): App\Models\Mpedidos->insertar_datos(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(929): App\Controllers\Pedidos->Insertar()
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(437): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(337): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}

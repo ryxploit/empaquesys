@@ -28,8 +28,8 @@
                                     <a class="btn btn-primary"
                                         href="<?php echo base_url('Lotes/Obtenerlote/'.$key->id_lotes); ?>"
                                         role="button">Modificar</a>
-                                    <a class="btn btn-warning"
-                                        href="<?php echo base_url('Lotes/Eliminar/'.$key->id_lotes); ?>"
+                                    <a class="btn btn-warning delete"
+                                        id="<?php echo $key->id_lotes; ?>"
                                         role="button">Borrar</a>
                                 </div>
                             </td>
@@ -42,3 +42,31 @@
 
     </section>
 </div>
+
+<?=$this->include("Footers/foot")?>
+
+<script type="text/javascript">
+// borrar pedido
+  $(document).ready(function() {
+    $('.delete').click(function () {
+      var id = $(this).attr('id');
+      Swal.fire({
+        title: 'De verdad desea borrar?',
+        showDenyButton: true,
+        showCancelButton: false,
+        confirmButtonText: `Borrar`,
+        denyButtonText: `No Borrar`,
+      }).then((result) => {
+
+        if (result.isConfirmed) {
+
+          var url = "<?php echo base_url('Lotes/Eliminar/'); ?>" + '/'+ id
+          window.location.href = url;
+
+        } else if (result.isDenied) {
+          Swal.fire('Siempre no se borro', '', 'info')
+        }
+      })
+    });
+  });
+</script>

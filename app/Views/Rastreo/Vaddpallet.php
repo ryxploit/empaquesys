@@ -16,28 +16,28 @@
                         </div>
                         <div class="form-group">
                             <label class="text-white">Variedad</label>
-                            <input type="text" name="variedad" class="form-control">
+                            <input type="text"  onkeyup="mayus(this);"  name="variedad" class="form-control">
                         </div>
                         <div class="form-group">
                             <label class="text-white">Marca</label>
-                            <input type="text" name="marca" class="form-control">
+                            <input type="text"  onkeyup="mayus(this);"  name="marca" class="form-control">
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="form-group">
                             <label class="text-white">Pallet</label>
-                            <input type="text" name="pallet" class="form-control">
+                            <input type="text"  onkeyup="mayus(this);"  name="pallet" class="form-control">
                         </div>
                         <div class="form-group">
                             <label class="text-white">Tamaño</label>
-                            <input type="text" name="tamaño" class="form-control">
+                            <input type="text"  onkeyup="mayus(this);"  name="tamaño" class="form-control">
                         </div>
                         <div class="form-group">
                             <h6 class="text-white">Hidrotermico</h6>
                             <fieldset class="form-group">
                                 <select name="hidrotermico" class="form-select">
-                                    <option>si</option>
-                                    <option>no</option>
+                                    <option>SI</option>
+                                    <option>NO</option>
                                 </select>
                             </fieldset>
                         </div>
@@ -45,15 +45,15 @@
                     <div class="col-md-4">
                         <div class="form-group">
                             <label class="text-white">Total</label>
-                            <input type="text" name="total" class="form-control">
+                            <input type="text"  onkeyup="mayus(this);"  name="total" class="form-control">
                         </div>
                         <div class="form-group">
                             <label class="text-white">Folio</label>
-                            <input type="text" name="folio" class="form-control">
+                            <input type="text"  onkeyup="mayus(this);"  name="folio" class="form-control">
                         </div>
                          <div class="form-group">
                             <label class="text-white">Rastreo</label>
-                            <input type="text" name="rastreo" class="form-control">
+                            <input type="text"  onkeyup="mayus(this);"  name="rastreo" class="form-control">
                         </div>
                         <div class="form-group">
                             <h6 class="text-white">Lote</h6>
@@ -143,52 +143,52 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label for="recipient-name" class="col-form-label">Fecha:</label>
+                                <label class="col-form-label">Fecha:</label>
                                 <input type="date" name="fecha" class="form-control" id="fecha">
                             </div>
                             <div class="form-group">
-                                <label for="recipient-name" class="col-form-label">Variedad:</label>
-                                <input type="text" name="variedad" class="form-control" id="variedad">
+                                <label  class="col-form-label">Variedad:</label>
+                                <input type="text"  onkeyup="mayus(this);"  name="variedad" class="form-control" id="variedad">
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label for="recipient-name" class="col-form-label">Marca:</label>
-                                <input type="text" name="marca" class="form-control" id="marca">
+                                <label  class="col-form-label">Marca:</label>
+                                <input type="text"  onkeyup="mayus(this);"  name="marca" class="form-control" id="marca">
                             </div>
                             <div class="form-group">
-                                <label for="recipient-name" class="col-form-label">Pallet:</label>
-                                <input type="text" name="pallet" class="form-control" id="pallet">
+                                <label  class="col-form-label">Pallet:</label>
+                                <input type="text"  onkeyup="mayus(this);"  name="pallet" class="form-control" id="pallet">
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label for="recipient-name" class="col-form-label">Tamaño:</label>
-                                <input type="text" name="tamaño" class="form-control" id="tamaño">
+                                <label  class="col-form-label">Tamaño:</label>
+                                <input type="text"  onkeyup="mayus(this);"  name="tamaño" class="form-control" id="tamaño">
                             </div>
                             <div class="form-group">
                                 <h6 class="">Hidrotermico</h6>
                                 <fieldset class="form-group">
                                     <select name="hidrotermico" class="form-select">
                                         <option id="hidrotermico"></option>
-                                        <option>si</option>
-                                        <option>no</option>
+                                        <option>SI</option>
+                                        <option>NO</option>
                                     </select>
                                 </fieldset>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label for="recipient-name" class="col-form-label">Total:</label>
-                                <input type="text" name="total" class="form-control" id="total">
+                                <label  class="col-form-label">Total:</label>
+                                <input type="text"  onkeyup="mayus(this);"  name="total" class="form-control" id="total">
                             </div>
                             <div class="form-group">
-                                <label for="recipient-name" class="col-form-label">Folio:</label>
-                                <input type="text" name="folio" class="form-control" id="folio">
+                                <label  class="col-form-label">Folio:</label>
+                                <input type="text"  onkeyup="mayus(this);"  name="folio" class="form-control" id="folio">
                             </div>
                             <div class="form-group">
-                                <label for="recipient-name" class="col-form-label">Rastreo:</label>
-                                <input type="text" name="rastreo" class="form-control" id="rastreo">
+                                <label  class="col-form-label">Rastreo:</label>
+                                <input type="text"  onkeyup="mayus(this);"  name="rastreo" class="form-control" id="rastreo">
                             </div>
                         </div>
                         <div class="form-group">
@@ -308,4 +308,10 @@ $(document).ready(function() {
           }
         });
       });
+    </script>
+
+    <script type="text/javascript">
+    function mayus(e) {
+      e.value = e.value.toUpperCase();
+    }
     </script>

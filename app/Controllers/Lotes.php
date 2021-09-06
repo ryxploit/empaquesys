@@ -14,8 +14,8 @@ class Lotes extends BaseController
                  'listarlotes' => $Modelo->listarlotes()
     						 );
       echo view('Headers/Head', $data);
-  echo view('Lotes/Vlotes',$data);
-  echo view('Footers/Foot');
+        echo view('Lotes/Vlotes',$data);
+
     }
 
     public function Agregarlote()
@@ -25,8 +25,8 @@ class Lotes extends BaseController
       						 'title' => 'Agregar Lote'
       						 );
         echo view('Headers/Head', $data);
-		echo view('Lotes/Vaddlote');
-		echo view('Footers/Foot');
+		      echo view('Lotes/Vaddlote');
+
     }
 
     public function Insertar()
@@ -100,7 +100,7 @@ class Lotes extends BaseController
 
       echo view('Headers/Head' ,$datos);
         echo view('Lotes/Vupdatelote' ,$datos);
-          echo view('Footers/Foot');
+        
 
     }
     public function Actualizar()

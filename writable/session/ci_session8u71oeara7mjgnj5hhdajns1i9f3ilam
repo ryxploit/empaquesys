@@ -1,0 +1,10 @@
+__ci_last_regenerate|i:1630903791;_ci_previous_url|s:52:"http://192.168.8.108:81/empaquesys/index.php/Pedidos";usuario|s:6:"carlos";type|s:5:"admin";mensaje|s:240:"
+        <script type="text/javascript">
+        $(document).ready(function(){
+          Swal.fire(
+            "Buen trabajo!",
+            "se elimino con exito!",
+            "success")
+          });
+          </script>
+        ";__ci_vars|a:1:{s:7:"mensaje";s:3:"old";}

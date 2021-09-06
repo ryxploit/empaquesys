@@ -18,7 +18,7 @@ class Pedidos extends BaseController
     						 );
       echo view('Headers/Head', $data);
         echo view('Pedidos/Vpedido');
-          echo view('Footers/Foot');
+
     }
 
     public function Agregarpedido()
@@ -29,7 +29,7 @@ class Pedidos extends BaseController
       						 );
         echo view('Headers/Head' ,$data);
 		      echo view('Pedidos/Vaddpedido');
-		        echo view('Footers/Foot');
+
     }
 
     public function Insertar()
@@ -103,7 +103,7 @@ class Pedidos extends BaseController
 
       echo view('Headers/Head' ,$datos);
         echo view('Pedidos/Vupdatepedido' ,$datos);
-          echo view('Footers/Foot');
+          
 
     }
     public function Actualizar()
@@ -200,5 +200,5 @@ class Pedidos extends BaseController
       }
     }
 
-    
+
 }

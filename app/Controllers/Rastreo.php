@@ -15,8 +15,8 @@ class Rastreo extends BaseController
                  'listarhrastreo' => $Modelo->listarhrastreo()
     						 );
       echo view('Headers/Head', $data);
-  echo view('Rastreo/Vhrastreo',$data);
-  echo view('Footers/Foot');
+        echo view('Rastreo/Vhrastreo',$data);
+
     }
 
     public function Agregarhrastreo()
@@ -28,8 +28,8 @@ class Rastreo extends BaseController
                    'listarpedidos' => $Modelo->listarpedidos()
       						 );
         echo view('Headers/Head', $data);
-		echo view('Rastreo/Vaddhrastreo',$data);
-		echo view('Footers/Foot');
+		      echo view('Rastreo/Vaddhrastreo',$data);
+		       
     }
 
     public function Agregarpallet()

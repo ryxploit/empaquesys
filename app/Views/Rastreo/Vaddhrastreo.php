@@ -13,7 +13,7 @@
                                 <h6 class="text-white">Codigo</h6>
                                 <fieldset class="form-group">
                                     <select name="codigo" class="form-select">
-                                        <option>seleccionar...</option>
+                                        <option>SELECCIONAR...</option>
                                         <?php foreach ($listarpedidos as $key): ?>
                                         <option value="<?php echo $key->codigo_embarque;?>">
                                             <?php echo $key->codigo_embarque;?></option>
@@ -23,15 +23,15 @@
                             </div>
                             <div class="form-group">
                                 <label class="text-white">Sello</label>
-                                <input type="text" name="sello" class="form-control">
+                                <input type="text" onkeyup="mayus(this);" name="sello" class="form-control">
                             </div>
                             <div class="form-group">
                                 <h6 class="text-white">Capuchon</h6>
                                 <fieldset class="form-group">
                                     <select name="capuchon" class="form-select">
-                                        <option>negro</option>
-                                        <option>blanco</option>
-                                        <option>rosas</option>
+                                        <option>NEGRO</option>
+                                        <option>BLANCO</option>
+                                        <option>ROSA</option>
                                     </select>
                                 </fieldset>
                             </div>
@@ -39,9 +39,9 @@
                                 <h6 class="text-white">Fondo</h6>
                                 <fieldset class="form-group">
                                     <select name="fondo" class="form-select">
-                                        <option>negro</option>
-                                        <option>blanco</option>
-                                        <option>conbinado</option>
+                                        <option>NEGRO</option>
+                                        <option>BLANCO</option>
+                                        <option>CONBINADO</option>
                                     </select>
                                 </fieldset>
                             </div>
@@ -51,9 +51,9 @@
                                 <h6 class="text-white">Malla</h6>
                                 <fieldset class="form-group">
                                     <select name="malla" class="form-select">
-                                        <option>si</option>
-                                        <option>No</option>
-                                        <option>base</option>
+                                        <option>SI</option>
+                                        <option>NO</option>
+                                        <option>BASE</option>
                                     </select>
                                 </fieldset>
                             </div>
@@ -61,14 +61,14 @@
                                 <h6 class="text-white">Termografo</h6>
                                 <fieldset class="form-group">
                                     <select name="termografo" class="form-select">
-                                        <option>si</option>
-                                        <option>no</option>
+                                        <option>SI</option>
+                                        <option>NO</option>
                                     </select>
                                 </fieldset>
                             </div>
                             <div class="form-group">
                                 <label class="text-white">Destino</label>
-                                <input type="text" name="destino" class="form-control">
+                                <input type="text" onkeyup="mayus(this);" name="destino" class="form-control">
                             </div>
                             <div class="form-group">
                                 <button type="submit" class="btn btn-primary btn-lg">Guardar</button>
@@ -81,3 +81,11 @@
         </div>
     </section>
 </div>
+
+<?=$this->include("Footers/foot")?>
+
+<script type="text/javascript">
+function mayus(e) {
+  e.value = e.value.toUpperCase();
+}
+</script>

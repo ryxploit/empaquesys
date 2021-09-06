@@ -1,22 +1,22 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => 'dev-main',
-        'version' => 'dev-main',
+        'pretty_version' => '1.0.0+no-version-set',
+        'version' => '1.0.0.0',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'ad564c82b7336b0ee3cd82f42f5323a1d709797b',
+        'reference' => NULL,
         'name' => 'codeigniter4/appstarter',
         'dev' => true,
     ),
     'versions' => array(
         'codeigniter4/appstarter' => array(
-            'pretty_version' => 'dev-main',
-            'version' => 'dev-main',
+            'pretty_version' => '1.0.0+no-version-set',
+            'version' => '1.0.0.0',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'ad564c82b7336b0ee3cd82f42f5323a1d709797b',
+            'reference' => NULL,
             'dev_requirement' => false,
         ),
         'codeigniter4/framework' => array(
@@ -65,21 +65,12 @@
             'dev_requirement' => false,
         ),
         'laminas/laminas-escaper' => array(
-            'pretty_version' => '2.8.0',
-            'version' => '2.8.0.0',
+            'pretty_version' => '2.9.0',
+            'version' => '2.9.0.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../laminas/laminas-escaper',
             'aliases' => array(),
-            'reference' => '2d6dce99668b413610e9544183fa10392437f542',
-            'dev_requirement' => false,
-        ),
-        'laminas/laminas-zendframework-bridge' => array(
-            'pretty_version' => '1.3.0',
-            'version' => '1.3.0.0',
-            'type' => 'library',
-            'install_path' => __DIR__ . '/../laminas/laminas-zendframework-bridge',
-            'aliases' => array(),
-            'reference' => '13af2502d9bb6f7d33be2de4b51fb68c6cdb476e',
+            'reference' => '891ad70986729e20ed2e86355fcf93c9dc238a5f',
             'dev_requirement' => false,
         ),
         'mikey179/vfsstream' => array(
@@ -212,12 +203,12 @@
             'dev_requirement' => true,
         ),
         'phpunit/phpunit' => array(
-            'pretty_version' => '9.5.8',
-            'version' => '9.5.8.0',
+            'pretty_version' => '9.5.9',
+            'version' => '9.5.9.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../phpunit/phpunit',
             'aliases' => array(),
-            'reference' => '191768ccd5c85513b4068bdbe99bb6390c7d54fb',
+            'reference' => 'ea8c2dfb1065eb35a79b3681eee6e6fb0a6f273b',
             'dev_requirement' => true,
         ),
         'psr/container' => array(
@@ -417,12 +408,6 @@
             'aliases' => array(),
             'reference' => '6964c76c7804814a842473e0c8fd15bab0f18e25',
             'dev_requirement' => true,
-        ),
-        'zendframework/zend-escaper' => array(
-            'dev_requirement' => false,
-            'replaced' => array(
-                0 => '^2.6.1',
-            ),
         ),
     ),
 );

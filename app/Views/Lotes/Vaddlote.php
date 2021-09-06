@@ -14,36 +14,36 @@
                             </div>
                             <div class="form-group">
                                 <label>Corredor</label>
-                                <input type="text" name="corredor" class="form-control">
+                                <input type="text" onkeyup="mayus(this);" name="corredor" class="form-control">
                             </div>
                             <div class="form-group">
                                 <label>Numero de cajas</label>
-                                <input type="text" name="numero_cajas" class="form-control">
+                                <input type="text" onkeyup="mayus(this);" name="numero_cajas" class="form-control">
                             </div>
                             <div class="form-group">
                                 <label>Productor</label>
-                                <input type="text" name="productor" class="form-control">
+                                <input type="text" onkeyup="mayus(this);" name="productor" class="form-control">
                             </div>
                             <div class="form-group">
                                 <label>Registro</label>
-                                <input type="text" name="registro" class="form-control">
+                                <input type="text" onkeyup="mayus(this);" name="registro" class="form-control">
                             </div>
                             <div class="form-group">
                                 <label>folio</label>
-                                <input type="text" name="folio" class="form-control">
+                                <input type="text" onkeyup="mayus(this);" name="folio" class="form-control">
                             </div>
                             <div class="form-group">
                                 <label>Nombre de huerta</label>
-                                <input type="text" name="nombre_huerta" class="form-control">
+                                <input type="text" onkeyup="mayus(this);" name="nombre_huerta" class="form-control">
                             </div>
 
                             <div class="form-group">
                                 <h6>Hidrotermico</h6>
                                 <fieldset class="form-group">
                                     <select name="hidrotermico" class="form-select" id="basicSelect">
-                                        <option value="">seleccionar...</option>
-                                        <option value="si">si</option>
-                                        <option value="no">no</option>
+                                        <option>SELECCIONAR...</option>
+                                        <option>SI</option>
+                                        <option>NO</option>
                                     </select>
                                 </fieldset>
                             </div>
@@ -52,27 +52,27 @@
 
                             <div class="form-group">
                                 <label>Ubicacion</label>
-                                <input type="text" name="ubicacion" class="form-control">
+                                <input type="text" onkeyup="mayus(this);" name="ubicacion" class="form-control">
                             </div>
                             <div class="form-group">
                                 <label>Lote</label>
-                                <input type="text" name="lote" class="form-control">
+                                <input type="text" onkeyup="mayus(this);" name="lote" class="form-control">
                             </div>
                             <div class="form-group">
                                 <label>Promedio</label>
-                                <input type="text" name="promedio" class="form-control">
+                                <input type="text" onkeyup="mayus(this);" name="promedio" class="form-control">
                             </div>
                             <div class="form-group">
                                 <label>Total</label>
-                                <input type="text" name="total" class="form-control">
+                                <input type="text" onkeyup="mayus(this);" name="total" class="form-control">
                             </div>
                             <div class="form-group">
                                 <label>Muestra</label>
-                                <input type="text" name="muestra" class="form-control">
+                                <input type="text" onkeyup="mayus(this);" name="muestra" class="form-control">
                             </div>
                             <div class="form-group">
                                 <label>Numero de cuadrilla</label>
-                                <input type="text" name="numero_cuadrilla" class="form-control">
+                                <input type="text" onkeyup="mayus(this);" name="numero_cuadrilla" class="form-control">
                             </div>
                             <div class="form-group">
                                 <button type="submit" class="btn btn-primary btn-lg">Guardar</button>
@@ -84,3 +84,11 @@
         </div>
     </section>
 </div>
+
+<?=$this->include("Footers/foot")?>
+
+<script type="text/javascript">
+function mayus(e) {
+  e.value = e.value.toUpperCase();
+}
+</script>

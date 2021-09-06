@@ -11,55 +11,54 @@
                         <div class="col-md-6">
                             <input type="hidden" name="id_pedidos" value="<?php echo $key->id_pedidos;?>">
                             <div class="form-group">
-                                <label for="helpInputTop">Codigo de embarque</label>
-                                <input type="text" value="<?php echo $key->codigo_embarque;?>" name="codigo_embarque"
+                                <label>Codigo de embarque</label>
+                                <input type="text"  onkeyup="mayus(this);" value="<?php echo $key->codigo_embarque;?>" name="codigo_embarque"
                                     class="form-control">
                             </div>
                             <div class="form-group">
-                                <label for="helpInputTop">Sello del cliente</label>
-                                <input type="text" value="<?php echo $key->sello_cliente;?>" name="sello_cliente"
+                                <label>Sello del cliente</label>
+                                <input type="text"  onkeyup="mayus(this);" value="<?php echo $key->sello_cliente;?>" name="sello_cliente"
                                     class="form-control">
                             </div>
                             <div class="form-group">
-                                <label for="helpInputTop">Aeropuerto destino</label>
-                                <input type="text" value="<?php echo $key->aeropuerto_destino;?>"
+                                <label>Aeropuerto destino</label>
+                                <input type="text"  onkeyup="mayus(this);" value="<?php echo $key->aeropuerto_destino;?>"
                                     name="aeropuerto_destino" class="form-control">
                             </div>
                             <div class="form-group">
-                                <label for="helpInputTop">Ejecutivo</label>
-                                <input type="text" value="<?php echo $key->ejecutivo;?>" name="ejecutivo"
+                                <label>Ejecutivo</label>
+                                <input type="text"  onkeyup="mayus(this);" value="<?php echo $key->ejecutivo;?>" name="ejecutivo"
                                     class="form-control">
                             </div>
                             <div class="form-group">
-                                <label for="helpInputTop">Variedad</label>
-                                <input type="text" value="<?php echo $key->variedad;?>" name="variedad"
+                                <label>Variedad</label>
+                                <input type="text"  onkeyup="mayus(this);" value="<?php echo $key->variedad;?>" name="variedad"
                                     class="form-control">
                             </div>
                             <div class="form-group">
-                                <label for="helpInputTop">Marca</label>
-                                <input type="text" value="<?php echo $key->marca;?>" name="marca" class="form-control">
+                                <label>Marca</label>
+                                <input type="text"  onkeyup="mayus(this);" value="<?php echo $key->marca;?>" name="marca" class="form-control">
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label for="helpInputTop">Etiqueta</label>
-                                <input type="text" value="<?php echo $key->etiqueta;?>" name="etiqueta"
+                                <label>Etiqueta</label>
+                                <input type="text"  onkeyup="mayus(this);" value="<?php echo $key->etiqueta;?>" name="etiqueta"
                                     class="form-control">
                             </div>
                             <div class="form-group">
-                                <label for="helpInputTop">Tipo de caja</label>
-                                <input type="text" value="<?php echo $key->tipo_caja;?>" name="tipo_caja"
+                                <label>Tipo de caja</label>
+                                <input type="text"  onkeyup="mayus(this);" value="<?php echo $key->tipo_caja;?>" name="tipo_caja"
                                     class="form-control">
                             </div>
                             <div class="form-group">
                                 <h6>Capuchon</h6>
                                 <fieldset class="form-group">
                                     <select name="capuchon" class="form-select" id="basicSelect">
-                                        <option value="<?php echo $key->capuchon;?>"><?php echo $key->capuchon;?>
-                                        </option>
-                                        <option value="negro">negro</option>
-                                        <option value="blanco">blanco</option>
-                                        <option value="rosa">rosa</option>
+                                        <option><?php echo $key->capuchon;?></option>
+                                        <option>NEGRO</option>
+                                        <option>BLANCO</option>
+                                        <option>ROSA</option>
                                     </select>
                                 </fieldset>
                             </div>
@@ -67,10 +66,10 @@
                                 <h6>Fondo</h6>
                                 <fieldset class="form-group">
                                     <select name="fondo" class="form-select" id="basicSelect">
-                                        <option value="<?php echo $key->fondo;?>"><?php echo $key->fondo;?></option>
-                                        <option value="negro">negro</option>
-                                        <option value="blanco">blanco</option>
-                                        <option value="convinado">conbinado</option>
+                                        <option><?php echo $key->fondo;?></option>
+                                        <option>NEGRO</option>
+                                        <option>BLANCO</option>
+                                        <option>CONBINADO</option>
                                     </select>
                                 </fieldset>
                             </div>
@@ -78,17 +77,15 @@
                                 <h6>Termografo</h6>
                                 <fieldset class="form-group">
                                     <select name="termografo" class="form-select" id="basicSelect">
-                                        <option value="<?php echo $key->termografo;?>"><?php echo $key->termografo;?>
-                                        </option>
-                                        <option value="si">si</option>
-                                        <option value="no">no</option>
+                                        <option><?php echo $key->termografo;?></option>
+                                        <option>SI</option>
+                                        <option>NO</option>
                                     </select>
                                 </fieldset>
                             </div>
                             <div class="form-group">
-                                <label for="helpInputTop">malla</label>
-                                <input type="text" value="<?php echo $key->malla;?>" name="malla" class="form-control"
-                                    id="helpInputTop">
+                                <label>malla</label>
+                                <input type="text"  onkeyup="mayus(this);" value="<?php echo $key->malla;?>" name="malla" class="form-control">
                             </div>
                             <div class="form-group">
                                 <button type="submit" class="btn btn-primary btn-lg">Guardar carmbios</button>
@@ -99,4 +96,12 @@
                 </form>
             </div>
         </div>
-    </section </div>
+    </section>
+   </div>
+   <?=$this->include("Footers/foot")?>
+
+   <script type="text/javascript">
+   function mayus(e) {
+     e.value = e.value.toUpperCase();
+   }
+   </script>
