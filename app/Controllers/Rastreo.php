@@ -29,7 +29,7 @@ class Rastreo extends BaseController
       						 );
         echo view('Headers/Head', $data);
 		      echo view('Rastreo/Vaddhrastreo',$data);
-		       
+
     }
 
     public function Agregarpallet()
@@ -475,13 +475,13 @@ class Rastreo extends BaseController
                 $pdf->SetFont('Arial', 'B', 15);
                 $pdf->Setfillcolor(42,226,141  );
                 $pdf->SetTextColor(255, 255, 255);
-                $pdf->Cell(108, 8, 'Lista de Lotes', 2, 1, 'C', 1);
+                $pdf->Cell(167, 8, 'Lista de Lotes', 2, 1, 'C', 1);
                 $pdf->SetTextColor(0, 0, 0);
 
                 $pdf->SetFont('Arial', 'B', 9);
                 $pdf->Cell(20, 8, 'Fecha', 1, 0, 'L');
                 $pdf->Cell(22, 8, 'Lote', 1,0,'L');
-                $pdf->Cell(22, 8, 'Corredor', 1,0,'L');
+                $pdf->Cell(80, 8, 'Corredor', 1,0,'L');
                 $pdf->Cell(22, 8, '# Cuadrilla', 1, 0, 'L');
                 $pdf->Cell(22, 8,utf8_decode( 'Total'), 1,1,'L');
 
@@ -490,7 +490,7 @@ class Rastreo extends BaseController
                 $pdf->SetFont('Arial', '', 8);
                 $pdf->Cell(20, 8, $key->fecha, 1,0,'L');
                 $pdf->Cell(22, 8, $key->lote, 1,0,'C');
-                $pdf->Cell(22, 8, $key->corredor, 1,0,'L');
+                $pdf->Cell(80, 8, $key->corredor, 1,0,'L');
                 $pdf->Cell(22, 8, $key->numero_cuadrilla, 1,0,'C');
                 $pdf->Cell(22, 8,utf8_decode($key->total ), 1,1,'L');
                 endforeach;

@@ -240,11 +240,11 @@
     $('.delete').click(function () {
       var id = $(this).attr('id');
       Swal.fire({
-        title: 'Do you want to save the changes?',
+        title: 'Desea borrar?',
         showDenyButton: true,
         showCancelButton: false,
         confirmButtonText: `Borrar`,
-        denyButtonText: `No Borrar`,
+        denyButtonText: `Cancelar`,
       }).then((result) => {
         /* Read more about isConfirmed, isDenied below */
         if (result.isConfirmed) {
@@ -255,7 +255,7 @@
             window.location.reload(); // Recargar página
           });
         } else if (result.isDenied) {
-          Swal.fire('Siempre no se borro', '', 'info')
+          Swal.fire('Cancelado', '', 'info')
         }
       })
     });

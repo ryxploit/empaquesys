@@ -1,0 +1,8 @@
+CRITICAL - 2021-09-07 23:52:25 --> Undefined variable $data
+#0 C:\xampp\htdocs\empaquesys\app\Models\Mrastreos.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 82)
+#1 C:\xampp\htdocs\empaquesys\app\Controllers\Rastreo.php(472): App\Models\Mrastreos->listarlote('SEA04')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(929): App\Controllers\Rastreo->pdf('4')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(437): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+#4 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(337): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}

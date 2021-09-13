@@ -10,7 +10,7 @@
                     <thead>
                         <tr>
                             <th>Codigo de embarque</th>
-                            <th>sello de Cliente</th>
+                            <th>Sello de Cliente</th>
                             <th>Aeropuerto destino</th>
                             <th>Ejecutivo</th>
                             <th></th>
@@ -49,11 +49,11 @@
     $('.delete').click(function () {
       var id = $(this).attr('id');
       Swal.fire({
-        title: 'De verdad desea borrar?',
+        title: 'Desea borrar?',
         showDenyButton: true,
         showCancelButton: false,
         confirmButtonText: `Borrar`,
-        denyButtonText: `No Borrar`,
+        denyButtonText: `Cancelar`,
       }).then((result) => {
 
         if (result.isConfirmed) {
@@ -62,7 +62,7 @@
           window.location.href = url;
 
         } else if (result.isDenied) {
-          Swal.fire('Siempre no se borro', '', 'info')
+          Swal.fire('Cancelado', '', 'info')
         }
       })
     });

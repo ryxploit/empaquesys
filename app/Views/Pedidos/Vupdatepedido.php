@@ -84,7 +84,7 @@
                                 </fieldset>
                             </div>
                             <div class="form-group">
-                                <label>malla</label>
+                                <label>Malla</label>
                                 <input type="text"  onkeyup="mayus(this);" value="<?php echo $key->malla;?>" name="malla" class="form-control">
                             </div>
                             <div class="form-group">

@@ -73,13 +73,13 @@ class Mrastreos extends Model
       return $query;
     }
 
-    public function listarlote($data)
+    public function listarlote($dato)
     {
       // code...
       $builder = $this->db->table('t_lotes');
       $builder->select('*');
-      $builder->join('t_pallet', 't_lotes.lote = t_pallet.rastreo');
-      $builder->where('codigo_rastreo', $data);
+      $builder->join('t_pallet', 't_lotes.lote = t_pallet.lote');
+      $builder->where('codigo_rastreo', $dato);
       $query = $builder->get()->getResult();
       return $query;
     }

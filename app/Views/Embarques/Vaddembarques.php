@@ -78,7 +78,7 @@
                             <td class="text-end">
                                 <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
                                     <a class="btn btn-warning"
-                                        href="<?php echo base_url('Rastreo/Obtenerrastreo/'); ?>"
+                                        href="<?php echo base_url('Embarques/Agregarpallet/'.$key->id_embarques); ?>"
                                         role="button">Agregar Pallets</a>
                                     <a class="btn btn-primary disabled"
                                         href="<?php echo base_url('Rastreo/Obtenerhrastreo/'); ?>"
