@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 10-09-2021 a las 00:44:22
+-- Tiempo de generación: 23-09-2021 a las 05:58:41
 -- Versión del servidor: 10.4.20-MariaDB
 -- Versión de PHP: 8.0.9
 
@@ -146,10 +146,10 @@ CREATE TABLE `t_pallet_embarque` (
 --
 
 INSERT INTO `t_pallet_embarque` (`id_embarques_pallet`, `pedido`, `numero_pallet`, `peso_pallet`, `marca_caja`, `cantidad`, `calibre`, `embarque_id`) VALUES
-(1, 'SEA04', '345', '14KG', 'KOALA', '13', '6', '1'),
-(2, 'SEA04', '345', '14KG', 'KOALA', '14', '9', '1'),
-(3, 'SEA04', '347', '14KG', 'KOALA', '13', '6', '1'),
-(4, 'SEA04', '345', '14KG', 'KOALA', '13', '6', '1');
+(9, 'SEA04', '345', '14KG', 'KOALA', '10', '6', '1'),
+(10, 'SEA045', '678', '14KG', 'KOALA', '13', '6', '1'),
+(11, 'SEA04', '987', '14KG', 'KOALA', '10', '6', '1'),
+(12, 'SEA04', '345', '14KG', 'KOALA', '10', '6', '1');
 
 -- --------------------------------------------------------
 
@@ -178,7 +178,8 @@ CREATE TABLE `t_pedidos` (
 --
 
 INSERT INTO `t_pedidos` (`id_pedidos`, `codigo_embarque`, `sello_cliente`, `aeropuerto_destino`, `ejecutivo`, `variedad`, `marca`, `etiqueta`, `tipo_caja`, `capuchon`, `fondo`, `termografo`, `malla`) VALUES
-(5, 'SEA04', 'SEDIFEL', 'PARIS', 'SAMANTA', 'KENT', 'DELIFRUIT', 'DELIFRUIT', 'NIPPON', 'NEGRO', 'CONBINADO', 'SI', 'SI');
+(5, 'SEA04', 'SEDIFEL', 'PARIS', 'SAMANTA', 'KENT', 'DELIFRUIT', 'DELIFRUIT', 'NIPPON', 'NEGRO', 'CONBINADO', 'SI', 'SI'),
+(6, 'SEA045', 'SEDIFEL', 'PARIS', 'SAMANTA', 'KENT', 'DELIFRUIT', 'DELIFRUIT', 'NIPPON', 'NEGRO', 'NEGRO', 'NO', 'NO');
 
 -- --------------------------------------------------------
 
@@ -223,7 +224,8 @@ CREATE TABLE `t_usuarios` (
 --
 
 INSERT INTO `t_usuarios` (`id_usuario`, `usuario`, `password`, `type`) VALUES
-(7, 'carlos', 'd033e22ae348aeb5660fc2140aec35850c4da997', 'admin');
+(7, 'CARLOS', 'd033e22ae348aeb5660fc2140aec35850c4da997', 'ADMINISTRADOR'),
+(11, 'RECIBA', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', 'LOTES');
 
 --
 -- Índices para tablas volcadas
@@ -297,13 +299,13 @@ ALTER TABLE `t_pallet`
 -- AUTO_INCREMENT de la tabla `t_pallet_embarque`
 --
 ALTER TABLE `t_pallet_embarque`
-  MODIFY `id_embarques_pallet` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_embarques_pallet` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT de la tabla `t_pedidos`
 --
 ALTER TABLE `t_pedidos`
-  MODIFY `id_pedidos` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_pedidos` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT de la tabla `t_rastreos`
@@ -315,7 +317,7 @@ ALTER TABLE `t_rastreos`
 -- AUTO_INCREMENT de la tabla `t_usuarios`
 --
 ALTER TABLE `t_usuarios`
-  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

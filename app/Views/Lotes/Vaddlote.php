@@ -29,7 +29,7 @@
                                 <input type="text" onkeyup="mayus(this);" name="registro" class="form-control">
                             </div>
                             <div class="form-group">
-                                <label>folio</label>
+                                <label>Folio</label>
                                 <input type="text" onkeyup="mayus(this);" name="folio" class="form-control">
                             </div>
                             <div class="form-group">
@@ -63,7 +63,7 @@
                                 <input type="text" onkeyup="mayus(this);" name="promedio" class="form-control">
                             </div>
                             <div class="form-group">
-                                <label>Total</label>
+                                <label>Total KG</label>
                                 <input type="text" onkeyup="mayus(this);" name="total" class="form-control">
                             </div>
                             <div class="form-group">

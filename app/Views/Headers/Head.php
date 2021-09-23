@@ -46,6 +46,8 @@
                                 <span>Menu</span>
                             </a>
                         </li>
+                        <?php if(session('type') == 'ADMINISTRADOR'){ ?>
+
                         <li class="sidebar-item  has-sub">
                             <a href="#" class='sidebar-link'>
                                 <i class="bi bi-bag-check"></i>
@@ -64,6 +66,7 @@
 
                             </ul>
                         </li>
+
                         <li class="sidebar-item  has-sub">
                             <a href="#" class='sidebar-link'>
                                 <i class="bi bi bi-broadcast"></i>
@@ -82,6 +85,7 @@
 
                             </ul>
                         </li>
+
                         <li class="sidebar-item  has-sub">
                             <a href="#" class='sidebar-link'>
                                 <i class="bi bi-clipboard-data"></i>
@@ -128,19 +132,81 @@
                             <ul class="submenu ">
 
                                 <li class="submenu-item ">
-                                    <a href="<?php echo base_url('Embarques') ?>"><i class="bi bi-people"></i> <span>Ver
+                                    <a href="<?php echo base_url('Usuarios') ?>"><i class="bi bi-people"></i> <span>Ver
                                             Usuarios</span></a>
                                 </li>
                                 <li class="submenu-item ">
-                                    <a href="<?php echo base_url('Embarques/Agregarembarque') ?>"><i
+                                    <a href="<?php echo base_url('Usuarios/AgregarUsuario') ?>"><i
                                             class="bi bi-person-plus"></i></i> <span>Crear Usuario</span></a>
                                 </li>
 
                             </ul>
                         </li>
 
+                      <?php }elseif (session('type') == 'LOTES') {
+                        // code...
+                      ?>
+                      <li class="sidebar-item  has-sub">
+                          <a href="#" class='sidebar-link'>
+                              <i class="bi bi-clipboard-data"></i>
+                              <span>Lotes</span>
+                          </a>
+                          <ul class="submenu ">
 
+                              <li class="submenu-item ">
+                                  <a href="<?php echo base_url('Lotes') ?>"><i class="bi bi bi-card-list"></i>
+                                      <span>Ver lotes</span></a>
+                              </li>
+                              <li class="submenu-item ">
+                                  <a href="<?php echo base_url('Lotes/Agregarlote') ?>"><i
+                                          class="bi bi-clipboard-plus"></i> <span>Crear lote</span></a>
+                              </li>
 
+                          </ul>
+                      </li>
+
+                    <?php }elseif (session('type') == 'RASTREO') {
+                      // code...
+                    ?>
+                    <li class="sidebar-item  has-sub">
+                        <a href="#" class='sidebar-link'>
+                            <i class="bi bi-bag-check"></i>
+                            <span>Pedidos</span>
+                        </a>
+                        <ul class="submenu ">
+
+                            <li class="submenu-item ">
+                                <a href="<?php echo base_url('Pedidos') ?>"><i class="bi bi bi-card-list"></i>
+                                    <span>Ver Pedidos</span></a>
+                            </li>
+                            <li class="submenu-item ">
+                                <a href="<?php echo base_url('Pedidos/Agregarpedido') ?>"><i
+                                        class="bi bi-clipboard-plus"></i> <span>Crear Pedido</span></a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="sidebar-item  has-sub">
+                        <a href="#" class='sidebar-link'>
+                            <i class="bi bi bi-broadcast"></i>
+                            <span>Rastreo</span>
+                        </a>
+                        <ul class="submenu ">
+
+                            <li class="submenu-item ">
+                                <a href="<?php echo base_url('Rastreo') ?>"><i class="bi bi bi-card-list"></i>
+                                    <span>Ver Hojas de rastreo</span></a>
+                            </li>
+                            <li class="submenu-item ">
+                                <a href="<?php echo base_url('Rastreo/Agregarhrastreo') ?>"><i
+                                        class="bi bi-clipboard-plus"></i> <span>Crear hoja de rastreo</span></a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                  <?php } ?>
                     </ul>
                 </div>
                 <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>

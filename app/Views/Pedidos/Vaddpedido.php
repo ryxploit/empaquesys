@@ -39,8 +39,15 @@
                                 <input type="text" onkeyup="mayus(this);" name="etiqueta" class="form-control">
                             </div>
                             <div class="form-group">
-                                <label>Tipo de caja</label>
-                                <input type="text" onkeyup="mayus(this);" name="tipo_caja" class="form-control">
+                                <h6>Tipo de Caja</h6>
+                                <fieldset class="form-group">
+                                    <select name="tipo_caja" class="form-select" id="basicSelect">
+                                        <option>SELECCIONAR...</option>
+                                        <option>NIPPON</option>
+                                        <option>DIAMANTE</option>
+                                        <option>ZAPATERA</option>
+                                    </select>
+                                </fieldset>
                             </div>
                             <div class="form-group">
                                 <h6>Capuchon</h6>
@@ -75,8 +82,15 @@
                                 </fieldset>
                             </div>
                             <div class="form-group">
-                                <label>Malla</label>
-                                <input type="text" onkeyup="mayus(this);" name="malla" class="form-control" id="helpInputTop">
+                                <h6>Malla</h6>
+                                <fieldset class="form-group">
+                                    <select name="malla" class="form-select" id="basicSelect">
+                                        <option>SELECCIONAR...</option>
+                                        <option>SI</option>
+                                        <option>NO</option>
+                                        <option>BASE</option>
+                                    </select>
+                                </fieldset>
                             </div>
                             <div class="form-group">
                                 <button type="submit" class="btn btn-primary btn-lg">Guardar</button>

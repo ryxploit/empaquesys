@@ -25,7 +25,7 @@
                             <input type="text"  onkeyup="mayus(this);"  name="numero_pallet" class="form-control">
                         </div>
                         <div class="form-group">
-                            <label class="text-white">peso pallet</label>
+                            <label class="text-white">Peso pallet</label>
                             <input type="text"  onkeyup="mayus(this);"  name="peso_pallet" class="form-control">
                         </div>
                     </div>
@@ -46,7 +46,7 @@
                     <div class="col-4">
                       <div class="card text-dark bg-warning  " >
                         <div class="card-body">
-                          <h5 class="card-title">Numero de Pallet</h5>
+                          <h5 class="card-title">Numero de Pallet <p class="text-center"><strong>Pedido</strong></p></h5>
                           <p class="text-start">Peso Pallet.</p>
                           <p class="text-center">Calibre - Cantidad.</p>
                           <p class="text-end">Marca de Caja.</p>
@@ -76,7 +76,7 @@
       <?php foreach ($listarpallet as $key): ?>
       <div class="card text-dark bg-warning  col-5 mx-3" >
         <div class="card-body">
-          <h5 class="card-title"><?php echo $key->numero_pallet;?></h5>
+          <h5 class="card-title"><?php echo $key->numero_pallet;?><p class="text-center"><strong><?php echo $key->pedido;?></strong></p></h5>
           <p class="text-start"><?php echo $key->peso_pallet;?></p>
           <p class="text-center"><?php echo $key->todos;?> </p>
           <p class="text-end"><?php echo $key->marca_caja;?></p>
@@ -89,6 +89,29 @@
 </div>
 
 </section>
+
+<section class="section">
+
+  <div class="card border-primary  " >
+  <div class="card-header"></div>
+  <div class="card-body">
+
+    <div class="row">
+        <?php foreach ($sumaTotal as $key): ?>
+      <div class="card text-white bg-primary mx-3" style="max-width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title text-warning">Total Pedido: <?php echo $key->pedido;?></h5>
+          <p class="card-text"><strong><?php echo $key->total;?></strong></p>
+        </div>
+      </div>
+      <?php endforeach; ?>
+    </div>
+
+  </div>
+</div>
+
+</section>
+
 
 <?=$this->include("Footers/foot")?>
 

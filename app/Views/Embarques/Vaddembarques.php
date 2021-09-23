@@ -11,37 +11,37 @@
                     </div>
                     <div class="col">
                         <label  class="form-label">Trailer</label>
-                        <input type="text" class="form-control" name="trailer">
+                        <input type="text" onkeyup="mayus(this);"   class="form-control" name="trailer">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
                         <label  class="form-label">Caja</label>
-                        <input type="text" class="form-control" name="caja">
+                        <input type="text" onkeyup="mayus(this);"   class="form-control" name="caja">
                     </div>
                     <div class="col">
                         <label class="form-label">Hora</label>
-                        <input type="time" class="form-control" name="hora_embarque">
+                        <input type="time"  class="form-control" name="hora_embarque">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
                         <label  class="form-label">Chofer</label>
-                        <input type="text" class="form-control" name="chofer">
+                        <input type="text" onkeyup="mayus(this);"   class="form-control" name="chofer">
                     </div>
                     <div class="col">
                         <label  class="form-label">Destinatario</label>
-                        <textarea class="form-control" name="destinatario" rows="3"></textarea>
+                        <textarea class="form-control" onkeyup="mayus(this);"   name="destinatario" rows="3"></textarea>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
                         <label  class="form-label">Numero de envio</label>
-                        <input type="text" class="form-control" name="numero_envio">
+                        <input type="text" onkeyup="mayus(this);"   class="form-control" name="numero_envio">
                     </div>
                     <div class="col">
                         <label  class="form-label">Observaciones</label>
-                        <textarea class="form-control" name="observaciones" rows="3"></textarea>
+                        <textarea class="form-control" onkeyup="mayus(this);"   name="observaciones" rows="3"></textarea>
                     </div>
                 </div>
                 <div class="col-auto">
@@ -100,3 +100,9 @@
     </section>
 </div>
 <?=$this->include("Footers/foot")?>
+
+<script type="text/javascript">
+function mayus(e) {
+  e.value = e.value.toUpperCase();
+}
+</script>

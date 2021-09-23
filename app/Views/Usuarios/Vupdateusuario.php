@@ -7,13 +7,17 @@
 
               </p>
             </div>
-            <form action="<?php echo base_url('Usuarios/Insertar'); ?>" method="post">
+            <form action="<?php echo base_url('Usuarios/Actualizar'); ?>" method="post">
+                <?php foreach ($datos as $key): ?>
                 <div class="row">
                     <div class="col-md-4">
                       <div class="form-group">
+                        <input type="hidden" name="id_usuario" value="<?php echo $key->id_usuario;?>">
+
                           <h6 class="text-white">Rol</h6>
                           <fieldset class="form-group">
                               <select name="type" class="form-select">
+                                <option><?php echo $key->type;?></option>
                                 <option>LOTES</option>
                                   <option>RASTREO</option>
                                     <option>EMBARQUES</option>
@@ -23,11 +27,11 @@
                       </div>
                         <div class="form-group">
                             <label class="text-white" >Usuario</label>
-                            <input type="text"  onkeyup="mayus(this);"  name="usuario" class="form-control">
+                            <input type="text"  onkeyup="mayus(this);" value="<?php echo $key->usuario;?>"  name="usuario" class="form-control">
                         </div>
                         <div class="form-group">
                             <label class="text-white">Contraseña</label>
-                            <input type="text"    name="password" class="form-control">
+                            <input type="text" value="<?php echo $key->password;?>"   name="password" class="form-control">
                         </div>
                     </div>
 
@@ -43,9 +47,10 @@
                       </div>
                     </div>
                     <div class="form-group">
-                        <button type="submit" class="btn btn-warning btn-lg">Guardar</button>
+                        <button type="submit" class="btn btn-warning btn-lg">Guardar carmbios</button>
                     </div>
                 </div>
+                <?php endforeach; ?>
             </form>
         </div>
     </div>

@@ -3,7 +3,7 @@
 namespace App\Controllers;
 use App\Models\Membarques;
 
-class Embarques extends BaseController 
+class Embarques extends BaseController
 {
     public function index()
     {
@@ -91,7 +91,8 @@ class Embarques extends BaseController
                    'title' => 'Agregar Pallet',
                    'datos' => $respuesta,
                    'listarpedidos' => $Modelo->listarpedidos(),
-                   'listarpallet' => $Modelo->listarpallet($id)
+                   'listarpallet' => $Modelo->listarpallet($id),
+                   'sumaTotal' => $Modelo->sumarTotalpallet($id)
                    );
         echo view('Headers/Head', $data);
           echo view('Embarques/Vaddpallet', $data);

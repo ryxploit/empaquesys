@@ -53,10 +53,22 @@ class Membarques extends Model
       $builder = $this->db->table('t_pallet_embarque');
       $builder->select("* , GROUP_CONCAT(calibre, ' - ',cantidad, '<br>') AS todos");
       $builder->where('embarque_id', $id);
+      $builder->groupBy('numero_pallet');
+      $query = $builder->get()->getResult();
+      return $query;
+    }
+
+    public function sumarTotalpallet($id)
+    {
+      // code...
+      $builder = $this->db->table('t_pallet_embarque');
+      $builder->select("* ,SUM(cantidad) AS total");
+      $builder->where('embarque_id', $id);
       $builder->groupBy('pedido');
       $query = $builder->get()->getResult();
       return $query;
     }
+
 
 
 }

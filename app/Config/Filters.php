@@ -61,14 +61,6 @@ class Filters extends BaseConfig
 	 * @var array
 	 */
 	public $filters = [
-		'Filtrologin'=>[
-			'before'=>[ 
-				'/Home',
-				'/Embarques',
-				'/Lotes',
-				'/Rastreo',
-				'/Pedidos'
-			]
-		]
+
 	];
 }
