@@ -92,12 +92,66 @@ class Embarques extends BaseController
                    'datos' => $respuesta,
                    'listarpedidos' => $Modelo->listarpedidos(),
                    'listarpallet' => $Modelo->listarpallet($id),
+                   'listartotalpallet' => $Modelo->listartotalpallet(),
                    'sumaTotal' => $Modelo->sumarTotalpallet($id)
                    );
         echo view('Headers/Head', $data);
           echo view('Embarques/Vaddpallet', $data);
 
     }
+
+    public function Actualizar_embarque_pallet()
+    {
+      // code...
+      $id = $this->request->getPost('id_embarques_pallet');
+
+        $data = [
+          'pedido' => $this->request->getPost('pedido'),
+          'numero_pallet' => $this->request->getPost('numero_pallet'),
+          'peso_pallet' => $this->request->getPost('peso_pallet'),
+          'marca_caja' => $this->request->getPost('marca_caja'),
+          'cantidad' => $this->request->getPost('cantidad'),
+          'calibre' => $this->request->getPost('calibre'),
+          'hidrotermico' => $this->request->getPost('hidrotermico')
+
+        ];
+
+        $Modelo = new Membarques();
+        $datos= $Modelo->Actualizar_data_embarque_pallet($data,$id);
+
+        print_r($_POST);
+          // code...
+          if ($data) {
+            // code...
+            $session = session();
+            $session->setFlashdata('mensaje', '
+            <script type="text/javascript">
+            $(document).ready(function(){
+              Swal.fire(
+                "Buen trabajo!",
+                "se modifico con exito el pallet!",
+                "success")
+              });
+              </script>
+            ');
+
+          }
+
+    }
+
+
+    public function Obtener_embarque_pallet($id_embarques_pallet)
+    {
+      // code...
+
+      $data = [
+        'id_embarques_pallet' => $id_embarques_pallet
+      ];
+      $Modelo = new Membarques();
+      $respuesta = $Modelo->Pallet_embarque_obtener($data);
+      echo json_encode($respuesta);
+
+      }
 
     public function Insertarpallet()
     {
@@ -111,6 +165,7 @@ class Embarques extends BaseController
           'marca_caja' => $this->request->getPost('marca_caja'),
           'cantidad' => $this->request->getPost('cantidad'),
           'calibre' => $this->request->getPost('calibre'),
+          'hidrotermico' => $this->request->getPost('hidrotermico'),
           'embarque_id' => $this->request->getPost('embarque_id')
 
         ];

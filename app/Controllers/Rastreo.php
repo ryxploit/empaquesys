@@ -391,7 +391,6 @@ class Rastreo extends BaseController
               $pdf->SetTextColor(0, 0, 0);
               $pdf->Ln();
               $pdf->SetFont('Arial', 'B', 9);
-              $pdf->image(base_url('assets/images/logo/logo.png'), 185, 25, 15, 15, 'PNG');
 
               $pdf->Cell(22, 8, utf8_decode('Fecha: '), 0, 0, 'L');
               $pdf->SetFont('Arial', '', 9);
@@ -483,6 +482,7 @@ class Rastreo extends BaseController
                 $pdf->Cell(22, 8, 'Lote', 1,0,'L');
                 $pdf->Cell(80, 8, 'Corredor', 1,0,'L');
                 $pdf->Cell(22, 8, '# Cuadrilla', 1, 0, 'L');
+                  $pdf->Cell(22, 8, 'Hidrotermico', 1, 0, 'L');
                 $pdf->Cell(22, 8,utf8_decode( 'Total'), 1,1,'L');
 
 
@@ -492,6 +492,7 @@ class Rastreo extends BaseController
                 $pdf->Cell(22, 8, $key->lote, 1,0,'C');
                 $pdf->Cell(80, 8, $key->corredor, 1,0,'L');
                 $pdf->Cell(22, 8, $key->numero_cuadrilla, 1,0,'C');
+                $pdf->Cell(22, 8, $key->hidrotermico, 1,0,'C');
                 $pdf->Cell(22, 8,utf8_decode($key->total ), 1,1,'L');
                 endforeach;
 

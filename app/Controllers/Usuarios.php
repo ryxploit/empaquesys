@@ -23,7 +23,7 @@ class Usuarios extends BaseController
     						 'title' => 'Agregar usuario'
     						 );
       echo view('Headers/Head', $data);
-        echo view('Usuarios/VaddUsuarios');
+        echo view('Usuarios/VaddUsuarios'); 
     }
 
     public function Insertar()
@@ -102,6 +102,50 @@ class Usuarios extends BaseController
 
       $Modelo = new Musuarios();
       $datos= $Modelo->Actualizarusuario($data,$id);
+
+      if ($datos) {
+        // code...
+        $session = session();
+        $session->setFlashdata('mensaje', '
+        <script type="text/javascript">
+        $(document).ready(function(){
+          Swal.fire(
+            "Buen trabajo!",
+            "se actualizo con exito!",
+            "success")
+          });
+          </script>
+        ');
+        return redirect()->to(base_url('/Usuarios'));
+      } else {
+        // code...
+        $session = session();
+        $session->setFlashdata('mensaje', '
+        <script type="text/javascript">
+        $(document).ready(function(){
+          Swal.fire(
+            "Disculpa!",
+            "Algo salio mal llame al encargado!",
+            "error")
+          });
+          </script>
+        ');
+        return redirect()->to(base_url('/Usuarios'));
+      }
+
+
+    }
+
+    public function Actualizar_contraseña()
+    {
+      // code...
+      $id = $this->request->getPost('id_usuario');
+      $data = [
+        'password' => sha1($this->request->getPost('password'))
+      ];
+
+      $Modelo = new Musuarios();
+      $datos= $Modelo->Actualizarcontraseña($data,$id);
 
       if ($datos) {
         // code...

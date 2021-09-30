@@ -237,7 +237,7 @@
                         <div class="card-body py-4 px-5">
                             <div class="d-flex align-items-center">
                                 <div class="avatar avatar-xl">
-                                    <img src="<?= base_url('assets/images/faces/1.jpg');  ?> " alt="Face 1">
+                                    <img src="<?= base_url('assets/images/faces/mango.png');  ?> " alt="Face 1">
                                 </div>
                                 <div class="ms-3 name">
                                     <h5 class="font-bold"><?php echo session('usuario'); ?></h5>

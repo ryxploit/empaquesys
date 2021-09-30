@@ -40,6 +40,15 @@ class Musuarios extends Model
       return $query->update();
     }
 
+    public function Actualizarcontraseña($data,$id)
+    {
+      // code...
+      $query = $this->db->table('t_usuarios');
+      $query->set($data);
+      $query->where('id_usuario',$id);
+      return $query->update();
+    }
+
     public function Eliminarusuario($data)
     {
       // code...

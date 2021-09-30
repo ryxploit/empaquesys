@@ -1,0 +1,19 @@
+ERROR - 2021-09-30 00:56:51 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''<br>') AS todos
+FROM `t_pallet_embarque`
+WHERE `embarque_id` = ('1')
+GROUP B...' at line 1
+CRITICAL - 2021-09-30 00:56:51 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''<br>') AS todos
+FROM `t_pallet_embarque`
+WHERE `embarque_id` = ('1')
+GROUP B...' at line 1
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT *, GROUP...')
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, GROUP...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, GROUP...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT *, GROUP...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(74): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(94): App\Models\Membarques->listarpallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Embarques->Agregarpallet('1')
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}

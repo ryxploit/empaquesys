@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 23-09-2021 a las 05:58:41
--- Versión del servidor: 10.4.20-MariaDB
--- Versión de PHP: 8.0.9
+-- Tiempo de generación: 30-09-2021 a las 15:37:27
+-- Versión del servidor: 10.4.21-MariaDB
+-- Versión de PHP: 8.0.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -138,6 +138,7 @@ CREATE TABLE `t_pallet_embarque` (
   `marca_caja` varchar(100) NOT NULL,
   `cantidad` varchar(50) NOT NULL,
   `calibre` varchar(50) NOT NULL,
+  `hidrotermico` varchar(50) NOT NULL,
   `embarque_id` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -145,11 +146,12 @@ CREATE TABLE `t_pallet_embarque` (
 -- Volcado de datos para la tabla `t_pallet_embarque`
 --
 
-INSERT INTO `t_pallet_embarque` (`id_embarques_pallet`, `pedido`, `numero_pallet`, `peso_pallet`, `marca_caja`, `cantidad`, `calibre`, `embarque_id`) VALUES
-(9, 'SEA04', '345', '14KG', 'KOALA', '10', '6', '1'),
-(10, 'SEA045', '678', '14KG', 'KOALA', '13', '6', '1'),
-(11, 'SEA04', '987', '14KG', 'KOALA', '10', '6', '1'),
-(12, 'SEA04', '345', '14KG', 'KOALA', '10', '6', '1');
+INSERT INTO `t_pallet_embarque` (`id_embarques_pallet`, `pedido`, `numero_pallet`, `peso_pallet`, `marca_caja`, `cantidad`, `calibre`, `hidrotermico`, `embarque_id`) VALUES
+(9, 'SEA04', '345', '14KG', 'KOALA', '10', '7', '', '1'),
+(10, 'SEA045', '678', '14KG', 'KOALA', '13', '6', '', '1'),
+(11, 'SEA04', '987', '14KG', 'KOALA', '10', '6', '', '1'),
+(12, 'SEA04', '345', '14KG', 'KOALA', '10', '6', '', '1'),
+(13, 'SEA04', '9678', '14KG', 'KOALA', '10', '6', 'SI', '1');
 
 -- --------------------------------------------------------
 
@@ -299,7 +301,7 @@ ALTER TABLE `t_pallet`
 -- AUTO_INCREMENT de la tabla `t_pallet_embarque`
 --
 ALTER TABLE `t_pallet_embarque`
-  MODIFY `id_embarques_pallet` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id_embarques_pallet` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT de la tabla `t_pedidos`

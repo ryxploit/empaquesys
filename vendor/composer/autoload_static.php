@@ -25,6 +25,7 @@ class ComposerStaticInit6ff7808071d19fef7e663b9f19be59ba
         ),
         'T' => 
         array (
+            'Translations\\' => 13,
             'Tests\\Support\\' => 14,
         ),
         'S' => 
@@ -77,6 +78,10 @@ class ComposerStaticInit6ff7808071d19fef7e663b9f19be59ba
         'Webmozart\\Assert\\' => 
         array (
             0 => __DIR__ . '/..' . '/webmozart/assert/src',
+        ),
+        'Translations\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/codeigniter4/translations',
         ),
         'Tests\\Support\\' => 
         array (

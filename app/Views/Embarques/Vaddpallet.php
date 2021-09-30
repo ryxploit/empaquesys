@@ -42,6 +42,15 @@
                             <label class="text-white">Calibre</label>
                             <input type="text"  onkeyup="mayus(this);"  name="calibre" class="form-control">
                         </div>
+                        <div class="form-group">
+                            <h6 class="text-white">Hidrotermico</h6>
+                            <fieldset class="form-group">
+                                <select name="hidrotermico" class="form-select">
+                                  <option>SI</option>
+                                  <option>NO</option>
+                                </select>
+                            </fieldset>
+                        </div>
                     </div>
                     <div class="col-4">
                       <div class="card text-dark bg-warning  " >
@@ -50,6 +59,7 @@
                           <p class="text-start">Peso Pallet.</p>
                           <p class="text-center">Calibre - Cantidad.</p>
                           <p class="text-end">Marca de Caja.</p>
+                          <p class="text-start">Hidrotermico.</p>
                         </div>
                       </div>
                     </div>
@@ -64,6 +74,49 @@
     </div>
 </section>
 
+<section class="section">
+    <div class="card " >
+        <div class="card-header" >
+            <h3 class="">Lista de Pallets en Hoja de embarque</h3>
+        </div>
+        <div class="card-body ">
+            <div class="table-responsive">
+                <table class="table ">
+                    <thead>
+                        <tr>
+                            <th>Pedido</th>
+                            <th>Numero de pallet</th>
+                            <th>Peso pallet</th>
+                            <th>Marca de caja</th>
+                            <th>Cantidad </th>
+                            <th>Calibre</th>
+                            <th>Hidrotermicol</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php foreach ($listartotalpallet as $key): ?>
+                        <tr>
+                            <td><?php echo $key->pedido;?></td>
+                            <td><?php echo $key->numero_pallet;?></td>
+                            <td><?php echo $key->peso_pallet;?></td>
+                            <td><?php echo $key->marca_caja;?></td>
+                            <td><?php echo $key->cantidad;?></td>
+                            <td><?php echo $key->calibre;?></td>
+                            <td><?php echo $key->hidrotermico;?></td>
+                            <td>
+                                <a type="button" class="btn btn-primary update" id="<?php echo $key->id_embarques_pallet; ?>"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal">Actualizar</a>
+                                
+                            </td>
+                        </tr>
+                        <?php endforeach; ?>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 
 <section class="section">
@@ -71,7 +124,9 @@
   <div class="card border-primary  " >
   <div class="card-header"></div>
   <div class="card-body">
-
+    <div class="card-header" >
+        <h3 class="">Caja</h3>
+    </div>
     <div class="row">
       <?php foreach ($listarpallet as $key): ?>
       <div class="card text-dark bg-warning  col-5 mx-3" >
@@ -80,11 +135,11 @@
           <p class="text-start"><?php echo $key->peso_pallet;?></p>
           <p class="text-center"><?php echo $key->todos;?> </p>
           <p class="text-end"><?php echo $key->marca_caja;?></p>
+          <p class="text-start"><?php echo $key->hidrotermico;?></p>
         </div>
       </div>
       <?php endforeach; ?>
     </div>
-
   </div>
 </div>
 
@@ -101,16 +156,88 @@
       <div class="card text-white bg-primary mx-3" style="max-width: 18rem;">
         <div class="card-body">
           <h5 class="card-title text-warning">Total Pedido: <?php echo $key->pedido;?></h5>
-          <p class="card-text"><strong><?php echo $key->total;?></strong></p>
+            <p class="card-text"><strong><?php echo $key->todoss;?></strong></p>
+            <hr>
+          <p class="card-text "><strong >Total: <?php echo $key->total;?></strong></p>
         </div>
       </div>
       <?php endforeach; ?>
     </div>
-
   </div>
 </div>
 
 </section>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="">Modificar pallet</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form class="" id="upadte_pallet" method="post">
+            <div class="row">
+                <div class="col-md-4">
+                  <div class="form-group">
+                      <h6 class="">Pedido</h6>
+                      <fieldset class="form-group">
+                          <select name="pedido" class="form-select">
+                            <option id="pedido" selected></option>
+                            <?php foreach ($listarpedidos as $key): ?>
+                            <option><?php echo $key->codigo_embarque;?></option>
+                            <?php endforeach; ?>
+                          </select>
+                      </fieldset>
+                  </div>
+                    <div class="form-group">
+                        <label class="" >Numero Pallet</label>
+                        <input type="text"  onkeyup="mayus(this);" id="numero_pallet"  name="numero_pallet" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label class="">Peso pallet</label>
+                        <input type="text"  onkeyup="mayus(this);" id="peso_pallet"  name="peso_pallet" class="form-control">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label class="">Marca caja</label>
+                        <input type="text"  onkeyup="mayus(this);" id="marca_caja"  name="marca_caja" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label  class="" >Cantidad</label>
+                        <input type="text"  onkeyup="mayus(this);" id="cantidad"  name="cantidad" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label class="">Calibre</label>
+                        <input type="text"  onkeyup="mayus(this);" id="calibre"  name="calibre" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <h6 class="">Hidrotermico</h6>
+                        <fieldset class="form-group">
+                            <select name="hidrotermico" class="form-select">
+                              <option id="hidrotermico" selected></option>
+                              <option>SI</option>
+                              <option>NO</option>
+                            </select>
+                        </fieldset>
+                    </div>
+                </div>
+
+                <input type="hidden" name="id_embarques_pallet" id="id_embarques_pallet" value="">
+
+            </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        <button type="submit" class="btn btn-primary">Guardar cambios</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 <?=$this->include("Footers/foot")?>
@@ -124,6 +251,55 @@
     jQuery.ajax({
       type: "POST",
       url: urll,
+      data: datos,
+      success: function(data)
+      {
+        window.location.reload(); // Recargar página
+      }
+    });
+  });
+</script>
+
+<script type="text/javascript">
+function mayus(e) {
+  e.value = e.value.toUpperCase();
+}
+</script>
+
+<script type="text/javascript">
+//obtener pallet
+$(document).ready(function() {
+  $('.update').click(function () {
+    var id = $(this).attr('id');
+    event.preventDefault();
+    var datos = id;
+    var urll = "<?php echo base_url('Embarques/Obtener_embarque_pallet'); ?>" + '/'+ id
+    $.get(urll, function(data, status){
+      var obj = JSON.parse(data);
+      $('#pedido').val(obj[0].pedido);
+      $('#pedido').html(obj[0].pedido);
+      $('#numero_pallet').val(obj[0].numero_pallet);
+      $('#peso_pallet').val(obj[0].peso_pallet);
+      $('#marca_caja').val(obj[0].marca_caja);
+      $('#cantidad').val(obj[0].cantidad);
+      $('#calibre').val(obj[0].calibre);
+      $('#hidrotermico').val(obj[0].hidrotermico);
+      $('#hidrotermico').html(obj[0].hidrotermico);
+        $('#id_embarques_pallet').val(obj[0].id_embarques_pallet);
+      });
+    });
+  });
+</script>
+
+<script type="text/javascript">
+//Modificar pallet
+  $("#upadte_pallet").submit(function(event) {
+    event.preventDefault();
+    var datos = jQuery(this).serialize();
+    var site = "<?php echo base_url('Embarques/Actualizar_embarque_pallet'); ?>"
+    jQuery.ajax({
+      type: "POST",
+      url: site,
       data: datos,
       success: function(data)
       {
