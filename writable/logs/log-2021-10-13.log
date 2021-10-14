@@ -1,0 +1,106 @@
+CRITICAL - 2021-10-13 15:11:06 --> Undefined variable $strHTML
+#0 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(196): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 196)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->pdf()
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-10-13 16:52:10 --> require(C:\xampp\htdocs\empaquesys\app\Controllers/Embarques/Agregarpallet/1): Failed to open stream: No such file or directory
+#0 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(203): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(C:\\xamp...', 'C:\\xampp\\htdocs...', 203)
+#1 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(203): require()
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->pdf()
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#4 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-10-13 16:55:54 --> Undefined variable $datos
+#0 C:\xampp\htdocs\empaquesys\app\Views\Embarques\Vaddpallet.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 8)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Common.php(1092): CodeIgniter\View\View->render('Embarques/Vaddp...', Array, true)
+#4 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(204): view('Embarques/Vaddp...')
+#5 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->pdf()
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-10-13 16:56:50 --> Undefined variable $id_embarques
+#0 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(206): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 206)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->pdf()
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-10-13 16:57:38 --> Too few arguments to function App\Controllers\Embarques::pdf(), 0 passed in C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php on line 804 and exactly 1 expected
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->pdf()
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-10-13 16:58:26 --> Undefined array key 0
+#0 C:\xampp\htdocs\empaquesys\app\Views\Embarques\Vaddpallet.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 8)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Common.php(1092): CodeIgniter\View\View->render('Embarques/Vaddp...', Array, true)
+#4 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(216): view('Embarques/Vaddp...', Array)
+#5 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->pdf()
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-10-13 16:59:23 --> require(C:\xampp\htdocs\empaquesys\app\Controllers/Embarques/Agregarpallet/): Failed to open stream: No such file or directory
+#0 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(203): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(C:\\xamp...', 'C:\\xampp\\htdocs...', 203)
+#1 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(203): require()
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->pdf()
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#4 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-10-13 17:00:15 --> require(C:\xampp\htdocs\empaquesys\app\Controllers../Embarques/Agregarpallet/): Failed to open stream: No such file or directory
+#0 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(203): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(C:\\xamp...', 'C:\\xampp\\htdocs...', 203)
+#1 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(203): require()
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->pdf()
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#4 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-10-13 17:00:43 --> require(C:\xampp\htdocs\empaquesys\app\Controllers..\Embarques\Agregarpallet/): Failed to open stream: No such file or directory
+#0 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(203): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(C:\\xamp...', 'C:\\xampp\\htdocs...', 203)
+#1 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(203): require()
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->pdf()
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#4 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-10-13 17:02:11 --> ob_get_clean() expects exactly 0 arguments, 1 given
+#0 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(210): ob_get_clean('http://localhos...')
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->pdf()
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-10-13 17:02:33 --> ob_get_clean() expects exactly 0 arguments, 1 given
+#0 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(210): ob_get_clean('http://localhos...')
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->pdf()
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-10-13 17:02:34 --> ob_get_clean() expects exactly 0 arguments, 1 given
+#0 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(210): ob_get_clean('http://localhos...')
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->pdf()
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-10-13 23:52:23 --> Undefined array key "Trailer"
+#0 C:\xampp\htdocs\empaquesys\app\Views\Embarques\Vaddpallet.php(135): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Common.php(1092): CodeIgniter\View\View->render('Embarques/Vaddp...', Array, true)
+#4 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(100): view('Embarques/Vaddp...', Array)
+#5 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->Agregarpallet('1')
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}

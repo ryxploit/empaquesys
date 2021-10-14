@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 use App\Models\Membarques;
+use Dompdf\Dompdf;
 
 class Embarques extends BaseController
 {
@@ -187,4 +188,6 @@ class Embarques extends BaseController
             </script>
           ');
     }
+
+    
 }

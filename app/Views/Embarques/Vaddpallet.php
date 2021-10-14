@@ -1,3 +1,4 @@
+
 <section class="section ">
     <div class="card " style="background-color:#435ebe;">
         <div class="card-body " >
@@ -106,7 +107,7 @@
                             <td>
                                 <a type="button" class="btn btn-primary update" id="<?php echo $key->id_embarques_pallet; ?>"
                                     data-bs-toggle="modal" data-bs-target="#exampleModal">Actualizar</a>
-                                
+
                             </td>
                         </tr>
                         <?php endforeach; ?>
@@ -118,16 +119,58 @@
 </section>
 
 
+<div id="content">
+
 
 <section class="section">
-
   <div class="card border-primary  " >
   <div class="card-header"></div>
   <div class="card-body">
     <div class="card-header" >
-        <h3 class="">Caja</h3>
+        <h2 class="text-center">Hoja de embarque</h2>
     </div>
     <div class="row">
+        <div class="col-md-4">
+        <h4>
+          Fecha:
+          <small class="text-muted"> <?php echo $datos[0]['fecha_embarque'];?></small>
+        </h3>
+        <h4>
+          Trailer:
+          <small class="text-muted"> <?php echo $datos[0]['trailer'];?></small>
+        </h4>
+        <h4>
+          Caja:
+          <small class="text-muted"> <?php echo $datos[0]['caja'];?></small>
+        </h4>
+        </div>
+        <div class="col-md-4">
+          <h4>
+            Hora:
+            <small class="text-muted"> <?php echo $datos[0]['hora_embarque'];  ?></small>
+          </h4>
+          <h4>
+            Chofer:
+            <small class="text-muted"> <?php echo $datos[0]['chofer'];?></small>
+          </h4>
+          <h4>
+            Destinatario:
+            <small class="text-muted"> <?php echo $datos[0]['destinatario'];?></small>
+          </h4>
+        </div>
+        <div class="col-4 ">
+          <h4>
+            Numero de envio:
+            <small class="text-muted"> <?php echo $datos[0]['numero_envio'];?></small>
+          </h4>
+          <label  class="form-label h4">Observaciones:</label>
+          <textarea class="form-control "   rows="3">  <?php echo $datos[0]['observaciones'];  ?></textarea>
+        </div>
+
+
+
+    </div>
+    <div class="row p-3">
       <?php foreach ($listarpallet as $key): ?>
       <div class="card text-dark bg-warning  col-5 mx-3" >
         <div class="card-body">
@@ -140,17 +183,6 @@
       </div>
       <?php endforeach; ?>
     </div>
-  </div>
-</div>
-
-</section>
-
-<section class="section">
-
-  <div class="card border-primary  " >
-  <div class="card-header"></div>
-  <div class="card-body">
-
     <div class="row">
         <?php foreach ($sumaTotal as $key): ?>
       <div class="card text-white bg-primary mx-3" style="max-width: 18rem;">
@@ -165,8 +197,11 @@
     </div>
   </div>
 </div>
-
 </section>
+
+
+
+</div>
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -238,6 +273,14 @@
     </div>
   </div>
 </div>
+
+
+<section class="section">
+<div class="card">
+  <button type="button" class="btn btn-warning btn-lg" name="button" >Enviar embarque</button>
+    <button type="button" class="btn btn-primary btn-lg" name="button" id="printBtn">Imprimir hoja deembarque</button>
+</div>
+</section>
 
 
 <?=$this->include("Footers/foot")?>
@@ -313,4 +356,70 @@ $(document).ready(function() {
 function mayus(e) {
   e.value = e.value.toUpperCase();
 }
+</script>
+
+<script type="text/javascript">
+function myExportPdf(){
+                        var element = $ ("#content"); // Este elemento dom es el contenedor div para exportar el pdf
+                        var w = element.width (); // Obtiene el ancho del contenedor
+                        var h = element.height (); // Obtiene la altura del contenedor
+                        var offsetTop = element.offset (). top; // Obtiene la distancia desde el contenedor hasta la parte superior del documento
+                        var offsetLeft = element.offset (). left; // Obtiene la distancia desde el contenedor hasta el extremo izquierdo del documento
+           var canvas = document.createElement("canvas");
+           var abs = 0;
+                        var win_i = $ (window).width (); // Obtiene el ancho de la ventana visual actual (sin incluir las barras de desplazamiento)
+                        var win_o = window.innerWidth; // Obtiene el ancho de la ventana actual (incluidas las barras de desplazamiento)
+           if(win_o>win_i){
+                                abs = (win_o-win_i) / 2; // Obtiene la mitad de la longitud de la barra de desplazamiento
+           }
+                        canvas.width = w * 2; // Aumenta el ancho && alto del lienzo dos veces
+           canvas.height = h * 2;
+           var context = canvas.getContext("2d");
+           context.scale(2, 2);
+           context.translate(-offsetLeft-abs,-offsetTop);
+                        // No hay una barra de desplazamiento horizontal por defecto aquí, porque offset.left (), hay una diferencia cuando no hay barra de desplazamiento, entonces
+                        // Al traducir, elimine esta diferencia
+           html2canvas(element).then(function(canvas) {
+               var contentWidth = canvas.width;
+               var contentHeight = canvas.height;
+                                // Una página de pdf muestra la altura del lienzo generado por la página html;
+               var pageHeight = contentWidth / 592.28 * 841.89;
+                                // Altura de la página html sin pdf generado
+               var leftHeight = contentHeight;
+                                // Desplazamiento de página
+               var position = 0;
+                                // El tamaño del papel a4 [595.28,841.89], el ancho y alto del lienzo generado por la página html en el pdf
+               var imgWidth = 595.28;
+               var imgHeight = 592.28/contentWidth * contentHeight;
+
+               var pageData = canvas.toDataURL('image/jpeg', 1.0);
+
+               var pdf = new jsPDF('', 'pt', 'letter');
+
+                                // Hay dos alturas para distinguir, una es la altura real de la página html y la altura de la página que genera el pdf (841.89)
+                                // Cuando el contenido no excede el rango mostrado en una página del pdf, no es necesario paginar
+               if (leftHeight < pageHeight) {
+                   pdf.addImage(pageData, 'JPEG', 0, 0, imgWidth, imgHeight);
+                                } else {// Paginación
+                   while(leftHeight > 0) {
+                       pdf.addImage(pageData, 'JPEG', 0, position, imgWidth, imgHeight)
+                       leftHeight -= pageHeight;
+                       position -= 841.89;
+                                                // Evite agregar páginas en blanco
+                       if(leftHeight > 0) {
+                           pdf.addPage();
+                       }
+                   }
+               }
+               6
+
+               window.open(pdf.output('bloburl'), '_blank');
+              // pdf.save('myTest.pdf');
+           })
+       }
+
+       $( "#printBtn" ).click(function() {
+         myExportPdf();
+       });
+
 </script>

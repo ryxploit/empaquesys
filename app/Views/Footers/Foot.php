@@ -30,7 +30,8 @@
     </script>
 
 
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.min.js"  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script src="<?php echo base_url('assets/js/main.js');?>"></script>
 </body>

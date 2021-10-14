@@ -86,9 +86,6 @@
                                     <a class="btn btn-warning disabled"
                                         href="<?php echo base_url('Rastreo/Eliminarhrastreo/'); ?>"
                                         role="button" aria-disabled="true">Borrar</a>
-                                    <a class="btn btn-primary disabled"
-                                        href="<?php echo base_url('Rastreo/pdf/'); ?>"
-                                        role="button" aria-disabled="true">Inprimir Hoja</a>
                                 </div>
                             </td>
                         </tr>
