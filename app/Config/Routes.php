@@ -62,6 +62,7 @@ $routes->get('/', 'Embarques::agregarembarque');
 $routes->post('/Embarques', 'Embarques::insertarhembarque');
 $routes->get('/Embarques/Agregarpallet/(:any)', 'Embarques::Agregarpallet/$1');
 $routes->post('/Embarques', 'Embarques::Insertarpallet');
+$routes->get('/Embarques/Packing/(:any)', 'Embarques::Packing/$1');
 //Usuarios
 $routes->post('/Usuarios', 'Usuarios::Insertar');
 $routes->get('/Usuarios/Obtenerusuario/(:any)', 'Usuarios::Obtenerusuario/$1');

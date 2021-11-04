@@ -11,48 +11,25 @@
                         <tr>
                             <th>Fecha</th>
                             <th>Hora</th>
-                            <th>Trailer</th>
+                            <th>Pedido</th>
                             <th>Numero de envio</th>
                             <th>Accion</th>
                         </tr>
                     </thead>
                     <tbody>
+                        <?php foreach ($listar_packing as $key): ?>
                         <tr>
-                            <td>02/06/2021</td>
-                            <td>13:06:00</td>
-                            <td>Polaris 450</td>
-                            <td>C0543</td>
+                            <td><?php echo $key->fecha_embarque;?></td>
+                            <td><?php echo $key->hora_embarque;?></td>
+                            <td><?php echo $key->pedido;?></td>
+                            <td><?php echo $key->numero_envio;?></td>
                             <td>
-                                <span class="badge bg-primary">Ver</span>
+                              <a href="<?php echo base_url('Embarques/Packing/'.$key->pedido); ?>" class="btn btn-primary"> ver</a>
                             </td>
                         </tr>
-                        <tr>
-                            <td>02/06/2021</td>
-                            <td>13:06:00</td>
-                            <td>Mercedes 450</td>
-                            <td>C0543</td>
-                            <td>
-                                <span class="badge bg-primary">Ver</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>02/06/2021</td>
-                            <td>13:06:00</td>
-                            <td>Mercedes 450</td>
-                            <td>C0543</td>
-                            <td>
-                                <span class="badge bg-primary">Ver</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>02/06/2021</td>
-                            <td>13:06:00</td>
-                            <td>Mercedes 450</td>
-                            <td>C0543</td>
-                            <td>
-                                <span class="badge bg-primary">Ver</span>
-                            </td>
-                        </tr>
+
+                      <?php endforeach; ?>
+
                     </tbody>
                 </table>
             </div>

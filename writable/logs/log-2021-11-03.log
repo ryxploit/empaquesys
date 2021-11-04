@@ -1,0 +1,488 @@
+CRITICAL - 2021-11-03 00:38:44 --> Undefined constant "condition"
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\View\View.php(214): include()
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Common.php(1092): CodeIgniter\View\View->render('Embarques/Vadde...', Array, true)
+#3 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(30): view('Embarques/Vadde...', Array)
+#4 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->Agregarembarque()
+#5 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-11-03 00:38:59 --> syntax error, unexpected token ")"
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Common.php(1092): CodeIgniter\View\View->render('Embarques/Vadde...', Array, true)
+#2 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(30): view('Embarques/Vadde...', Array)
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->Agregarembarque()
+#4 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#5 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-03 03:35:35 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Model.php(719): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(15): CodeIgniter\Model->__call('listar_packing_...', Array)
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->index()
+#4 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#5 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2021-11-03 03:40:55 --> Unknown column 'p.pallet' in 'field list'
+CRITICAL - 2021-11-03 03:40:55 --> Unknown column 'p.pallet' in 'field list'
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT `p`.`pal...')
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.`pal...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.`pal...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`pal...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(137): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(15): App\Models\Membarques->listar_packing_list()
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->index()
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-11-03 04:02:43 --> Archivo inválido: {0}
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Embarques/Vlist...')
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Common.php(1092): CodeIgniter\View\View->render('Embarques/Vlist...', Array, true)
+#2 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(31): view('Embarques/Vlist...', Array)
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->Packing()
+#4 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#5 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-03 04:03:20 --> Archivo inválido: {0}
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Embarques/Vlist...')
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Common.php(1092): CodeIgniter\View\View->render('Embarques/Vlist...', Array, true)
+#2 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(31): view('Embarques/Vlist...', Array)
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->Packing()
+#4 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#5 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-03 04:04:02 --> Undefined variable $datos
+#0 C:\xampp\htdocs\empaquesys\app\Views\Embarques\VlistPackig.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 7)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Common.php(1092): CodeIgniter\View\View->render('Embarques/Vlist...', Array, true)
+#4 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(31): view('Embarques/Vlist...', Array)
+#5 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->Packing()
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-03 04:05:37 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\View\View.php(214): include()
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Common.php(1092): CodeIgniter\View\View->render('Embarques/Vlist...', Array, true)
+#3 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(31): view('Embarques/Vlist...', Array)
+#4 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->Packing()
+#5 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-11-03 04:05:59 --> syntax error, unexpected token ";"
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Common.php(1092): CodeIgniter\View\View->render('Embarques/Vlist...', Array, true)
+#2 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(31): view('Embarques/Vlist...', Array)
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->Packing()
+#4 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#5 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-03 04:06:01 --> syntax error, unexpected token ";"
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Common.php(1092): CodeIgniter\View\View->render('Embarques/Vlist...', Array, true)
+#2 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(31): view('Embarques/Vlist...', Array)
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->Packing()
+#4 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#5 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-03 05:01:24 --> Undefined property: stdClass::$todoss
+#0 C:\xampp\htdocs\empaquesys\app\Views\Embarques\VlistPackig.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 68)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Common.php(1092): CodeIgniter\View\View->render('Embarques/Vlist...', Array, true)
+#4 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(35): view('Embarques/Vlist...', Array)
+#5 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->Packing('SEA04')
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-11-03 13:34:18 --> Column 'pedido' in where clause is ambiguous
+CRITICAL - 2021-11-03 13:34:18 --> Column 'pedido' in where clause is ambiguous
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT *\nFROM (...')
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM (...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM (...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM (...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(148): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(31): App\Models\Membarques->listarpallet_packing(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->Packing('SEA04')
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-11-03 13:46:24 --> Undefined property: stdClass::$total
+#0 C:\xampp\htdocs\empaquesys\app\Views\Embarques\VlistPackig.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 70)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Common.php(1092): CodeIgniter\View\View->render('Embarques/Vlist...', Array, true)
+#4 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(35): view('Embarques/Vlist...', Array)
+#5 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->Packing('SEA04')
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-11-03 13:46:43 --> Column 'cantidad' in field list is ambiguous
+CRITICAL - 2021-11-03 13:46:43 --> Column 'cantidad' in field list is ambiguous
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT *, SUM(c...')
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(c...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(c...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(c...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(149): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(31): App\Models\Membarques->listarpallet_packing(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->Packing('SEA04')
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-11-03 14:02:43 --> Undefined variable $db
+#0 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(144): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 144)
+#1 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(31): App\Models\Membarques->listarpallet_packing(Array)
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->Packing('SEA04')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#4 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-11-03 14:12:28 --> Undefined variable $db
+#0 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(144): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 144)
+#1 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(31): App\Models\Membarques->listarpallet_packing(Array)
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->Packing('SEA04')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#4 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-11-03 14:15:40 --> Undefined variable $db
+#0 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(144): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 144)
+#1 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(31): App\Models\Membarques->listarpallet_packing(Array)
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->Packing('SEA04')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#4 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-11-03 14:15:42 --> Undefined variable $db
+#0 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(144): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 144)
+#1 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(31): App\Models\Membarques->listarpallet_packing(Array)
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->Packing('SEA04')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#4 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-11-03 14:15:45 --> Undefined variable $db
+#0 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(144): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 144)
+#1 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(31): App\Models\Membarques->listarpallet_packing(Array)
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->Packing('SEA04')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#4 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-11-03 14:21:45 --> Undefined variable $db
+#0 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(144): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 144)
+#1 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(31): App\Models\Membarques->listarpallet_packing(Array)
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->Packing('SEA04')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#4 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-11-03 14:21:47 --> Undefined variable $db
+#0 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(144): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 144)
+#1 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(31): App\Models\Membarques->listarpallet_packing(Array)
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->Packing('SEA04')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#4 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-11-03 14:25:17 --> Undefined variable $db
+#0 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(144): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 144)
+#1 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(31): App\Models\Membarques->listarpallet_packing(Array)
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->Packing('SEA04')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#4 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-11-03 14:26:23 --> Object of class CodeIgniter\Database\MySQLi\Connection could not be converted to string
+#0 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(31): App\Models\Membarques->listarpallet_packing(Array)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->Packing('SEA04')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-03 14:27:52 --> Undefined property: mysqli::$numero_pallet
+#0 C:\xampp\htdocs\empaquesys\app\Views\Embarques\VlistPackig.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 67)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Common.php(1092): CodeIgniter\View\View->render('Embarques/Vlist...', Array, true)
+#4 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(35): view('Embarques/Vlist...', Array)
+#5 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->Packing('SEA04')
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-03 14:28:53 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::get()
+#0 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(31): App\Models\Membarques->listarpallet_packing(Array)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->Packing('SEA04')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-03 14:29:11 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::get()
+#0 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(31): App\Models\Membarques->listarpallet_packing(Array)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->Packing('SEA04')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-03 14:29:12 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::get()
+#0 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(31): App\Models\Membarques->listarpallet_packing(Array)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->Packing('SEA04')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-03 14:30:01 --> Undefined property: mysqli::$numero_pallet
+#0 C:\xampp\htdocs\empaquesys\app\Views\Embarques\VlistPackig.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 67)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Common.php(1092): CodeIgniter\View\View->render('Embarques/Vlist...', Array, true)
+#4 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(35): view('Embarques/Vlist...', Array)
+#5 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->Packing('SEA04')
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-03 14:55:58 --> syntax error, unexpected token "."
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Memb...')
+#2 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(25): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Memb...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->Packing('SEA04')
+#4 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#5 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2021-11-03 14:56:22 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'cantidad) AS todos FROM t_pallet_embarque e JOIN t_pedidos p ON e.pedido = p....' at line 1
+CRITICAL - 2021-11-03 14:56:22 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'cantidad) AS todos FROM t_pallet_embarque e JOIN t_pedidos p ON e.pedido = p....' at line 1
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(280): mysqli->query('select *, SUM(e...')
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('select *, SUM(e...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('select *, SUM(e...')
+#3 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(144): CodeIgniter\Database\BaseConnection->query('select *, SUM(e...')
+#4 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(31): App\Models\Membarques->listarpallet_packing(Array)
+#5 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->Packing('SEA04')
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-03 14:57:15 --> syntax error, unexpected double-quoted string "-", expecting ")"
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Memb...')
+#2 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(25): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Memb...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->Packing('SEA04')
+#4 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#5 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2021-11-03 14:57:58 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'cantidad) AS todos FROM t_pallet_embarque e JOIN t_pedidos p ON e.pedido = p....' at line 1
+CRITICAL - 2021-11-03 14:57:58 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'cantidad) AS todos FROM t_pallet_embarque e JOIN t_pedidos p ON e.pedido = p....' at line 1
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(280): mysqli->query('select *, SUM(e...')
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('select *, SUM(e...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('select *, SUM(e...')
+#3 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(144): CodeIgniter\Database\BaseConnection->query('select *, SUM(e...')
+#4 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(31): App\Models\Membarques->listarpallet_packing(Array)
+#5 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->Packing('SEA04')
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-11-03 14:58:26 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'e.cantidad) AS todos FROM t_pallet_embarque e JOIN t_pedidos p ON e.pedido = ...' at line 1
+CRITICAL - 2021-11-03 14:58:26 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'e.cantidad) AS todos FROM t_pallet_embarque e JOIN t_pedidos p ON e.pedido = ...' at line 1
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(280): mysqli->query('select *, SUM(e...')
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('select *, SUM(e...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('select *, SUM(e...')
+#3 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(144): CodeIgniter\Database\BaseConnection->query('select *, SUM(e...')
+#4 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(31): App\Models\Membarques->listarpallet_packing(Array)
+#5 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->Packing('SEA04')
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-03 14:59:44 --> syntax error, unexpected token "."
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Memb...')
+#2 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(25): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Memb...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->Packing('SEA04')
+#4 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#5 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-03 15:01:57 --> syntax error, unexpected token ";", expecting ")"
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Memb...')
+#2 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(25): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Memb...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->Packing('SEA04')
+#4 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#5 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-03 15:02:13 --> syntax error, unexpected single-quoted string ",e.cantidad) AS todos FROM t_p...", expecting ")"
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Memb...')
+#2 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(25): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Memb...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->Packing('SEA04')
+#4 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#5 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2021-11-03 15:03:04 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;,e.cantidad) AS todos FROM t_pallet_embarque e ...' at line 1
+CRITICAL - 2021-11-03 15:03:04 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;,e.cantidad) AS todos FROM t_pallet_embarque e ...' at line 1
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(280): mysqli->query('select *, SUM(e...')
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('select *, SUM(e...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('select *, SUM(e...')
+#3 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(144): CodeIgniter\Database\BaseConnection->query('select *, SUM(e...')
+#4 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(31): App\Models\Membarques->listarpallet_packing(Array)
+#5 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->Packing('SEA04')
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-11-03 15:03:26 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '&nbsp&nbsp&nbsp&nbsp&nbsp,e.cantidad) AS todos FROM t_pallet_embarque e JOIN ...' at line 1
+CRITICAL - 2021-11-03 15:03:26 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '&nbsp&nbsp&nbsp&nbsp&nbsp,e.cantidad) AS todos FROM t_pallet_embarque e JOIN ...' at line 1
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(280): mysqli->query('select *, SUM(e...')
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('select *, SUM(e...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('select *, SUM(e...')
+#3 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(144): CodeIgniter\Database\BaseConnection->query('select *, SUM(e...')
+#4 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(31): App\Models\Membarques->listarpallet_packing(Array)
+#5 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->Packing('SEA04')
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-03 15:04:08 --> syntax error, unexpected identifier "str_repeat", expecting ")"
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Memb...')
+#2 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(25): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Memb...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->Packing('SEA04')
+#4 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#5 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-03 15:05:30 --> syntax error, unexpected identifier "str_repeat", expecting ")"
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Memb...')
+#2 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(25): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Memb...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->Packing('SEA04')
+#4 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#5 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-03 15:07:14 --> syntax error, unexpected token "&"
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Memb...')
+#2 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(25): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Memb...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->Packing('SEA04')
+#4 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#5 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2021-11-03 15:10:47 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '"<br>") AS todos FROM t_pallet_embarque e JOIN t_pedidos p ON e.pedido = p.co...' at line 1
+CRITICAL - 2021-11-03 15:10:47 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '"<br>") AS todos FROM t_pallet_embarque e JOIN t_pedidos p ON e.pedido = p.co...' at line 1
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(280): mysqli->query('select *, SUM(e...')
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('select *, SUM(e...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('select *, SUM(e...')
+#3 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(144): CodeIgniter\Database\BaseConnection->query('select *, SUM(e...')
+#4 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(31): App\Models\Membarques->listarpallet_packing(Array)
+#5 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->Packing('SEA04')
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-03 15:16:28 --> Array to string conversion
+#0 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(144): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 144)
+#1 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(31): App\Models\Membarques->listarpallet_packing(Array)
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->Packing('SEA04')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#4 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-11-03 15:17:44 --> syntax error, unexpected variable "$id", expecting ")"
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Memb...')
+#2 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(25): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Memb...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->Packing('SEA04')
+#4 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#5 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-03 15:18:06 --> Array to string conversion
+#0 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(144): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 144)
+#1 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(31): App\Models\Membarques->listarpallet_packing(Array)
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->Packing('SEA04')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#4 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2021-11-03 15:20:03 --> Unknown column 'SEA04' in 'where clause'
+CRITICAL - 2021-11-03 15:20:03 --> Unknown column 'SEA04' in 'where clause'
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(280): mysqli->query('select *, SUM(e...')
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('select *, SUM(e...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('select *, SUM(e...')
+#3 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(144): CodeIgniter\Database\BaseConnection->query('select *, SUM(e...')
+#4 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(30): App\Models\Membarques->listarpallet_packing('SEA04')
+#5 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->Packing('SEA04')
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-03 19:03:57 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Model.php(719): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(32): CodeIgniter\Model->__call('sumarCajas_pack...', Array)
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->Packing('SEA04')
+#4 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#5 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-03 19:36:49 --> Undefined variable $prueba
+#0 C:\xampp\htdocs\empaquesys\app\Views\Embarques\VlistPackig.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 76)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Common.php(1092): CodeIgniter\View\View->render('Embarques/Vlist...', Array, true)
+#4 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(36): view('Embarques/Vlist...', Array)
+#5 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->Packing('SEA04')
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-03 19:38:53 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countAll()
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->Packing('SEA04')
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-11-03 19:39:48 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countAll()
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\View\View.php(214): include()
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Common.php(1092): CodeIgniter\View\View->render('Embarques/Vlist...', Array, true)
+#3 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(37): view('Embarques/Vlist...', Array)
+#4 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->Packing('SEA04')
+#5 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-11-03 19:56:14 --> Undefined array key "pesoB"
+#0 C:\xampp\htdocs\empaquesys\app\Views\Embarques\VlistPackig.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 128)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Common.php(1092): CodeIgniter\View\View->render('Embarques/Vlist...', Array, true)
+#4 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(37): view('Embarques/Vlist...', Array)
+#5 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->Packing('SEA04')
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}

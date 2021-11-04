@@ -277,8 +277,7 @@
 
 <section class="section">
 <div class="card">
-  <button type="button" class="btn btn-warning btn-lg" name="button" >Enviar embarque</button>
-    <button type="button" class="btn btn-primary btn-lg" name="button" id="printBtn">Imprimir hoja deembarque</button>
+    <button type="button" class="btn btn-primary btn-lg" name="button" id="printBtn">Imprimir</button>
 </div>
 </section>
 

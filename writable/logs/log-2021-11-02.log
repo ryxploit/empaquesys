@@ -1,0 +1,10 @@
+CRITICAL - 2021-11-02 23:33:27 --> unlink(C:\xampp\htdocs\empaquesys\writable\debugbar/debugbar_1634187569.json): Resource temporarily unavailable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\xampp...', 'C:\\xampp\\htdocs...', 74)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Debug\Toolbar\Collectors\History.php(74): unlink('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Debug\Toolbar.php(399): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles(1635914006, 20)
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Debug\Toolbar.php(375): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#4 C:\xampp\htdocs\empaquesys\app\Config\Events.php(52): CodeIgniter\Debug\Toolbar->respond()
+#5 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Events\Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(301): CodeIgniter\Events\Events::trigger('pre_system')
+#7 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}

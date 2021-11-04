@@ -9,11 +9,32 @@ class Embarques extends BaseController
     public function index()
     {
       # code...
+      $Modelo = new Membarques();
       $data = array(
-    						 'title' => 'PACKING LIST'
+    						 'title' => 'PACKING LIST',
+                  'listar_packing'=> $Modelo->listar_packing_list()
     						 );
       echo view('Headers/Head', $data);
-        echo view('Embarques/Vpackinglist');
+        echo view('Embarques/Vpackinglist', $data);
+          echo view('Footers/Foot');
+    }
+
+    public function Packing($pedido)
+    {
+      // code...
+      $Modelo = new Membarques();
+
+
+      $data = array(
+    						 'title' => ' Ver PACKING LIST',
+                 'listarpallet' => $Modelo->listarpallet_packing($pedido),
+                 'totalP' => $Modelo->listarpallet_packing($pedido),
+                 'datos' => $Modelo->listarpallet_packing($pedido)->getResultArray(),
+                 'sumaCajas' => $Modelo->sumaCajas_packing($pedido)->getResultArray()
+
+    						 );
+      echo view('Headers/Head', $data);
+        echo view('Embarques/VlistPackig', $data);
           echo view('Footers/Foot');
     }
 
@@ -189,5 +210,59 @@ class Embarques extends BaseController
           ');
     }
 
-    
+    public function Obtener_embarque($id_embarques)
+    {
+      // code...
+
+      $data = [
+        'id_embarques' => $id_embarques
+      ];
+      $Modelo = new Membarques();
+      $respuesta = $Modelo->embarque_obtener($data);
+      echo json_encode($respuesta);
+
+      }
+
+      public function Actualizar_embarque()
+      {
+        // code...
+        $id = $this->request->getPost('id_embarques');
+
+          $data = [
+            'fecha_embarque' => $this->request->getPost('fecha_embarque'),
+            'trailer' => $this->request->getPost('trailer'),
+            'caja' => $this->request->getPost('caja'),
+            'hora_embarque' => $this->request->getPost('hora_embarque'),
+            'chofer' => $this->request->getPost('chofer'),
+            'destinatario' => $this->request->getPost('destinatario'),
+            'numero_envio' => $this->request->getPost('numero_envio'),
+            'observaciones' => $this->request->getPost('observaciones'),
+            'status_embarque' => $this->request->getPost('status_embarque')
+
+          ];
+
+          $Modelo = new Membarques();
+          $datos= $Modelo->Actualizar_data_embarque($data,$id);
+
+
+            // code...
+            if ($data) {
+              // code...
+              $session = session();
+              $session->setFlashdata('mensaje', '
+              <script type="text/javascript">
+              $(document).ready(function(){
+                Swal.fire(
+                  "Buen trabajo!",
+                  "se modifico con exito el embarque!",
+                  "success")
+                });
+                </script>
+              ');
+
+            }
+
+      }
+
+
 }
