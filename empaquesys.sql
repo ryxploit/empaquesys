@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 30-09-2021 a las 15:37:27
+-- Tiempo de generación: 04-11-2021 a las 02:21:12
 -- Versión del servidor: 10.4.21-MariaDB
--- Versión de PHP: 8.0.10
+-- Versión de PHP: 8.0.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -36,15 +36,16 @@ CREATE TABLE `t_embarques` (
   `chofer` varchar(100) NOT NULL,
   `destinatario` varchar(100) NOT NULL,
   `numero_envio` varchar(100) NOT NULL,
-  `observaciones` varchar(100) NOT NULL
+  `observaciones` varchar(100) NOT NULL,
+  `status_embarque` varchar(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Volcado de datos para la tabla `t_embarques`
 --
 
-INSERT INTO `t_embarques` (`id_embarques`, `fecha_embarque`, `trailer`, `caja`, `hora_embarque`, `chofer`, `destinatario`, `numero_envio`, `observaciones`) VALUES
-(1, '2021-09-14', 'fghdfhfgh', 'hfghfgh', '01:06', 'fghfgh', 'gbhnuyn', '23467', 'gtrgrthr');
+INSERT INTO `t_embarques` (`id_embarques`, `fecha_embarque`, `trailer`, `caja`, `hora_embarque`, `chofer`, `destinatario`, `numero_envio`, `observaciones`, `status_embarque`) VALUES
+(1, '2021-09-14', 'fghdfhfgh', 'hfghfgh', '01:06', 'fghfgh', 'MAZATLAN', '23467', 'gtrgrthr', 'enviado');
 
 -- --------------------------------------------------------
 
@@ -150,7 +151,7 @@ INSERT INTO `t_pallet_embarque` (`id_embarques_pallet`, `pedido`, `numero_pallet
 (9, 'SEA04', '345', '14KG', 'KOALA', '10', '7', '', '1'),
 (10, 'SEA045', '678', '14KG', 'KOALA', '13', '6', '', '1'),
 (11, 'SEA04', '987', '14KG', 'KOALA', '10', '6', '', '1'),
-(12, 'SEA04', '345', '14KG', 'KOALA', '10', '6', '', '1'),
+(12, 'SEA04', '345', '', 'KOALA', '10', '6', '', '1'),
 (13, 'SEA04', '9678', '14KG', 'KOALA', '10', '6', 'SI', '1');
 
 -- --------------------------------------------------------
