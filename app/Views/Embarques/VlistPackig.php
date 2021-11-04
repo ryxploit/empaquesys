@@ -139,6 +139,10 @@
       AWB:
       <small class="text-muted"></small>
     </h4>
+    <h4>
+      Observaciones:
+      <small class="text-muted"><?php echo $sumaCajas[0]['observaciones'];?></small>
+    </h4>
     </div>
   </div>
 </div>

@@ -35,7 +35,6 @@ class Embarques extends BaseController
     						 );
       echo view('Headers/Head', $data);
         echo view('Embarques/VlistPackig', $data);
-          echo view('Footers/Foot');
     }
 
     public function Agregarembarque()
