@@ -358,67 +358,18 @@ function mayus(e) {
 </script>
 
 <script type="text/javascript">
-function myExportPdf(){
-                        var element = $ ("#content"); // Este elemento dom es el contenedor div para exportar el pdf
-                        var w = element.width (); // Obtiene el ancho del contenedor
-                        var h = element.height (); // Obtiene la altura del contenedor
-                        var offsetTop = element.offset (). top; // Obtiene la distancia desde el contenedor hasta la parte superior del documento
-                        var offsetLeft = element.offset (). left; // Obtiene la distancia desde el contenedor hasta el extremo izquierdo del documento
-           var canvas = document.createElement("canvas");
-           var abs = 0;
-                        var win_i = $ (window).width (); // Obtiene el ancho de la ventana visual actual (sin incluir las barras de desplazamiento)
-                        var win_o = window.innerWidth; // Obtiene el ancho de la ventana actual (incluidas las barras de desplazamiento)
-           if(win_o>win_i){
-                                abs = (win_o-win_i) / 2; // Obtiene la mitad de la longitud de la barra de desplazamiento
-           }
-                        canvas.width = w * 2; // Aumenta el ancho && alto del lienzo dos veces
-           canvas.height = h * 2;
-           var context = canvas.getContext("2d");
-           context.scale(2, 2);
-           context.translate(-offsetLeft-abs,-offsetTop);
-                        // No hay una barra de desplazamiento horizontal por defecto aquí, porque offset.left (), hay una diferencia cuando no hay barra de desplazamiento, entonces
-                        // Al traducir, elimine esta diferencia
-           html2canvas(element).then(function(canvas) {
-               var contentWidth = canvas.width;
-               var contentHeight = canvas.height;
-                                // Una página de pdf muestra la altura del lienzo generado por la página html;
-               var pageHeight = contentWidth / 592.28 * 841.89;
-                                // Altura de la página html sin pdf generado
-               var leftHeight = contentHeight;
-                                // Desplazamiento de página
-               var position = 0;
-                                // El tamaño del papel a4 [595.28,841.89], el ancho y alto del lienzo generado por la página html en el pdf
-               var imgWidth = 595.28;
-               var imgHeight = 592.28/contentWidth * contentHeight;
-
-               var pageData = canvas.toDataURL('image/jpeg', 1.0);
-
-               var pdf = new jsPDF('', 'pt', 'letter');
-
-                                // Hay dos alturas para distinguir, una es la altura real de la página html y la altura de la página que genera el pdf (841.89)
-                                // Cuando el contenido no excede el rango mostrado en una página del pdf, no es necesario paginar
-               if (leftHeight < pageHeight) {
-                   pdf.addImage(pageData, 'JPEG', 0, 0, imgWidth, imgHeight);
-                                } else {// Paginación
-                   while(leftHeight > 0) {
-                       pdf.addImage(pageData, 'JPEG', 0, position, imgWidth, imgHeight)
-                       leftHeight -= pageHeight;
-                       position -= 841.89;
-                                                // Evite agregar páginas en blanco
-                       if(leftHeight > 0) {
-                           pdf.addPage();
-                       }
-                   }
-               }
-               6
-
-               window.open(pdf.output('bloburl'), '_blank');
-              // pdf.save('myTest.pdf');
-           })
-       }
 
        $( "#printBtn" ).click(function() {
-         myExportPdf();
+        // myExportPdf();
+      $("#content").print({
+    addGlobalStyles : true,
+    stylesheet : "<?php echo base_url('assets/css/bootstrap.css');?>",
+    rejectWindow : true,
+    noPrintSelector : ".no-print",
+    iframe : true,
+    append : null,
+    prepend : null
+});
        });
 
 </script>

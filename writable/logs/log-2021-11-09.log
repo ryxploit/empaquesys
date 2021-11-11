@@ -1,0 +1,56 @@
+CRITICAL - 2021-11-09 00:57:37 --> Class "App\Controllers\FPDF" not found
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->pdf_packing('SEA04')
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2021-11-09 01:04:04 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '\n) AS todos FROM t_pallet_embarque e JOIN t_pedidos p ON e.pedido = p.codigo...' at line 1
+CRITICAL - 2021-11-09 01:04:04 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '\n) AS todos FROM t_pallet_embarque e JOIN t_pedidos p ON e.pedido = p.codigo...' at line 1
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(280): mysqli->query('select *, SUM(e...')
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('select *, SUM(e...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('select *, SUM(e...')
+#3 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(144): CodeIgniter\Database\BaseConnection->query('select *, SUM(e...')
+#4 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(274): App\Models\Membarques->listarpallet_packing('SEA04')
+#5 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->pdf_packing('SEA04')
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-11-09 01:15:02 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '\n) AS todos FROM t_pallet_embarque e JOIN t_pedidos p ON e.pedido = p.codigo...' at line 1
+CRITICAL - 2021-11-09 01:15:02 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '\n) AS todos FROM t_pallet_embarque e JOIN t_pedidos p ON e.pedido = p.codigo...' at line 1
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(280): mysqli->query('select *, SUM(e...')
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('select *, SUM(e...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('select *, SUM(e...')
+#3 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(144): CodeIgniter\Database\BaseConnection->query('select *, SUM(e...')
+#4 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(274): App\Models\Membarques->listarpallet_packing('SEA04')
+#5 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->pdf_packing('SEA04')
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-09 01:27:00 --> syntax error, unexpected fully qualified name "\n", expecting ")"
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Router\Router.php(160): CodeIgniter\Router\Router->autoRoute('/Embarques/pdf_...')
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(704): CodeIgniter\Router\Router->handle('/Embarques/pdf_...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(360): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-09 01:28:19 --> syntax error, unexpected single-quoted string "\n", expecting ")"
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Router\Router.php(160): CodeIgniter\Router\Router->autoRoute('/Embarques/pdf_...')
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(704): CodeIgniter\Router\Router->handle('/Embarques/pdf_...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(360): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-09 01:35:14 --> Call to undefined method Fpdf\Fpdf::WriteHTML()
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->pdf_packing('SEA04')
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-11-09 01:35:28 --> Call to undefined method Fpdf\Fpdf::WriteHTML2()
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->pdf_packing('SEA04')
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}

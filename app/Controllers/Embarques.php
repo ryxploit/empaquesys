@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 use App\Models\Membarques;
-use Dompdf\Dompdf;
+use Fpdf\Fpdf;
 
 class Embarques extends BaseController
 {
@@ -260,6 +260,166 @@ class Embarques extends BaseController
               ');
 
             }
+
+      }
+
+      public function pdf_packing($pedido)
+      {
+        // code...
+        $Modelo = new Membarques();
+
+
+
+
+                   $listarpallet = $Modelo->listarpallet_packing($pedido);
+                   $totalP = $Modelo->listarpallet_packing($pedido);
+                   $datos = $Modelo->listarpallet_packing($pedido)->getResultArray();
+                   $sumaCajas = $Modelo->sumaCajas_packing($pedido)->getResultArray();
+
+
+        // code...
+              $pdf = new FPDF('P', 'mm', 'letter');
+              $pdf->AddPage();
+
+              $pdf->SetMargins(10, 10, 10);
+              $pdf->SetTitle("Hoja Packing List");
+              $pdf->SetFont('Arial', 'B', 18);
+              $pdf->SetTextColor(19, 14, 94);
+              $pdf->Cell(195, 5, "Hoja Packing List", 0, 1, 'C');
+              $pdf->SetFont('Arial', 'B', 10);
+              $pdf->SetTextColor(255, 87, 51  );
+              $pdf->Cell(195, 5, 'Frutas y Legumbres El Rodeo S.P.R de R.I', 0, 1, 'C');
+              $pdf->SetTextColor(0, 0, 0);
+              $pdf->Ln();
+              $pdf->SetFont('Arial', 'B', 9);
+
+              $pdf->Cell(22, 8, utf8_decode('Importador: '), 0, 0, 'L');
+              $pdf->SetFont('Arial', '', 9);
+              $pdf->Cell(22, 8, '  ', 2, 0, 'L');
+              $pdf->SetFont('Arial', 'B', 9);
+              $pdf->Cell(22, 8, utf8_decode('Dirección: '), 0, 0, 'L');
+              $pdf->SetFont('Arial', '', 9);
+              $pdf->Cell(22, 8, '', 2, 0, 'L');
+              $pdf->SetFont('Arial', 'B', 9);
+              $pdf->Cell(22, 8, utf8_decode('País: '), 0, 0, 'L');
+              $pdf->SetFont('Arial', '', 9);
+              $pdf->Cell(22, 8,' ', 2, 0, 'L');
+              $pdf->SetFont('Arial', 'B', 9);
+              $pdf->Cell(22, 8, utf8_decode('Transportador: '), 0, 0, 'L');
+              $pdf->SetFont('Arial', '', 9);
+              $pdf->Cell(22, 8, '  ', 2, 1, 'L');
+
+              $pdf->SetFont('Arial', 'B', 9);
+              $pdf->Cell(22, 8, utf8_decode('Compañia: '), 0, 0, 'L');
+              $pdf->SetFont('Arial', '', 9);
+              $pdf->Cell(22, 8, '  ', 2, 0, 'L');
+              $pdf->SetFont('Arial', 'B', 9);
+              $pdf->Cell(22, 8, utf8_decode('Destino: '), 0, 0, 'L');
+              $pdf->SetFont('Arial', '', 9);
+              $pdf->Cell(22, 8, '  ', 2, 0, 'L');
+
+              $pdf->SetFont('Arial', 'B', 9);
+              $pdf->Cell(22, 8, utf8_decode('Temp ºC: '), 0, 0, 'L');
+              $pdf->SetFont('Arial', '', 9);
+              $pdf->Cell(22, 8, '  ', 2, 0, 'L');
+              $pdf->SetFont('Arial', 'B', 9);
+              $pdf->Cell(22, 8, utf8_decode('Humedad: '), 0, 0, 'L');
+              $pdf->SetFont('Arial', '', 9);
+              $pdf->Cell(22, 8, '  ', 2, 1, 'L');
+
+              $pdf->SetFont('Arial', 'B', 9);
+              $pdf->Cell(22, 8, utf8_decode('Factura: '), 0, 0, 'L');
+              $pdf->SetFont('Arial', '', 9);
+              $pdf->Cell(22, 8, '  ', 2, 0, 'L');
+              $pdf->SetFont('Arial', 'B', 9);
+              $pdf->Cell(22, 8, utf8_decode('Fecha: '), 0, 0, 'L');
+              $pdf->SetFont('Arial', '', 9);
+              $pdf->Cell(22, 8, $sumaCajas[0]['fecha_embarque'], 2, 0, 'L');
+
+              $pdf->SetFont('Arial', 'B', 9);
+              $pdf->Cell(22, 8, utf8_decode('Producto: '), 0, 0, 'L');
+              $pdf->SetFont('Arial', '', 9);
+              $pdf->Cell(22, 8, ' MANGO ', 2, 0, 'L');
+              $pdf->SetFont('Arial', 'B', 9);
+              $pdf->Cell(22, 8, utf8_decode('Variedad: '), 0, 0, 'L');
+              $pdf->SetFont('Arial', '', 9);
+              $pdf->Cell(22, 8, $datos[0]['variedad'], 2, 1, 'L');
+
+              $pdf->SetFont('Arial', 'B', 9);
+              $pdf->Cell(22, 8, utf8_decode('Pallets: '), 0, 0, 'L');
+              $pdf->SetFont('Arial', '', 9);
+              $pdf->Cell(22, 8, $totalP->getNumRows(), 2, 0, 'L');
+              $pdf->SetFont('Arial', 'B', 9);
+              $pdf->Cell(28, 8, utf8_decode('Numero de cajas: '), 0, 0, 'L');
+              $pdf->SetFont('Arial', '', 9);
+              $pdf->Cell(22, 8, $sumaCajas[0]['totalC'], 2, 0, 'L');
+              $pdf->SetFont('Arial', 'B', 9);
+              $pdf->Cell(22, 8, utf8_decode('Pedido: '), 0, 0, 'L');
+              $pdf->SetFont('Arial', '', 9);
+              $pdf->Cell(22, 8,  $sumaCajas[0]['pedido'], 2, 1, 'L');
+
+
+
+              $pdf->Ln();
+
+
+              $pdf->SetFont('Arial', 'B', 15);
+              $pdf->Setfillcolor(42,226,141  );
+              $pdf->SetTextColor(255, 255, 255);
+              $pdf->Cell(177, 8, 'Lista de pallet', 2, 1, 'C', 1);
+
+              $pdf->SetTextColor(0, 0, 0);
+              $pdf->SetFont('Arial', 'B', 9);
+              $pdf->Cell(30, 8, 'Numero de Pallet', 1, 0, 'C');
+              $pdf->Cell(80, 8, 'Calibre - Cantidad', 1,0,'C');
+              $pdf->Cell(22, 8, 'Total', 1,0,'L');
+              $pdf->Cell(22, 8, 'Peso bruto', 1, 0, 'L');
+              $pdf->Cell(22, 8, 'Marca', 1,1,'L');
+
+              foreach ($listarpallet->getResult()  as $key):
+              $pdf->SetFont('Arial', '', 8);
+              $pdf->Cell(30, 8, $key->numero_pallet, 1,0,'C');
+              $pdf->Cell(80, 8, $key->todos, 1,0,'C');
+              $pdf->Cell(22, 8, $key->total, 1,0,'L');
+              $pdf->Cell(22, 8, $key->peso_pallet, 1,0,'C');
+              $pdf->Cell(22, 8, $key->marca, 1,1,'C');
+              endforeach;
+
+              $pdf->Ln();
+
+              $pdf->SetFont('Arial', 'B', 9);
+              $pdf->Cell(22, 8, utf8_decode('Total de cajas: '), 0, 0, 'L');
+              $pdf->SetFont('Arial', '', 9);
+              $pdf->Cell(22, 8, $sumaCajas[0]['totalC'] , 2, 1, 'L');
+              $pdf->SetFont('Arial', 'B', 9);
+              $pdf->Cell(22, 8, utf8_decode('Peso Bruto: '), 0, 0, 'L');
+              $pdf->SetFont('Arial', '', 9);
+              $pdf->Cell(22, 8, $sumaCajas[0]['pesoB'], 2, 1, 'L');
+              $pdf->SetFont('Arial', 'B', 9);
+              $pdf->Cell(22, 8, utf8_decode('Peso Neto: '), 0, 0, 'L');
+              $pdf->SetFont('Arial', '', 9);
+              $pesoBruto = $sumaCajas[0]['pesoB'];
+              $totaPa = $totalP->getNumRows();
+              $resul = $pesoBruto - (60 * $totaPa) ;
+              $pdf->Cell(22, 8,$resul, 2, 1, 'L');
+              $pdf->SetFont('Arial', 'B', 9);
+              $pdf->Cell(30, 8, utf8_decode('Total de Pallets: '), 0, 0, 'L');
+              $pdf->SetFont('Arial', '', 9);
+              $pdf->Cell(22, 8, $totalP->getNumRows(), 2, 1, 'L');
+              $pdf->SetFont('Arial', 'B', 9);
+              $pdf->Cell(22, 8, utf8_decode('AWB: '), 0, 0, 'L');
+              $pdf->SetFont('Arial', '', 9);
+              $pdf->Cell(22, 8,'  ' , 2, 1, 'L');
+              $pdf->SetFont('Arial', 'B', 9);
+              $pdf->Cell(30, 8, utf8_decode('Observaciones: '), 0, 0, 'L');
+              $pdf->SetFont('Arial', '', 9);
+              $pdf->Cell(22, 8, $sumaCajas[0]['observaciones'] , 2, 1, 'L');
+
+
+
+              $this->response->setHeader('Content-Type', 'application/pdf');
+              $pdf->Output('packing'. $sumaCajas[0]['pedido'].'.pdf', "I");
+
 
       }
 

@@ -1,0 +1,11 @@
+CRITICAL - 2021-11-10 18:16:02 --> Undefined array key 0
+#0 C:\xampp\htdocs\empaquesys\app\Views\Embarques\Vaddpallet.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 8)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Common.php(1092): CodeIgniter\View\View->render('Embarques/Vaddp...', Array, true)
+#4 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(120): view('Embarques/Vaddp...', Array)
+#5 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(804): App\Controllers\Embarques->Agregarpallet('true')
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(319): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}

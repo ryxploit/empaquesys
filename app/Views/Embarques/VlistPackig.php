@@ -159,7 +159,8 @@
 
 <section class="section">
 <div class="card">
-    <button type="button" class="btn btn-primary btn-lg" name="button" id="printBtn">Imprimir</button>
+  
+    <a href="<?php echo base_url('Embarques/pdf_packing/'.$key->pedido); ?>" type="button" class="btn btn-primary btn-lg" name="button">Imprimir</a>
 </div>
 </section>
 

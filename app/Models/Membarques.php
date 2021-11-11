@@ -141,7 +141,7 @@ class Membarques extends Model
     {
       // code...
       $db = $this->db;
-    $query = $db->query('select *, SUM(e.cantidad) AS total,GROUP_CONCAT(e.calibre,"   -   ",e.cantidad, "<br>") AS todos FROM t_pallet_embarque e JOIN t_pedidos p ON e.pedido = p.codigo_embarque WHERE e.pedido = "'. $pedido .'" GROUP BY e.numero_pallet; ');
+    $query = $db->query('select *, SUM(e.cantidad) AS total,GROUP_CONCAT(e.calibre,"   -\n   ",e.cantidad, CHAR(10)) AS todos FROM t_pallet_embarque e JOIN t_pedidos p ON e.pedido = p.codigo_embarque WHERE e.pedido = "'. $pedido .'" GROUP BY e.numero_pallet; ');
       return $query;
     }
 
