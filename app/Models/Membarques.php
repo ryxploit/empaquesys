@@ -40,6 +40,15 @@ class Membarques extends Model
       return  $builder->get()->getResult();
     }
 
+    public function listartotalpallet2($id)
+    {
+      // code...
+      $builder = $this->db->table('t_pallet_embarque');
+      $builder->select('*');
+      $builder->where('embarque_id',$id);
+      return  $builder->get()->getResult();
+    }
+
 
     public function obtener_embarque($id)
     {
@@ -88,7 +97,7 @@ class Membarques extends Model
     {
       // code...
       $builder = $this->db->table('t_pallet_embarque');
-      $builder->select("* ,SUM(cantidad) AS total, GROUP_CONCAT(calibre, ' - ',cantidad, '<br>') AS todoss");
+      $builder->select("* ,SUM(cantidad) AS total, GROUP_CONCAT( DISTINCT calibre, '<br>') AS todoss");
       $builder->where('embarque_id', $id);
       $builder->groupBy('pedido' );
       $query = $builder->get()->getResult();

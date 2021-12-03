@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 04-11-2021 a las 02:21:12
+-- Tiempo de generación: 03-12-2021 a las 11:38:36
 -- Versión del servidor: 10.4.21-MariaDB
 -- Versión de PHP: 8.0.11
 
@@ -34,6 +34,7 @@ CREATE TABLE `t_embarques` (
   `caja` varchar(100) NOT NULL,
   `hora_embarque` varchar(100) NOT NULL,
   `chofer` varchar(100) NOT NULL,
+  `termografo` varchar(11) NOT NULL,
   `destinatario` varchar(100) NOT NULL,
   `numero_envio` varchar(100) NOT NULL,
   `observaciones` varchar(100) NOT NULL,
@@ -44,8 +45,9 @@ CREATE TABLE `t_embarques` (
 -- Volcado de datos para la tabla `t_embarques`
 --
 
-INSERT INTO `t_embarques` (`id_embarques`, `fecha_embarque`, `trailer`, `caja`, `hora_embarque`, `chofer`, `destinatario`, `numero_envio`, `observaciones`, `status_embarque`) VALUES
-(1, '2021-09-14', 'fghdfhfgh', 'hfghfgh', '01:06', 'fghfgh', 'MAZATLAN', '23467', 'gtrgrthr', 'enviado');
+INSERT INTO `t_embarques` (`id_embarques`, `fecha_embarque`, `trailer`, `caja`, `hora_embarque`, `chofer`, `termografo`, `destinatario`, `numero_envio`, `observaciones`, `status_embarque`) VALUES
+(1, '2021-09-14', 'fghdfhfgh', 'hfghfgh', '01:06', 'fghfgh', 'SI', 'MAZATLAN', '23467', 'gtrgrthr', 'enviado'),
+(2, '2021-11-26', 'FGHDFHFGH', 'HFGHFGH', '12:12', 'FGHFGH', 'NO', 'XSDX', '23467', 'XDC', '');
 
 -- --------------------------------------------------------
 
@@ -140,6 +142,7 @@ CREATE TABLE `t_pallet_embarque` (
   `cantidad` varchar(50) NOT NULL,
   `calibre` varchar(50) NOT NULL,
   `hidrotermico` varchar(50) NOT NULL,
+  `termografo_pallet` varchar(11) NOT NULL,
   `embarque_id` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -147,12 +150,12 @@ CREATE TABLE `t_pallet_embarque` (
 -- Volcado de datos para la tabla `t_pallet_embarque`
 --
 
-INSERT INTO `t_pallet_embarque` (`id_embarques_pallet`, `pedido`, `numero_pallet`, `peso_pallet`, `marca_caja`, `cantidad`, `calibre`, `hidrotermico`, `embarque_id`) VALUES
-(9, 'SEA04', '345', '14KG', 'KOALA', '10', '7', '', '1'),
-(10, 'SEA045', '678', '14KG', 'KOALA', '13', '6', '', '1'),
-(11, 'SEA04', '987', '14KG', 'KOALA', '10', '6', '', '1'),
-(12, 'SEA04', '345', '', 'KOALA', '10', '6', '', '1'),
-(13, 'SEA04', '9678', '14KG', 'KOALA', '10', '6', 'SI', '1');
+INSERT INTO `t_pallet_embarque` (`id_embarques_pallet`, `pedido`, `numero_pallet`, `peso_pallet`, `marca_caja`, `cantidad`, `calibre`, `hidrotermico`, `termografo_pallet`, `embarque_id`) VALUES
+(9, 'SEA04', '345', '14KG', 'KOALA', '10', '7', '', 'NO', '1'),
+(10, 'SEA045', '678', '14KG', 'KOALA', '13', '6', '', '', '1'),
+(11, 'SEA04', '987', '14KG', 'KOALA', '10', '6', '', '', '1'),
+(12, 'SEA04', '345', '', 'KOALA', '10', '6', '', 'SI', '1'),
+(13, 'SEA04', '9678', '14KG', 'KOALA', '10', '6', 'SI', '', '1');
 
 -- --------------------------------------------------------
 
@@ -284,7 +287,7 @@ ALTER TABLE `t_usuarios`
 -- AUTO_INCREMENT de la tabla `t_embarques`
 --
 ALTER TABLE `t_embarques`
-  MODIFY `id_embarques` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_embarques` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `t_lotes`

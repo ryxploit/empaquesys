@@ -60,6 +60,7 @@ class Embarques extends BaseController
         'caja' => $this->request->getPost('caja'),
         'hora_embarque' => $this->request->getPost('hora_embarque'),
         'chofer' => $this->request->getPost('chofer'),
+        'termografo' => $this->request->getPost('termografo'),
         'destinatario' => $this->request->getPost('destinatario'),
         'numero_envio' => $this->request->getPost('numero_envio'),
         'observaciones' => $this->request->getPost('observaciones')
@@ -113,7 +114,7 @@ class Embarques extends BaseController
                    'datos' => $respuesta,
                    'listarpedidos' => $Modelo->listarpedidos(),
                    'listarpallet' => $Modelo->listarpallet($id),
-                   'listartotalpallet' => $Modelo->listartotalpallet(),
+                   'listartotalpallet' => $Modelo->listartotalpallet2($id),
                    'sumaTotal' => $Modelo->sumarTotalpallet($id)
                    );
         echo view('Headers/Head', $data);
@@ -133,7 +134,8 @@ class Embarques extends BaseController
           'marca_caja' => $this->request->getPost('marca_caja'),
           'cantidad' => $this->request->getPost('cantidad'),
           'calibre' => $this->request->getPost('calibre'),
-          'hidrotermico' => $this->request->getPost('hidrotermico')
+          'hidrotermico' => $this->request->getPost('hidrotermico'),
+          'termografo_pallet' => $this->request->getPost('termografo_pallet')
 
         ];
 
@@ -187,6 +189,7 @@ class Embarques extends BaseController
           'cantidad' => $this->request->getPost('cantidad'),
           'calibre' => $this->request->getPost('calibre'),
           'hidrotermico' => $this->request->getPost('hidrotermico'),
+          'termografo_pallet' => $this->request->getPost('termografo_pallet'),
           'embarque_id' => $this->request->getPost('embarque_id')
 
         ];
@@ -233,6 +236,7 @@ class Embarques extends BaseController
             'caja' => $this->request->getPost('caja'),
             'hora_embarque' => $this->request->getPost('hora_embarque'),
             'chofer' => $this->request->getPost('chofer'),
+            'termografo' => $this->request->getPost('termografo'),
             'destinatario' => $this->request->getPost('destinatario'),
             'numero_envio' => $this->request->getPost('numero_envio'),
             'observaciones' => $this->request->getPost('observaciones'),
@@ -321,7 +325,7 @@ class Embarques extends BaseController
               $pdf->SetFont('Arial', 'B', 9);
               $pdf->Cell(22, 8, utf8_decode('Temp ºC: '), 0, 0, 'L');
               $pdf->SetFont('Arial', '', 9);
-              $pdf->Cell(22, 8, '  ', 2, 0, 'L');
+              $pdf->Cell(22, 8, ' 13 ', 2, 0, 'L');
               $pdf->SetFont('Arial', 'B', 9);
               $pdf->Cell(22, 8, utf8_decode('Humedad: '), 0, 0, 'L');
               $pdf->SetFont('Arial', '', 9);
@@ -366,24 +370,32 @@ class Embarques extends BaseController
               $pdf->SetFont('Arial', 'B', 15);
               $pdf->Setfillcolor(42,226,141  );
               $pdf->SetTextColor(255, 255, 255);
-              $pdf->Cell(177, 8, 'Lista de pallet', 2, 1, 'C', 1);
+              $pdf->Cell(205, 8, 'Lista de pallet', 2, 1, 'C', 1);
 
               $pdf->SetTextColor(0, 0, 0);
               $pdf->SetFont('Arial', 'B', 9);
-              $pdf->Cell(30, 8, 'Numero de Pallet', 1, 0, 'C');
+                $pdf->Cell(10, 8, 'PN', 1, 0, 'C');
+              $pdf->Cell(27, 8, 'Numero de Pallet', 1, 0, 'C');
               $pdf->Cell(80, 8, 'Calibre - Cantidad', 1,0,'C');
               $pdf->Cell(22, 8, 'Total', 1,0,'L');
               $pdf->Cell(22, 8, 'Peso bruto', 1, 0, 'L');
-              $pdf->Cell(22, 8, 'Marca', 1,1,'L');
-
+              $pdf->Cell(22, 8, 'Marca', 1,0,'L');
+                $pdf->Cell(22, 8, 'Termografo', 1,1,'L');
+                  $number = 1;
               foreach ($listarpallet->getResult()  as $key):
               $pdf->SetFont('Arial', '', 8);
-              $pdf->Cell(30, 8, $key->numero_pallet, 1,0,'C');
+
+                // code...
+                $pdf->Cell(10, 8, $number++, 1,0,'C');
+              $pdf->Cell(27, 8, $key->numero_pallet, 1,0,'C');
               $pdf->Cell(80, 8, $key->todos, 1,0,'C');
               $pdf->Cell(22, 8, $key->total, 1,0,'L');
               $pdf->Cell(22, 8, $key->peso_pallet, 1,0,'C');
-              $pdf->Cell(22, 8, $key->marca, 1,1,'C');
+              $pdf->Cell(22, 8, $key->marca, 1,0,'C');
+            $pdf->Cell(22, 8, $key->termografo_pallet, 1,1,'C');
+
               endforeach;
+
 
               $pdf->Ln();
 

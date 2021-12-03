@@ -13,6 +13,8 @@
 
     <link rel="stylesheet" href="<?php echo base_url('assets/vendors/iconly/bold.css');?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/vendors/simple-datatables/style.css');?>">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/jquery.dataTables.min.css');?>">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/buttons.dataTables.min.css');?>">
 
     <link rel="stylesheet" href="<?php echo base_url('assets/vendors/perfect-scrollbar/perfect-scrollbar.css');?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/vendors/bootstrap-icons/bootstrap-icons.css');?>">
@@ -27,7 +29,7 @@
                 <div class="sidebar-header">
                     <div class="d-flex justify-content-between">
                         <div class="logo">
-                            <a href="<?php echo base_url('Home'); ?>" class="text-warning">RODEO</a>
+                            <a href="#" class="text-warning">RODEO</a>
                             <p class="fs-6">Frutas y Legumbres El Rodeo S.P.R de R.I</p>
                         </div>
                         <div class="toggler">

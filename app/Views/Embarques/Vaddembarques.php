@@ -30,6 +30,15 @@
                         <input type="text" onkeyup="mayus(this);"   class="form-control" name="chofer">
                     </div>
                     <div class="col">
+                      <label class="form-label">Termografo</label>
+                      <fieldset class="form-group">
+                        <select name="termografo" class="form-select">
+                          <option>SI</option>
+                          <option>NO</option>
+                        </select>
+                      </fieldset>
+                    </div>
+                    <div class="col">
                         <label  class="form-label">Destinatario</label>
                         <textarea class="form-control" onkeyup="mayus(this);"   name="destinatario" rows="3"></textarea>
                     </div>
@@ -139,6 +148,15 @@
                       <label  class="form-label">Chofer</label>
                       <input type="text" onkeyup="mayus(this);" id="chofer"  class="form-control" name="chofer">
                   </div>
+                  <div class="form-group">
+                    <h6 >Termografo</h6>
+                    <fieldset class="form-group">
+                      <select name="termografo" id="termografo" class="form-select">
+                        <option>SI</option>
+                        <option>NO</option>
+                      </select>
+                    </fieldset>
+                  </div>
                   <div class="col">
                       <label  class="form-label">Destinatario</label>
                       <textarea class="form-control" onkeyup="mayus(this);" id="destinatario"  name="destinatario" rows="3"></textarea>
@@ -198,6 +216,7 @@ $(document).ready(function() {
       $('#caja').val(obj[0].caja);
       $('#hora_embarque').val(obj[0].hora_embarque);
       $('#chofer').val(obj[0].chofer);
+      $('#termografo').val(obj[0].termografo);
       $('#destinatario').val(obj[0].destinatario);
         $('#destinatario').html(obj[0].destinatario)
       $('#numero_envio').val(obj[0].numero_envio);
