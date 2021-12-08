@@ -282,7 +282,7 @@ class Embarques extends BaseController
 
 
         // code...
-              $pdf = new FPDF('P', 'mm', 'letter');
+              $pdf = new FPDF('L', 'mm', 'letter');
               $pdf->AddPage();
 
               $pdf->SetMargins(10, 10, 10);
@@ -297,24 +297,24 @@ class Embarques extends BaseController
               $pdf->Ln();
               $pdf->SetFont('Arial', 'B', 9);
 
-              $pdf->Cell(22, 8, utf8_decode('Importador: '), 0, 0, 'L');
+              $pdf->Cell(22, 8, utf8_decode('Importer: '), 0, 0, 'L');
               $pdf->SetFont('Arial', '', 9);
               $pdf->Cell(22, 8, '  ', 2, 0, 'L');
               $pdf->SetFont('Arial', 'B', 9);
-              $pdf->Cell(22, 8, utf8_decode('Dirección: '), 0, 0, 'L');
+              $pdf->Cell(22, 8, utf8_decode('Address: '), 0, 0, 'L');
               $pdf->SetFont('Arial', '', 9);
               $pdf->Cell(22, 8, '', 2, 0, 'L');
               $pdf->SetFont('Arial', 'B', 9);
-              $pdf->Cell(22, 8, utf8_decode('País: '), 0, 0, 'L');
+              $pdf->Cell(22, 8, utf8_decode('Country: '), 0, 0, 'L');
               $pdf->SetFont('Arial', '', 9);
               $pdf->Cell(22, 8,' ', 2, 0, 'L');
               $pdf->SetFont('Arial', 'B', 9);
-              $pdf->Cell(22, 8, utf8_decode('Transportador: '), 0, 0, 'L');
+              $pdf->Cell(22, 8, utf8_decode('Transporter: '), 0, 0, 'L');
               $pdf->SetFont('Arial', '', 9);
               $pdf->Cell(22, 8, '  ', 2, 1, 'L');
 
               $pdf->SetFont('Arial', 'B', 9);
-              $pdf->Cell(22, 8, utf8_decode('Compañia: '), 0, 0, 'L');
+              $pdf->Cell(22, 8, utf8_decode('Company: '), 0, 0, 'L');
               $pdf->SetFont('Arial', '', 9);
               $pdf->Cell(22, 8, '  ', 2, 0, 'L');
               $pdf->SetFont('Arial', 'B', 9);
@@ -345,7 +345,7 @@ class Embarques extends BaseController
               $pdf->SetFont('Arial', '', 9);
               $pdf->Cell(22, 8, ' MANGO ', 2, 0, 'L');
               $pdf->SetFont('Arial', 'B', 9);
-              $pdf->Cell(22, 8, utf8_decode('Variedad: '), 0, 0, 'L');
+              $pdf->Cell(22, 8, utf8_decode('Variety: '), 0, 0, 'L');
               $pdf->SetFont('Arial', '', 9);
               $pdf->Cell(22, 8, $datos[0]['variedad'], 2, 1, 'L');
 
@@ -354,7 +354,7 @@ class Embarques extends BaseController
               $pdf->SetFont('Arial', '', 9);
               $pdf->Cell(22, 8, $totalP->getNumRows(), 2, 0, 'L');
               $pdf->SetFont('Arial', 'B', 9);
-              $pdf->Cell(28, 8, utf8_decode('Numero de cajas: '), 0, 0, 'L');
+              $pdf->Cell(28, 8, utf8_decode('Nr.Boxes: '), 0, 0, 'L');
               $pdf->SetFont('Arial', '', 9);
               $pdf->Cell(22, 8, $sumaCajas[0]['totalC'], 2, 0, 'L');
               $pdf->SetFont('Arial', 'B', 9);

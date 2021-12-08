@@ -55,6 +55,7 @@ $routes->get('/Rastreo/pdf/(:any)', 'Rastreo::pdf/$1');
 //Lotes
 $routes->post('/Lotes', 'Lotes::Insertar');
 $routes->get('/Lotes/Obtenerlote/(:any)', 'Lotes::Obtenerlote/$1');
+$routes->get('/Lotes/Pdf_lotes/', 'Lotes::Pdf_lotes/');
 $routes->post('/Lotes', 'Lotes::Actualizar');
 $routes->get('/Lotes/Eliminar/(:any)', 'Lotes::Eliminar/$1');
 //Embarques

@@ -13,6 +13,7 @@
               <h6 class="text-white">Rol</h6>
               <fieldset class="form-group">
                 <select name="type" class="form-select">
+                  <option>ADMINISTRADOR</option>
                   <option>LOTES</option>
                   <option>RASTREO</option>
                   <option>EMBARQUES</option>

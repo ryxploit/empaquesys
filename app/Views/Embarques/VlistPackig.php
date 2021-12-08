@@ -40,7 +40,7 @@
             </h4>
             <h4>
               Humedad:
-              <small class="text-muted"> <?php //echo $datos[0]['chofer'];?></small>
+              <small class="text-muted"> <?php //echo $datos[0]['chofer'];?></small> 
             </h4>
             <h4>
               Factura:

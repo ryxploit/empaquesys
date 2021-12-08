@@ -378,7 +378,7 @@
   }
 </script>
 
-<script type="text/javascript">
+<script type="text/javascript"> 
   $("#printBtn").click(function() {
     // myExportPdf();
     $("#content").print({
