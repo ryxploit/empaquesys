@@ -30,14 +30,10 @@
                         <input type="text" onkeyup="mayus(this);"   class="form-control" name="chofer">
                     </div>
                     <div class="col">
-                      <label class="form-label">Termografo</label>
-                      <fieldset class="form-group">
-                        <select name="termografo" class="form-select">
-                          <option>SI</option>
-                          <option>NO</option>
-                        </select>
-                      </fieldset>
+                        <label  class="form-label">Termografo(Numero de Pallet)</label>
+                        <input type="text" onkeyup="mayus(this);"   class="form-control" name="termografo">
                     </div>
+                    
                     <div class="col">
                         <label  class="form-label">Destinatario</label>
                         <textarea class="form-control" onkeyup="mayus(this);"   name="destinatario" rows="3"></textarea>
@@ -75,6 +71,7 @@
                             <th>Fecha</th>
                             <th>Hora</th>
                             <th>Destino</th>
+                            <th>Termografo</th>
                             <th class="text-end"></th>
                             <th>Status</th>
                         </tr>
@@ -85,6 +82,7 @@
                             <td><?php echo $key->fecha_embarque;?></td>
                             <td><?php echo $key->hora_embarque;?></td>
                             <td><?php echo $key->destinatario;?></td>
+                             <td><?php echo $key->termografo;?></td>
                             <td class="text-end">
                                 <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
                                     <a class="btn btn-warning"
@@ -92,9 +90,9 @@
                                         role="button">Agregar Pallets</a>
                                         <a type="button" class="btn btn-primary update" id="<?php echo $key->id_embarques; ?>"
                                             data-bs-toggle="modal" data-bs-target="#exampleModal">Modificar</a>
-                                    <a class="btn btn-warning disabled"
-                                        href="<?php echo base_url('Rastreo/Eliminarhrastreo/'); ?>"
-                                        role="button" aria-disabled="true">Borrar</a>
+                                    <a class="btn btn-warning "
+                                        href="<?php echo base_url('Embarques/Eliminar_embarque/'.$key->id_embarques); ?>"
+                                        role="button" >Borrar</a>
                                 </div>
                             </td>
                             <td>
@@ -148,15 +146,10 @@
                       <label  class="form-label">Chofer</label>
                       <input type="text" onkeyup="mayus(this);" id="chofer"  class="form-control" name="chofer">
                   </div>
-                  <div class="form-group">
-                    <h6 >Termografo</h6>
-                    <fieldset class="form-group">
-                      <select name="termografo" id="termografo" class="form-select">
-                        <option>SI</option>
-                        <option>NO</option>
-                      </select>
-                    </fieldset>
-                  </div>
+                  <div class="col">
+                        <label  class="form-label">Termografo(Numero de Pallet)</label>
+                        <input type="text" onkeyup="mayus(this);"   class="form-control" name="termografo">
+                    </div>
                   <div class="col">
                       <label  class="form-label">Destinatario</label>
                       <textarea class="form-control" onkeyup="mayus(this);" id="destinatario"  name="destinatario" rows="3"></textarea>

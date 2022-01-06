@@ -85,7 +85,7 @@ class Membarques extends Model {
     public function sumarTotalpallet($id) {
         // code...
         $builder = $this->db->table('t_pallet_embarque');
-        $builder->select("* ,SUM(cantidad) AS total, GROUP_CONCAT( DISTINCT calibre, '<br>') AS todoss");
+        $builder->select("* ,SUM(cantidad) AS total, GROUP_CONCAT( DISTINCT calibre,' - ',cantidad, '<br>') AS todoss");
         $builder->where('embarque_id', $id);
         $builder->groupBy('pedido');
         $query = $builder->get()->getResult();
@@ -134,6 +134,7 @@ class Membarques extends Model {
         // code...
         $db = $this->db;
         $query = $db->query('select *, SUM(e.cantidad) AS total,GROUP_CONCAT(e.calibre,";",e.cantidad) AS todos FROM t_pallet_embarque e JOIN t_pedidos p ON e.pedido = p.codigo_embarque WHERE e.pedido = "' . $pedido . '" GROUP BY e.calibre; ');
+        
         return $query;
     }
 
@@ -142,6 +143,13 @@ class Membarques extends Model {
         $db = $this->db;
         $query = $db->query('select *, SUM(cantidad)as totalC,SUM(peso_pallet) as pesoB FROM t_pallet_embarque p JOIN t_embarques e ON p.embarque_id = e.id_embarques WHERE pedido = "' . $pedido . '" ');
         return $query;
+    }
+    
+    public function Eliminarembarque($data) {
+        // code...
+        $query = $this->db->table('t_embarques');
+        $query->where($data);
+        return $query->delete();
     }
 
 }

@@ -239,6 +239,45 @@ class Embarques extends BaseController {
               ');
         }
     }
+    
+     public function Eliminar_embarque($id_embarques) {
+        // code...
+        $data = [
+            'id_embarques' => $id_embarques
+        ];
+        $Modelo = new Membarques();
+        $datos = $Modelo->Eliminarembarque($data);
+
+        if ($datos) {
+            // code...
+            $session = session();
+            $session->setFlashdata('mensaje', '
+        <script type="text/javascript">
+        $(document).ready(function(){
+          Swal.fire(
+            "Buen trabajo!",
+            "se elimino con exito!",
+            "success")
+          });
+          </script>
+        ');
+            return redirect()->to(base_url('/Embarques/Agregarembarque'));
+        } else {
+            // code...
+            $session = session();
+            $session->setFlashdata('mensaje', '
+        <script type="text/javascript">
+        $(document).ready(function(){
+          Swal.fire(
+            "Disculpa!",
+            "Algo salio mal llame al encargado!",
+            "error")
+          });
+          </script>
+        ');
+            return redirect()->to(base_url('/Embarques/Agregarembarque'));
+        }
+    }
 
     public function pdf_packing($pedido) {
         // code...
@@ -485,9 +524,9 @@ class Embarques extends BaseController {
         $pdf->Ln();
 
         $pdf->SetFont('Arial', 'B', 9);
-        $pdf->Cell(22, 8, utf8_decode('Total de boxes: '), 0, 0, 'L');
+        $pdf->Cell(28, 8, utf8_decode('Total de boxes: '), 0, 0, 'L');
         $pdf->SetFont('Arial', '', 9);
-        $pdf->Cell(22, 8, $sumaCajas[0]['totalC'], 2, 1, 'L');
+        $pdf->Cell(25, 8, $sumaCajas[0]['totalC'], 2, 1, 'L');
         $pdf->SetFont('Arial', 'B', 9);
         $pdf->Cell(22, 8, utf8_decode('Peso Bruto: '), 0, 0, 'L');
         $pdf->SetFont('Arial', '', 9);
