@@ -374,7 +374,7 @@ class Embarques extends BaseController {
         $pdf->SetFont('Arial', 'B', 15);
         $pdf->Setfillcolor(42, 226, 141);
         $pdf->SetTextColor(255, 255, 255);
-        $pdf->Cell(225, 8, 'Lista de pallet', 2, 1, 'C', 1);
+        $pdf->Cell(202, 8, 'Lista de pallet', 2, 1, 'C', 1);
 
         $pdf->SetTextColor(0, 0, 0);
         $pdf->SetFont('Arial', 'B', 9);
@@ -391,8 +391,8 @@ class Embarques extends BaseController {
         $pdf->Cell(12, 8, '14', 1, 0, 'C');
         $pdf->Cell(22, 8, 'Total', 1, 0, 'L');
         $pdf->Cell(22, 8, 'Peso bruto', 1, 0, 'L');
-        $pdf->Cell(22, 8, 'Marca', 1, 0, 'L');
-        $pdf->Cell(22, 8, 'Termografo', 1, 1, 'L');
+        $pdf->Cell(22, 8, 'Marca', 1, 1, 'L');
+       
         $number = 1;
         foreach ($listarpallet->getResult() as $key):
             $pdf->SetFont('Arial', '', 8);
@@ -447,8 +447,8 @@ class Embarques extends BaseController {
             }
             $pdf->Cell(22, 8, $key->total, 1, 0, 'L');
             $pdf->Cell(22, 8, $key->peso_pallet, 1, 0, 'C');
-            $pdf->Cell(22, 8, $key->marca, 1, 0, 'C');
-            $pdf->Cell(22, 8, $key->termografo_pallet, 1, 1, 'C');
+            $pdf->Cell(22, 8, $key->marca, 1, 1, 'C');
+            
 
         endforeach;
 
@@ -550,6 +550,10 @@ class Embarques extends BaseController {
         $pdf->Cell(30, 8, utf8_decode('Observaciones: '), 0, 0, 'L');
         $pdf->SetFont('Arial', '', 9);
         $pdf->Cell(22, 8, $sumaCajas[0]['observaciones'], 2, 1, 'L');
+        $pdf->SetFont('Arial', 'B', 9);
+        $pdf->Cell(30, 8, utf8_decode('Termografo: '), 0, 0, 'L');
+        $pdf->SetFont('Arial', '', 9);
+        $pdf->Cell(22, 8, $sumaCajas[0]['termografo'], 2, 1, 'L');
 
         $this->response->setHeader('Content-Type', 'application/pdf');
         $pdf->Output('packing' . $sumaCajas[0]['pedido'] . '.pdf', "I");

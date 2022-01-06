@@ -90,9 +90,9 @@
                                         role="button">Agregar Pallets</a>
                                         <a type="button" class="btn btn-primary update" id="<?php echo $key->id_embarques; ?>"
                                             data-bs-toggle="modal" data-bs-target="#exampleModal">Modificar</a>
-                                    <a class="btn btn-warning "
-                                        href="<?php echo base_url('Embarques/Eliminar_embarque/'.$key->id_embarques); ?>"
-                                        role="button" >Borrar</a>
+                                    <a class="btn btn-warning delete"
+                                           id="<?php echo $key->id_embarques; ?>"
+                                           role="button">Borrar</a>
                                 </div>
                             </td>
                             <td>
@@ -238,4 +238,30 @@ $(document).ready(function() {
       }
     });
   });
+</script>
+
+<script type="text/javascript">
+// borrar pedido
+    $(document).ready(function () {
+        $('.delete').click(function () {
+            var id = $(this).attr('id');
+            Swal.fire({
+                title: 'Desea borrar?',
+                showDenyButton: true,
+                showCancelButton: false,
+                confirmButtonText: `Borrar`,
+                denyButtonText: `Cancelar`,
+            }).then((result) => {
+
+                if (result.isConfirmed) {
+
+                    var url = "<?php echo base_url('Embarques/Eliminar_embarque'); ?>" + '/' + id
+                    window.location.href = url;
+
+                } else if (result.isDenied) {
+                    Swal.fire('Cancelado', '', 'info')
+                }
+            })
+        });
+    });
 </script>

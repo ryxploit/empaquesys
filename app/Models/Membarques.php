@@ -88,6 +88,7 @@ class Membarques extends Model {
         $builder->select("* ,SUM(cantidad) AS total, GROUP_CONCAT( DISTINCT calibre,' - ',cantidad, '<br>') AS todoss");
         $builder->where('embarque_id', $id);
         $builder->groupBy('pedido');
+       // $builder->groupBy('calibre');
         $query = $builder->get()->getResult();
         return $query;
     }

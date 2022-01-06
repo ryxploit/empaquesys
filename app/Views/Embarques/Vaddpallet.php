@@ -172,15 +172,12 @@
                 </div>
                 <div class="row p-3">
                     <?php foreach ($listarpallet as $key): ?>
-                        <div class="card text-dark bg-warning  col-5 mx-3 " style="width: 14rem;height:16rem;">
+                        <div class="card text-dark bg-warning  col-5 mx-3 " style="width: 14rem;height:12rem;">
                             <div class="card-body">
-                                <h5 class="card-title"><?php echo $key->numero_pallet; ?><p class="text-center"><strong><?php echo $key->pedido; ?></strong></p>
-                                </h5>
-                                <p class="text-start"><?php echo $key->peso_pallet; ?></p>
+                                <h6 class="card-title"><?php echo $key->numero_pallet; ?>&nbsp;&nbsp;&nbsp;<?php echo $key->termografo_pallet; ?><p class="text-center"><strong><?php echo $key->pedido; ?></strong></p>
+                                </h6>
                                 <p class="text-center"><?php echo $key->todos; ?> </p>
-                                <p class="text-end"><?php echo $key->marca_caja; ?></p>
-                                <p class="text-start"><?php echo $key->hidrotermico; ?></p>
-                                <p class="text-end"><?php echo $key->termografo_pallet; ?></p>
+                                <p class=""><?php echo $key->marca_caja;  ?> &nbsp;&nbsp;&nbsp;<?php echo $key->hidrotermico; ?>&nbsp;&nbsp;&nbsp;<?php echo $key->peso_pallet; ?></p>
                             </div>
                         </div>
                     <?php endforeach; ?>
