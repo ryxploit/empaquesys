@@ -1,0 +1,1129 @@
+ERROR - 2022-01-12 19:38:57 --> Column 'termografo_pallet' cannot be null
+CRITICAL - 2022-01-12 19:38:57 --> Column 'termografo_pallet' cannot be null
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `t_...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(64): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(179): App\Models\Membarques->insertar_datos_pallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Embarques->Insertarpallet()
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-01-12 19:38:57 --> Uncaught ErrorException: Undefined property: Config\Exceptions::$sensitiveDataInTrace in C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Debug\Exceptions.php:242
+Stack trace:
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Debug\Exceptions.php(242): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 242)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->collectVars(Object(mysqli_sql_exception), 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-01-12 19:39:01 --> Column 'termografo_pallet' cannot be null
+CRITICAL - 2022-01-12 19:39:01 --> Column 'termografo_pallet' cannot be null
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `t_...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(64): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(179): App\Models\Membarques->insertar_datos_pallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Embarques->Insertarpallet()
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-01-12 19:39:01 --> Uncaught ErrorException: Undefined property: Config\Exceptions::$sensitiveDataInTrace in C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Debug\Exceptions.php:242
+Stack trace:
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Debug\Exceptions.php(242): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 242)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->collectVars(Object(mysqli_sql_exception), 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-01-12 19:39:01 --> Column 'termografo_pallet' cannot be null
+CRITICAL - 2022-01-12 19:39:01 --> Column 'termografo_pallet' cannot be null
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `t_...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(64): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(179): App\Models\Membarques->insertar_datos_pallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Embarques->Insertarpallet()
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-01-12 19:39:01 --> Uncaught ErrorException: Undefined property: Config\Exceptions::$sensitiveDataInTrace in C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Debug\Exceptions.php:242
+Stack trace:
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Debug\Exceptions.php(242): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 242)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->collectVars(Object(mysqli_sql_exception), 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-01-12 19:39:01 --> Column 'termografo_pallet' cannot be null
+CRITICAL - 2022-01-12 19:39:01 --> Column 'termografo_pallet' cannot be null
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `t_...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(64): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(179): App\Models\Membarques->insertar_datos_pallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Embarques->Insertarpallet()
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-01-12 19:39:01 --> Uncaught ErrorException: Undefined property: Config\Exceptions::$sensitiveDataInTrace in C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Debug\Exceptions.php:242
+Stack trace:
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Debug\Exceptions.php(242): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 242)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->collectVars(Object(mysqli_sql_exception), 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-01-12 19:39:02 --> Column 'termografo_pallet' cannot be null
+CRITICAL - 2022-01-12 19:39:02 --> Column 'termografo_pallet' cannot be null
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `t_...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(64): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(179): App\Models\Membarques->insertar_datos_pallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Embarques->Insertarpallet()
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-01-12 19:39:02 --> Uncaught ErrorException: Undefined property: Config\Exceptions::$sensitiveDataInTrace in C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Debug\Exceptions.php:242
+Stack trace:
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Debug\Exceptions.php(242): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 242)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->collectVars(Object(mysqli_sql_exception), 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-01-12 19:39:02 --> Column 'termografo_pallet' cannot be null
+CRITICAL - 2022-01-12 19:39:02 --> Column 'termografo_pallet' cannot be null
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `t_...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(64): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(179): App\Models\Membarques->insertar_datos_pallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Embarques->Insertarpallet()
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-01-12 19:39:02 --> Uncaught ErrorException: Undefined property: Config\Exceptions::$sensitiveDataInTrace in C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Debug\Exceptions.php:242
+Stack trace:
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Debug\Exceptions.php(242): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 242)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->collectVars(Object(mysqli_sql_exception), 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-01-12 19:39:02 --> Column 'termografo_pallet' cannot be null
+CRITICAL - 2022-01-12 19:39:02 --> Column 'termografo_pallet' cannot be null
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `t_...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(64): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(179): App\Models\Membarques->insertar_datos_pallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Embarques->Insertarpallet()
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-01-12 19:39:02 --> Uncaught ErrorException: Undefined property: Config\Exceptions::$sensitiveDataInTrace in C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Debug\Exceptions.php:242
+Stack trace:
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Debug\Exceptions.php(242): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 242)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->collectVars(Object(mysqli_sql_exception), 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-01-12 19:39:02 --> Column 'termografo_pallet' cannot be null
+CRITICAL - 2022-01-12 19:39:02 --> Column 'termografo_pallet' cannot be null
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `t_...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(64): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(179): App\Models\Membarques->insertar_datos_pallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Embarques->Insertarpallet()
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-01-12 19:39:02 --> Uncaught ErrorException: Undefined property: Config\Exceptions::$sensitiveDataInTrace in C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Debug\Exceptions.php:242
+Stack trace:
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Debug\Exceptions.php(242): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 242)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->collectVars(Object(mysqli_sql_exception), 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-01-12 19:39:03 --> Column 'termografo_pallet' cannot be null
+CRITICAL - 2022-01-12 19:39:03 --> Column 'termografo_pallet' cannot be null
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `t_...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(64): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(179): App\Models\Membarques->insertar_datos_pallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Embarques->Insertarpallet()
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-01-12 19:39:03 --> Uncaught ErrorException: Undefined property: Config\Exceptions::$sensitiveDataInTrace in C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Debug\Exceptions.php:242
+Stack trace:
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Debug\Exceptions.php(242): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 242)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->collectVars(Object(mysqli_sql_exception), 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-01-12 19:39:03 --> Column 'termografo_pallet' cannot be null
+CRITICAL - 2022-01-12 19:39:03 --> Column 'termografo_pallet' cannot be null
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `t_...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(64): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(179): App\Models\Membarques->insertar_datos_pallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Embarques->Insertarpallet()
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-01-12 19:39:03 --> Uncaught ErrorException: Undefined property: Config\Exceptions::$sensitiveDataInTrace in C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Debug\Exceptions.php:242
+Stack trace:
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Debug\Exceptions.php(242): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 242)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->collectVars(Object(mysqli_sql_exception), 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-01-12 19:39:14 --> Column 'termografo_pallet' cannot be null
+CRITICAL - 2022-01-12 19:39:14 --> Column 'termografo_pallet' cannot be null
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `t_...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(64): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(179): App\Models\Membarques->insertar_datos_pallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Embarques->Insertarpallet()
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-01-12 19:39:14 --> Uncaught ErrorException: Undefined property: Config\Exceptions::$sensitiveDataInTrace in C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Debug\Exceptions.php:242
+Stack trace:
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Debug\Exceptions.php(242): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 242)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->collectVars(Object(mysqli_sql_exception), 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-01-12 19:41:05 --> Column 'termografo_pallet' cannot be null
+CRITICAL - 2022-01-12 19:41:05 --> Column 'termografo_pallet' cannot be null
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `t_...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(64): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(179): App\Models\Membarques->insertar_datos_pallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Embarques->Insertarpallet()
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-01-12 19:41:05 --> Uncaught ErrorException: Undefined property: Config\Exceptions::$sensitiveDataInTrace in C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Debug\Exceptions.php:242
+Stack trace:
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Debug\Exceptions.php(242): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 242)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->collectVars(Object(mysqli_sql_exception), 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-01-12 19:57:37 --> Column 'termografo_pallet' cannot be null
+CRITICAL - 2022-01-12 19:57:37 --> Column 'termografo_pallet' cannot be null
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `t_...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(64): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(179): App\Models\Membarques->insertar_datos_pallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Embarques->Insertarpallet()
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-01-12 19:57:37 --> Uncaught ErrorException: Undefined property: Config\Exceptions::$sensitiveDataInTrace in C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Debug\Exceptions.php:242
+Stack trace:
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Debug\Exceptions.php(242): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 242)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->collectVars(Object(mysqli_sql_exception), 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-01-12 19:58:17 --> Column 'termografo_pallet' cannot be null
+CRITICAL - 2022-01-12 19:58:17 --> Column 'termografo_pallet' cannot be null
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `t_...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(64): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(179): App\Models\Membarques->insertar_datos_pallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Embarques->Insertarpallet()
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-01-12 19:58:17 --> Uncaught ErrorException: Undefined property: Config\Exceptions::$sensitiveDataInTrace in C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Debug\Exceptions.php:242
+Stack trace:
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Debug\Exceptions.php(242): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 242)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->collectVars(Object(mysqli_sql_exception), 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-01-12 19:59:09 --> Column 'termografo_pallet' cannot be null
+CRITICAL - 2022-01-12 19:59:09 --> Column 'termografo_pallet' cannot be null
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `t_...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(64): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(179): App\Models\Membarques->insertar_datos_pallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Embarques->Insertarpallet()
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-01-12 19:59:09 --> Uncaught ErrorException: Undefined property: Config\Exceptions::$sensitiveDataInTrace in C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Debug\Exceptions.php:242
+Stack trace:
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Debug\Exceptions.php(242): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 242)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->collectVars(Object(mysqli_sql_exception), 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-01-12 19:59:27 --> Column 'termografo_pallet' cannot be null
+CRITICAL - 2022-01-12 19:59:27 --> Column 'termografo_pallet' cannot be null
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `t_...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(64): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(179): App\Models\Membarques->insertar_datos_pallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Embarques->Insertarpallet()
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-01-12 19:59:27 --> Uncaught ErrorException: Undefined property: Config\Exceptions::$sensitiveDataInTrace in C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Debug\Exceptions.php:242
+Stack trace:
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Debug\Exceptions.php(242): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 242)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->collectVars(Object(mysqli_sql_exception), 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(mysqli_sql_exception))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-01-12 20:02:51 --> Column 'termografo_pallet' cannot be null
+CRITICAL - 2022-01-12 20:02:51 --> Column 'termografo_pallet' cannot be null
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `t_...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(64): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(179): App\Models\Membarques->insertar_datos_pallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Embarques->Insertarpallet()
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-12 20:03:11 --> Column 'termografo_pallet' cannot be null
+CRITICAL - 2022-01-12 20:03:11 --> Column 'termografo_pallet' cannot be null
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `t_...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(64): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(179): App\Models\Membarques->insertar_datos_pallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Embarques->Insertarpallet()
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-01-12 21:02:12 --> Undefined property: stdClass::$todoss
+#0 C:\xampp\htdocs\empaquesys\app\Views\Embarques\Vaddpallet.php(190): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 190)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('Embarques/Vaddp...', Array, true)
+#4 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(112): view('Embarques/Vaddp...', Array)
+#5 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Embarques->Agregarpallet('1')
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-01-12 21:14:41 --> Undefined property: stdClass::$todoss
+#0 C:\xampp\htdocs\empaquesys\app\Views\Embarques\Vaddpallet.php(190): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 190)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('Embarques/Vaddp...', Array, true)
+#4 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(112): view('Embarques/Vaddp...', Array)
+#5 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Embarques->Agregarpallet('1')
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-12 21:21:34 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''<br>') AS todoss
+FROM `t_pallet_embarque`
+WHERE `embarque_id` = ('1')
+GROUP ...' at line 1
+CRITICAL - 2022-01-12 21:21:34 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''<br>') AS todoss
+FROM `t_pallet_embarque`
+WHERE `embarque_id` = ('1')
+GROUP ...' at line 1
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, SUM(c...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(c...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(c...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(c...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(92): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->sumarTotalpallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Embarques->Agregarpallet('1')
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-12 21:22:25 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'calibre, ' - ', `cantidad`, '<br>') AS todoss
+FROM `t_pallet_embarque`
+WHERE ...' at line 1
+CRITICAL - 2022-01-12 21:22:25 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'calibre, ' - ', `cantidad`, '<br>') AS todoss
+FROM `t_pallet_embarque`
+WHERE ...' at line 1
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, SUM(c...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(c...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(c...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(c...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(92): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->sumarTotalpallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Embarques->Agregarpallet('1')
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-12 21:22:44 --> FUNCTION empaquesys.groupBy does not exist
+CRITICAL - 2022-01-12 21:22:44 --> FUNCTION empaquesys.groupBy does not exist
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, SUM(c...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(c...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(c...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(c...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(92): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->sumarTotalpallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Embarques->Agregarpallet('1')
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-12 21:22:45 --> FUNCTION empaquesys.groupBy does not exist
+CRITICAL - 2022-01-12 21:22:45 --> FUNCTION empaquesys.groupBy does not exist
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, SUM(c...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(c...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(c...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(c...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(92): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->sumarTotalpallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Embarques->Agregarpallet('1')
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-12 21:23:01 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'DISTINCT calibre, ' - ', `cantidad`, '<br>') AS todoss
+FROM `t_pallet_embarqu...' at line 1
+CRITICAL - 2022-01-12 21:23:01 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'DISTINCT calibre, ' - ', `cantidad`, '<br>') AS todoss
+FROM `t_pallet_embarqu...' at line 1
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, SUM(c...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(c...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(c...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(c...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(92): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->sumarTotalpallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Embarques->Agregarpallet('1')
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-12 21:23:02 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'DISTINCT calibre, ' - ', `cantidad`, '<br>') AS todoss
+FROM `t_pallet_embarqu...' at line 1
+CRITICAL - 2022-01-12 21:23:02 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'DISTINCT calibre, ' - ', `cantidad`, '<br>') AS todoss
+FROM `t_pallet_embarqu...' at line 1
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, SUM(c...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(c...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(c...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(c...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(92): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->sumarTotalpallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Embarques->Agregarpallet('1')
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-12 21:25:36 --> Operand should contain 1 column(s)
+CRITICAL - 2022-01-12 21:25:36 --> Operand should contain 1 column(s)
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, SUM(c...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(c...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(c...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(c...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(92): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->sumarTotalpallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Embarques->Agregarpallet('1')
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-12 21:26:06 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SUM(calibre, ' - ', `cantidad`, '<br>') AS todoss
+FROM `t_pallet_embarque`
+WH...' at line 1
+CRITICAL - 2022-01-12 21:26:06 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SUM(calibre, ' - ', `cantidad`, '<br>') AS todoss
+FROM `t_pallet_embarque`
+WH...' at line 1
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, SUM(c...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(c...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(c...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(c...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(92): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->sumarTotalpallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Embarques->Agregarpallet('1')
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-12 21:26:06 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SUM(calibre, ' - ', `cantidad`, '<br>') AS todoss
+FROM `t_pallet_embarque`
+WH...' at line 1
+CRITICAL - 2022-01-12 21:26:06 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SUM(calibre, ' - ', `cantidad`, '<br>') AS todoss
+FROM `t_pallet_embarque`
+WH...' at line 1
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, SUM(c...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(c...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(c...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(c...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(92): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->sumarTotalpallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Embarques->Agregarpallet('1')
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-12 21:26:24 --> Incorrect parameters in the call to stored function 'GROUP_CONCAT'
+CRITICAL - 2022-01-12 21:26:24 --> Incorrect parameters in the call to stored function 'GROUP_CONCAT'
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, SUM(c...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(c...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(c...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(c...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(92): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->sumarTotalpallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Embarques->Agregarpallet('1')
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-12 21:26:39 --> FUNCTION empaquesys.GROUP_CONCAT does not exist. Check the 'Function Name Parsing and Resolution' section in the Reference Manual
+CRITICAL - 2022-01-12 21:26:39 --> FUNCTION empaquesys.GROUP_CONCAT does not exist. Check the 'Function Name Parsing and Resolution' section in the Reference Manual
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, SUM(c...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(c...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(c...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(c...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(92): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->sumarTotalpallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Embarques->Agregarpallet('1')
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-12 21:26:39 --> FUNCTION empaquesys.GROUP_CONCAT does not exist. Check the 'Function Name Parsing and Resolution' section in the Reference Manual
+CRITICAL - 2022-01-12 21:26:39 --> FUNCTION empaquesys.GROUP_CONCAT does not exist. Check the 'Function Name Parsing and Resolution' section in the Reference Manual
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, SUM(c...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(c...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(c...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(c...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(92): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->sumarTotalpallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Embarques->Agregarpallet('1')
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-12 21:27:06 --> FUNCTION empaquesys.GROUP_CONCAT does not exist. Check the 'Function Name Parsing and Resolution' section in the Reference Manual
+CRITICAL - 2022-01-12 21:27:06 --> FUNCTION empaquesys.GROUP_CONCAT does not exist. Check the 'Function Name Parsing and Resolution' section in the Reference Manual
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, SUM(c...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(c...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(c...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(c...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(92): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->sumarTotalpallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Embarques->Agregarpallet('1')
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-12 21:27:07 --> FUNCTION empaquesys.GROUP_CONCAT does not exist. Check the 'Function Name Parsing and Resolution' section in the Reference Manual
+CRITICAL - 2022-01-12 21:27:07 --> FUNCTION empaquesys.GROUP_CONCAT does not exist. Check the 'Function Name Parsing and Resolution' section in the Reference Manual
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, SUM(c...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(c...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(c...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(c...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(92): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->sumarTotalpallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Embarques->Agregarpallet('1')
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-12 21:27:08 --> FUNCTION empaquesys.GROUP_CONCAT does not exist. Check the 'Function Name Parsing and Resolution' section in the Reference Manual
+CRITICAL - 2022-01-12 21:27:08 --> FUNCTION empaquesys.GROUP_CONCAT does not exist. Check the 'Function Name Parsing and Resolution' section in the Reference Manual
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, SUM(c...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(c...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(c...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(c...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(92): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->sumarTotalpallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Embarques->Agregarpallet('1')
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-12 21:27:16 --> FUNCTION empaquesys.GROUP_CONCAT does not exist. Check the 'Function Name Parsing and Resolution' section in the Reference Manual
+CRITICAL - 2022-01-12 21:27:16 --> FUNCTION empaquesys.GROUP_CONCAT does not exist. Check the 'Function Name Parsing and Resolution' section in the Reference Manual
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, SUM(c...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(c...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(c...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(c...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(92): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->sumarTotalpallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Embarques->Agregarpallet('1')
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-12 21:27:17 --> FUNCTION empaquesys.GROUP_CONCAT does not exist. Check the 'Function Name Parsing and Resolution' section in the Reference Manual
+CRITICAL - 2022-01-12 21:27:17 --> FUNCTION empaquesys.GROUP_CONCAT does not exist. Check the 'Function Name Parsing and Resolution' section in the Reference Manual
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, SUM(c...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(c...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(c...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(c...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(92): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->sumarTotalpallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Embarques->Agregarpallet('1')
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-12 21:31:08 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP BY calibre, ' - ', `cantidad`, '<br>') AS todoss
+FROM `t_pallet_embarqu...' at line 1
+CRITICAL - 2022-01-12 21:31:08 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP BY calibre, ' - ', `cantidad`, '<br>') AS todoss
+FROM `t_pallet_embarqu...' at line 1
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, SUM(c...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(c...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(c...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(c...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(92): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->sumarTotalpallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Embarques->Agregarpallet('1')
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-12 21:31:15 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'calibre, ' - ', `cantidad`, '<br>') AS todoss
+FROM `t_pallet_embarque`
+WHERE ...' at line 1
+CRITICAL - 2022-01-12 21:31:15 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'calibre, ' - ', `cantidad`, '<br>') AS todoss
+FROM `t_pallet_embarque`
+WHERE ...' at line 1
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, SUM(c...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(c...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(c...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(c...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(92): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->sumarTotalpallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Embarques->Agregarpallet('1')
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-12 21:31:16 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'calibre, ' - ', `cantidad`, '<br>') AS todoss
+FROM `t_pallet_embarque`
+WHERE ...' at line 1
+CRITICAL - 2022-01-12 21:31:16 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'calibre, ' - ', `cantidad`, '<br>') AS todoss
+FROM `t_pallet_embarque`
+WHERE ...' at line 1
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, SUM(c...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(c...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(c...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(c...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(92): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->sumarTotalpallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Embarques->Agregarpallet('1')
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-12 21:31:52 --> FUNCTION empaquesys.GROUP_BY does not exist
+CRITICAL - 2022-01-12 21:31:52 --> FUNCTION empaquesys.GROUP_BY does not exist
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, SUM(c...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(c...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(c...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(c...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(92): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->sumarTotalpallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Embarques->Agregarpallet('1')
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-12 21:31:53 --> FUNCTION empaquesys.GROUP_BY does not exist
+CRITICAL - 2022-01-12 21:31:53 --> FUNCTION empaquesys.GROUP_BY does not exist
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, SUM(c...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(c...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(c...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(c...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(92): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->sumarTotalpallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Embarques->Agregarpallet('1')
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-12 21:32:02 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'calibre, ' - ', `cantidad`, '<br>') AS todoss
+FROM `t_pallet_embarque`
+WHERE ...' at line 1
+CRITICAL - 2022-01-12 21:32:02 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'calibre, ' - ', `cantidad`, '<br>') AS todoss
+FROM `t_pallet_embarque`
+WHERE ...' at line 1
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, SUM(c...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(c...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(c...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(c...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(92): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->sumarTotalpallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Embarques->Agregarpallet('1')
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-12 21:32:31 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`cantidad`, '<br>') AS todoss
+FROM `t_pallet_embarque`
+WHERE `embarque_id` = ...' at line 1
+CRITICAL - 2022-01-12 21:32:31 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`cantidad`, '<br>') AS todoss
+FROM `t_pallet_embarque`
+WHERE `embarque_id` = ...' at line 1
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, SUM(c...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(c...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(c...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(c...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(92): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->sumarTotalpallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Embarques->Agregarpallet('1')
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-12 21:32:48 --> FUNCTION empaquesys.SUM does not exist. Check the 'Function Name Parsing and Resolution' section in the Reference Manual
+CRITICAL - 2022-01-12 21:32:48 --> FUNCTION empaquesys.SUM does not exist. Check the 'Function Name Parsing and Resolution' section in the Reference Manual
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, SUM(c...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(c...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(c...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(c...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(92): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->sumarTotalpallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Embarques->Agregarpallet('1')
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-12 21:32:48 --> FUNCTION empaquesys.SUM does not exist. Check the 'Function Name Parsing and Resolution' section in the Reference Manual
+CRITICAL - 2022-01-12 21:32:48 --> FUNCTION empaquesys.SUM does not exist. Check the 'Function Name Parsing and Resolution' section in the Reference Manual
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, SUM(c...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(c...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(c...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(c...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(92): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->sumarTotalpallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Embarques->Agregarpallet('1')
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-12 21:32:49 --> FUNCTION empaquesys.SUM does not exist. Check the 'Function Name Parsing and Resolution' section in the Reference Manual
+CRITICAL - 2022-01-12 21:32:49 --> FUNCTION empaquesys.SUM does not exist. Check the 'Function Name Parsing and Resolution' section in the Reference Manual
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, SUM(c...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(c...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(c...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(c...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(92): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->sumarTotalpallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Embarques->Agregarpallet('1')
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-12 21:37:15 --> FUNCTION empaquesys.COUNT does not exist. Check the 'Function Name Parsing and Resolution' section in the Reference Manual
+CRITICAL - 2022-01-12 21:37:15 --> FUNCTION empaquesys.COUNT does not exist. Check the 'Function Name Parsing and Resolution' section in the Reference Manual
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, SUM(c...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(c...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(c...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(c...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(92): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->sumarTotalpallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Embarques->Agregarpallet('1')
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-12 21:37:15 --> FUNCTION empaquesys.COUNT does not exist. Check the 'Function Name Parsing and Resolution' section in the Reference Manual
+CRITICAL - 2022-01-12 21:37:15 --> FUNCTION empaquesys.COUNT does not exist. Check the 'Function Name Parsing and Resolution' section in the Reference Manual
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, SUM(c...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(c...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(c...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(c...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(92): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->sumarTotalpallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Embarques->Agregarpallet('1')
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-12 21:37:16 --> FUNCTION empaquesys.COUNT does not exist. Check the 'Function Name Parsing and Resolution' section in the Reference Manual
+CRITICAL - 2022-01-12 21:37:16 --> FUNCTION empaquesys.COUNT does not exist. Check the 'Function Name Parsing and Resolution' section in the Reference Manual
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, SUM(c...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(c...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(c...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(c...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(92): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->sumarTotalpallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Embarques->Agregarpallet('1')
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-12 21:37:16 --> FUNCTION empaquesys.COUNT does not exist. Check the 'Function Name Parsing and Resolution' section in the Reference Manual
+CRITICAL - 2022-01-12 21:37:16 --> FUNCTION empaquesys.COUNT does not exist. Check the 'Function Name Parsing and Resolution' section in the Reference Manual
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, SUM(c...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(c...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(c...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(c...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(92): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->sumarTotalpallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Embarques->Agregarpallet('1')
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-12 21:37:17 --> FUNCTION empaquesys.COUNT does not exist. Check the 'Function Name Parsing and Resolution' section in the Reference Manual
+CRITICAL - 2022-01-12 21:37:17 --> FUNCTION empaquesys.COUNT does not exist. Check the 'Function Name Parsing and Resolution' section in the Reference Manual
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, SUM(c...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(c...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(c...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(c...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(92): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->sumarTotalpallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Embarques->Agregarpallet('1')
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-12 21:37:17 --> FUNCTION empaquesys.COUNT does not exist. Check the 'Function Name Parsing and Resolution' section in the Reference Manual
+CRITICAL - 2022-01-12 21:37:17 --> FUNCTION empaquesys.COUNT does not exist. Check the 'Function Name Parsing and Resolution' section in the Reference Manual
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, SUM(c...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(c...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(c...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(c...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(92): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->sumarTotalpallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Embarques->Agregarpallet('1')
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-12 21:37:18 --> FUNCTION empaquesys.COUNT does not exist. Check the 'Function Name Parsing and Resolution' section in the Reference Manual
+CRITICAL - 2022-01-12 21:37:18 --> FUNCTION empaquesys.COUNT does not exist. Check the 'Function Name Parsing and Resolution' section in the Reference Manual
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, SUM(c...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(c...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(c...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(c...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(92): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->sumarTotalpallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Embarques->Agregarpallet('1')
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-12 21:37:18 --> FUNCTION empaquesys.COUNT does not exist. Check the 'Function Name Parsing and Resolution' section in the Reference Manual
+CRITICAL - 2022-01-12 21:37:18 --> FUNCTION empaquesys.COUNT does not exist. Check the 'Function Name Parsing and Resolution' section in the Reference Manual
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, SUM(c...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(c...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(c...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(c...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(92): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->sumarTotalpallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Embarques->Agregarpallet('1')
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-12 21:38:01 --> FUNCTION empaquesys.COUNT does not exist. Check the 'Function Name Parsing and Resolution' section in the Reference Manual
+CRITICAL - 2022-01-12 21:38:01 --> FUNCTION empaquesys.COUNT does not exist. Check the 'Function Name Parsing and Resolution' section in the Reference Manual
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, COUNT...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, COUNT...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, COUNT...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *, COUNT...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(92): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->sumarTotalpallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Embarques->Agregarpallet('1')
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-12 21:38:02 --> FUNCTION empaquesys.COUNT does not exist. Check the 'Function Name Parsing and Resolution' section in the Reference Manual
+CRITICAL - 2022-01-12 21:38:02 --> FUNCTION empaquesys.COUNT does not exist. Check the 'Function Name Parsing and Resolution' section in the Reference Manual
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, COUNT...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, COUNT...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, COUNT...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *, COUNT...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(92): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->sumarTotalpallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Embarques->Agregarpallet('1')
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-12 21:38:03 --> FUNCTION empaquesys.COUNT does not exist. Check the 'Function Name Parsing and Resolution' section in the Reference Manual
+CRITICAL - 2022-01-12 21:38:03 --> FUNCTION empaquesys.COUNT does not exist. Check the 'Function Name Parsing and Resolution' section in the Reference Manual
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, COUNT...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, COUNT...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, COUNT...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *, COUNT...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(92): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->sumarTotalpallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Embarques->Agregarpallet('1')
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-12 21:38:04 --> FUNCTION empaquesys.COUNT does not exist. Check the 'Function Name Parsing and Resolution' section in the Reference Manual
+CRITICAL - 2022-01-12 21:38:04 --> FUNCTION empaquesys.COUNT does not exist. Check the 'Function Name Parsing and Resolution' section in the Reference Manual
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, COUNT...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, COUNT...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, COUNT...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *, COUNT...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(92): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->sumarTotalpallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Embarques->Agregarpallet('1')
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-12 21:39:37 --> FUNCTION empaquesys.COUNT does not exist. Check the 'Function Name Parsing and Resolution' section in the Reference Manual
+CRITICAL - 2022-01-12 21:39:37 --> FUNCTION empaquesys.COUNT does not exist. Check the 'Function Name Parsing and Resolution' section in the Reference Manual
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, COUNT...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, COUNT...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, COUNT...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *, COUNT...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(92): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->sumarTotalpallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Embarques->Agregarpallet('1')
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-12 21:39:38 --> FUNCTION empaquesys.COUNT does not exist. Check the 'Function Name Parsing and Resolution' section in the Reference Manual
+CRITICAL - 2022-01-12 21:39:38 --> FUNCTION empaquesys.COUNT does not exist. Check the 'Function Name Parsing and Resolution' section in the Reference Manual
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, COUNT...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, COUNT...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, COUNT...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *, COUNT...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(92): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->sumarTotalpallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Embarques->Agregarpallet('1')
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-12 21:45:03 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' ' - ', `cantidad`, '<br>') AS todoss
+FROM `t_pallet_embarque`
+WHERE `embarqu...' at line 1
+CRITICAL - 2022-01-12 21:45:03 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' ' - ', `cantidad`, '<br>') AS todoss
+FROM `t_pallet_embarque`
+WHERE `embarqu...' at line 1
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, SUM(c...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(c...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(c...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(c...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(92): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->sumarTotalpallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Embarques->Agregarpallet('1')
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-12 21:45:35 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'calibre, ' - ', `cantidad`, '<br>') AS todoss
+FROM `t_pallet_embarque`
+WHERE ...' at line 1
+CRITICAL - 2022-01-12 21:45:35 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'calibre, ' - ', `cantidad`, '<br>') AS todoss
+FROM `t_pallet_embarque`
+WHERE ...' at line 1
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, SUM(c...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(c...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(c...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(c...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(92): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->sumarTotalpallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Embarques->Agregarpallet('1')
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-12 21:45:40 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' ' - ', `cantidad`, '<br>') AS todoss
+FROM `t_pallet_embarque`
+WHERE `embarqu...' at line 1
+CRITICAL - 2022-01-12 21:45:40 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' ' - ', `cantidad`, '<br>') AS todoss
+FROM `t_pallet_embarque`
+WHERE `embarqu...' at line 1
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, SUM(c...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(c...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(c...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(c...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(92): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->sumarTotalpallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Embarques->Agregarpallet('1')
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-12 21:45:41 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' ' - ', `cantidad`, '<br>') AS todoss
+FROM `t_pallet_embarque`
+WHERE `embarqu...' at line 1
+CRITICAL - 2022-01-12 21:45:41 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' ' - ', `cantidad`, '<br>') AS todoss
+FROM `t_pallet_embarque`
+WHERE `embarqu...' at line 1
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, SUM(c...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(c...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(c...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(c...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(92): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->sumarTotalpallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Embarques->Agregarpallet('1')
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-12 21:48:55 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''<br>', SUM(cantidad) AS todoss2
+FROM `t_pallet_embarque`
+WHERE `embarque_id`...' at line 1
+CRITICAL - 2022-01-12 21:48:55 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''<br>', SUM(cantidad) AS todoss2
+FROM `t_pallet_embarque`
+WHERE `embarque_id`...' at line 1
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, SUM(c...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(c...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(c...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(c...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(92): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->sumarTotalpallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Embarques->Agregarpallet('1')
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-12 21:50:59 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'cantidad) AS todoss2
+FROM `t_pallet_embarque`
+WHERE `embarque_id` = ('1')
+GRO...' at line 1
+CRITICAL - 2022-01-12 21:50:59 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'cantidad) AS todoss2
+FROM `t_pallet_embarque`
+WHERE `embarque_id` = ('1')
+GRO...' at line 1
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, SUM(c...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(c...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(c...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(c...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(92): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->sumarTotalpallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Embarques->Agregarpallet('1')
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-12 21:52:18 --> Unknown column 'total' in 'field list'
+CRITICAL - 2022-01-12 21:52:18 --> Unknown column 'total' in 'field list'
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, SUM(c...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(c...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(c...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(c...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(92): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->sumarTotalpallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Embarques->Agregarpallet('1')
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-12 23:30:59 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'cantidad, '<br>') AS todoss2
+FROM `t_pallet_embarque`
+WHERE `embarque_id` = (...' at line 1
+CRITICAL - 2022-01-12 23:30:59 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'cantidad, '<br>') AS todoss2
+FROM `t_pallet_embarque`
+WHERE `embarque_id` = (...' at line 1
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, SUM(c...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(c...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(c...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(c...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(91): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->sumarTotalpallet(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Embarques->Agregarpallet('1')
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-01-12 23:31:17 --> Undefined property: stdClass::$todoss2
+#0 C:\xampp\htdocs\empaquesys\app\Views\Embarques\Vaddpallet.php(190): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 190)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('Embarques/Vaddp...', Array, true)
+#4 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(112): view('Embarques/Vaddp...', Array)
+#5 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Embarques->Agregarpallet('1')
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-01-12 23:31:30 --> Undefined property: stdClass::$todoss2
+#0 C:\xampp\htdocs\empaquesys\app\Views\Embarques\Vaddpallet.php(190): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 190)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('Embarques/Vaddp...', Array, true)
+#4 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(112): view('Embarques/Vaddp...', Array)
+#5 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Embarques->Agregarpallet('1')
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}

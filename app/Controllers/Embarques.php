@@ -106,6 +106,7 @@ class Embarques extends BaseController {
             'listarpedidos' => $Modelo->listarpedidos(),
             'listarpallet' => $Modelo->listarpallet($id),
             'listartotalpallet' => $Modelo->listartotalpallet2($id),
+            'totalxpedido' => $Modelo->toxpedido($id),
             'sumaTotal' => $Modelo->sumarTotalpallet($id)
         );
         echo view('Headers/Head', $data);
@@ -123,8 +124,8 @@ class Embarques extends BaseController {
             'marca_caja' => $this->request->getPost('marca_caja'),
             'cantidad' => $this->request->getPost('cantidad'),
             'calibre' => $this->request->getPost('calibre'),
-            'hidrotermico' => $this->request->getPost('hidrotermico'),
-            'termografo_pallet' => $this->request->getPost('termografo_pallet')
+            'hidrotermico' => $this->request->getPost('hidrotermico')
+            
         ];
 
         $Modelo = new Membarques();
@@ -171,7 +172,6 @@ class Embarques extends BaseController {
             'cantidad' => $this->request->getPost('cantidad'),
             'calibre' => $this->request->getPost('calibre'),
             'hidrotermico' => $this->request->getPost('hidrotermico'),
-            'termografo_pallet' => $this->request->getPost('termografo_pallet'),
             'embarque_id' => $this->request->getPost('embarque_id')
         ];
 

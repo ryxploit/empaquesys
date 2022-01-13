@@ -57,11 +57,11 @@
                             <div class="card-body">
                                 <h5 class="card-title">Numero de Pallet <p class="text-center"><strong>Pedido</strong></p>
                                 </h5>
-                                <p class="text-start">Peso Pallet.</p>
+                                
                                 <p class="text-center">Calibre - Cantidad.</p>
-                                <p class="text-end">Marca de Caja.</p>
-                                <p class="text-start">Hidrotermico.</p>
-                                <p class="text-end">Termografo.</p>
+                                <p class="text-end">Marca de Caja - Hidrotermico - Peso Pallet </p>
+                               
+                               
                             </div>
                         </div>
                     </div>
@@ -172,19 +172,19 @@
                 </div>
                 <div class="row p-3">
                     <?php foreach ($listarpallet as $key): ?>
-                        <div class="card text-dark bg-warning  col-5 mx-3 " style="width: 14rem;height:12rem;">
+                        <div class="card text-dark bg-warning  col-5 mx-3 border border-warning" style="width: 14rem;height:12rem;">
                             <div class="card-body">
                                 <h6 class="card-title"><?php echo $key->numero_pallet; ?>&nbsp;&nbsp;&nbsp;<?php echo $key->termografo_pallet; ?><p class="text-center"><strong><?php echo $key->pedido; ?></strong></p>
                                 </h6>
                                 <p class="text-center"><?php echo $key->todos; ?> </p>
-                                <p class=""><?php echo $key->marca_caja;  ?> &nbsp;&nbsp;&nbsp;<?php echo $key->hidrotermico; ?>&nbsp;&nbsp;&nbsp;<?php echo $key->peso_pallet; ?></p>
+                                <p class=""><?php echo $key->marca_caja; ?> &nbsp;&nbsp;&nbsp;<?php echo $key->hidrotermico; ?>&nbsp;&nbsp;&nbsp;<?php echo $key->peso_pallet; ?></p>
                             </div>
                         </div>
                     <?php endforeach; ?>
                 </div>
                 <div class="row">
-                    <?php foreach ($sumaTotal as $key): ?>
-                        <div class="card text-white bg-primary mx-3" style="max-width: 18rem;">
+                    <?php foreach ($totalxpedido->getResult() as $key): ?>
+                        <div class="card text-white bg-primary mx-3 border border-primary" style="max-width: 18rem;">
                             <div class="card-body">
                                 <h5 class="card-title text-warning">Total Pedido: <?php echo $key->pedido; ?></h5>
                                 <p class="card-text"><strong><?php echo $key->todoss; ?></strong></p>
@@ -193,7 +193,9 @@
                             </div>
                         </div>
                     <?php endforeach; ?>
+                    
                 </div>
+                 
             </div>
         </div>
     </section>
@@ -256,21 +258,9 @@
                                     </select>
                                 </fieldset>
                             </div>
-                            <div class="form-group">
-                                <h6 class="">termografo</h6>
-                                <fieldset class="form-group">
-                                    <select name="termografo_pallet" id="termografo_pallet" class="form-select">
-                                        <option>SI</option>
-                                        <option>NO</option>
-                                    </select>
-                                </fieldset>
-                            </div>
                         </div>
-
                         <input type="hidden" name="id_embarques_pallet" id="id_embarques_pallet" value="">
-
                     </div>
-
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
@@ -284,7 +274,7 @@
 
 <section class="section">
     <div class="card">
-        <button type="button" class="btn btn-primary btn-lg" name="button" id="printBtn">Imprimir</button>
+        <button type="button" class="btn btn-primary btn-lg" name="button"  onclick="printPRE('content'),foli()"  id="print" >Imprimir</button>
     </div>
 </section>
 
@@ -364,17 +354,21 @@
     }
 </script>
 
-<script type="text/javascript">
-    $("#printBtn").click(function () {
-        // myExportPdf();
-        $("#content").print({
-            addGlobalStyles: true,
-            stylesheet: "<?php echo base_url('assets/css/bootstrap.css'); ?>",
-            rejectWindow: true,
-            noPrintSelector: ".no-print",
-            iframe: true,
-            append: null,
-            prepend: null
-        });
-    });
-</script>
+
+
+<script>
+          function printPRE(contenidoe) {
+
+              var contenido= document.getElementById(contenidoe).innerHTML;
+              var contenidoOriginal= document.body.innerHTML;
+
+              document.body.innerHTML = contenido;
+
+              window.print();
+
+              document.body.innerHTML = contenidoOriginal;
+
+              location.reload();
+          }
+
+        </script>
