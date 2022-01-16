@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 03-12-2021 a las 11:38:36
+-- Tiempo de generación: 16-01-2022 a las 21:30:46
 -- Versión del servidor: 10.4.21-MariaDB
 -- Versión de PHP: 8.0.11
 
@@ -46,8 +46,7 @@ CREATE TABLE `t_embarques` (
 --
 
 INSERT INTO `t_embarques` (`id_embarques`, `fecha_embarque`, `trailer`, `caja`, `hora_embarque`, `chofer`, `termografo`, `destinatario`, `numero_envio`, `observaciones`, `status_embarque`) VALUES
-(1, '2021-09-14', 'fghdfhfgh', 'hfghfgh', '01:06', 'fghfgh', 'SI', 'MAZATLAN', '23467', 'gtrgrthr', 'enviado'),
-(2, '2021-11-26', 'FGHDFHFGH', 'HFGHFGH', '12:12', 'FGHFGH', 'NO', 'XSDX', '23467', 'XDC', '');
+(1, '2021-09-14', 'fghdfhfgh', 'hfghfgh', '01:06', 'fghfgh', '', 'MAZATLAN', '23467', 'gtrgrthr', 'enviado');
 
 -- --------------------------------------------------------
 
@@ -79,7 +78,9 @@ CREATE TABLE `t_lotes` (
 
 INSERT INTO `t_lotes` (`id_lotes`, `fecha`, `corredor`, `numero_cajas`, `productor`, `registro`, `folio`, `nombre_huerta`, `hidrotermico`, `ubicacion`, `lote`, `promedio`, `total`, `muestra`, `numero_cuadrilla`) VALUES
 (1, '2021-08-05', 'EDGAR LAMBRANOV', '120', 'LUIS LOPEZ ARROLLO', 'HUE345665657556554', 'VL5445HY4554', 'NO SE', 'no', 'CHAMETLA', '67', '9', '24', 'NO SE', '34567'),
-(4, '2021-09-07', 'JUAN LOPEZ', '120', 'ARREOLA LOPEZ ', 'HUE345665657556554', 'R05208149-1', 'NO SE', 'SI', 'CHAMETLA', '69', '9', '13', 'NO SE', '34567');
+(4, '2021-09-07', 'JUAN LOPEZ', '120', 'ARREOLA LOPEZ ', 'HUE345665657556554', 'R05208149-1', 'NO SE', 'SI', 'CHAMETLA', '69', '9', '13', 'NO SE', '34567'),
+(5, '2021-09-07', 'EDGAR LAMBRANO', '25', 'LUIS LOPEZ ARROLLO', 'HUE345665657556554', 'VL5445HY4554', 'NO SE', 'SI', 'CHAMETLA', '80', '9', '23', 'NO SE', '34567'),
+(6, '2021-08-05', 'EDGAR LAMBRANO', '124', 'LUIS LOPEZ ARROLLO', 'HUE345665657556554', 'R05208149-1', 'NO SE', 'SI', 'CHAMETLA', '23', '9', '23', 'NO SE', '34567');
 
 -- --------------------------------------------------------
 
@@ -151,11 +152,11 @@ CREATE TABLE `t_pallet_embarque` (
 --
 
 INSERT INTO `t_pallet_embarque` (`id_embarques_pallet`, `pedido`, `numero_pallet`, `peso_pallet`, `marca_caja`, `cantidad`, `calibre`, `hidrotermico`, `termografo_pallet`, `embarque_id`) VALUES
-(9, 'SEA04', '345', '14KG', 'KOALA', '10', '7', '', 'NO', '1'),
-(10, 'SEA045', '678', '14KG', 'KOALA', '13', '6', '', '', '1'),
-(11, 'SEA04', '987', '14KG', 'KOALA', '10', '6', '', '', '1'),
-(12, 'SEA04', '345', '', 'KOALA', '10', '6', '', 'SI', '1'),
-(13, 'SEA04', '9678', '14KG', 'KOALA', '10', '6', 'SI', '', '1');
+(9, 'SEA04', '345', '14KG', 'KOALA', '10', '5', '', 'NO', '1'),
+(10, 'SEA045', '678', '14KG', 'KOALA', '10', '4', '', '', '1'),
+(11, 'SEA04', '987', '14KG', 'KOALA', '10', '4', '', '', '1'),
+(12, 'SEA04', '345', '', 'KOALA', '10', '4', '', 'SI', '1'),
+(13, 'SEA04', '9678', '14KG', 'KOALA', '10', '11', 'NO', '', '1');
 
 -- --------------------------------------------------------
 
@@ -287,13 +288,13 @@ ALTER TABLE `t_usuarios`
 -- AUTO_INCREMENT de la tabla `t_embarques`
 --
 ALTER TABLE `t_embarques`
-  MODIFY `id_embarques` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_embarques` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de la tabla `t_lotes`
 --
 ALTER TABLE `t_lotes`
-  MODIFY `id_lotes` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_lotes` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT de la tabla `t_pallet`
@@ -305,7 +306,7 @@ ALTER TABLE `t_pallet`
 -- AUTO_INCREMENT de la tabla `t_pallet_embarque`
 --
 ALTER TABLE `t_pallet_embarque`
-  MODIFY `id_embarques_pallet` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id_embarques_pallet` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT de la tabla `t_pedidos`
