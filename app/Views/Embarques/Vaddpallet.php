@@ -274,7 +274,7 @@
 
 <section class="section">
     <div class="card">
-        <button type="button" class="btn btn-primary btn-lg" name="button"  onclick="printPRE('content'),foli()"  id="print" >Imprimir</button>
+        <button type="button" class="btn btn-primary btn-lg" name="button"  onclick="printPRE('content')"  id="print" >Imprimir</button>
     </div>
 </section>
 
@@ -357,9 +357,9 @@
 
 
 <script>
-          function printPRE(contenidoe) {
+          function printPRE(content) {
 
-              var contenido= document.getElementById(contenidoe).innerHTML;
+              var contenido= document.getElementById(content).innerHTML;
               var contenidoOriginal= document.body.innerHTML;
 
               document.body.innerHTML = contenido;
