@@ -93,9 +93,9 @@ class Membarques extends Model {
     }
     public function toxpedido($id){
         //code...
-        
         $db = db_connect();
-        $query = $db->query("SELECT *, GROUP_CONCAT(calibre,':',quantity_sum SEPARATOR ' <br> ' ) As todoss,SUM(quantity_sum) AS total FROM (SELECT *,sum(cantidad) as quantity_sum from t_pallet_embarque GROUP BY pedido,calibre) a WHERE embarque_id = 1 group by pedido;");
+        $sql = 'select *, GROUP_CONCAT(calibre, ":" ,quantity_sum SEPARATOR " <br> " ) As todoss,SUM(quantity_sum) AS total FROM (SELECT *,sum(cantidad) as quantity_sum from t_pallet_embarque GROUP BY pedido,calibre) a WHERE embarque_id = "' . $id .  '" group by pedido ';
+       $query = $db->query($sql);
          return $query;
     }
 
@@ -141,7 +141,7 @@ class Membarques extends Model {
         // code...
         $db = $this->db;
         $query = $db->query('select *, SUM(e.cantidad) AS total,GROUP_CONCAT(e.calibre,";",e.cantidad) AS todos FROM t_pallet_embarque e JOIN t_pedidos p ON e.pedido = p.codigo_embarque WHERE e.pedido = "' . $pedido . '" GROUP BY e.calibre; ');
-        
+
         return $query;
     }
 
@@ -151,7 +151,7 @@ class Membarques extends Model {
         $query = $db->query('select *, SUM(cantidad)as totalC,SUM(peso_pallet) as pesoB FROM t_pallet_embarque p JOIN t_embarques e ON p.embarque_id = e.id_embarques WHERE pedido = "' . $pedido . '" ');
         return $query;
     }
-    
+
     public function Eliminarembarque($data) {
         // code...
         $query = $this->db->table('t_embarques');

@@ -1,0 +1,353 @@
+ERROR - 2022-04-28 00:02:53 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*, sum(cantidad) as quantity_sum from t_pallet_embarque GROUP BY pedido, `cal...' at line 1
+CRITICAL - 2022-04-28 00:02:53 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*, sum(cantidad) as quantity_sum from t_pallet_embarque GROUP BY pedido, `cal...' at line 1
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, GROUP...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, GROUP...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, GROUP...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *, GROUP...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(107): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->toxpedido(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Embarques->Agregarpallet('4')
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-04-28 00:05:58 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*, sum(cantidad) as quantity_sum
+FROM `t_pallet_embarque`
+WHERE `embarque_id`...' at line 1
+CRITICAL - 2022-04-28 00:05:58 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*, sum(cantidad) as quantity_sum
+FROM `t_pallet_embarque`
+WHERE `embarque_id`...' at line 1
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, GROUP...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, GROUP...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, GROUP...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *, GROUP...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(108): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->toxpedido(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Embarques->Agregarpallet('4')
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-04-28 00:08:11 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResult()
+#0 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->toxpedido(Array)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Embarques->Agregarpallet('4')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-28 00:08:59 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResult()
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('Embarques/Vaddp...', Array, true)
+#3 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(113): view('Embarques/Vaddp...', Array)
+#4 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Embarques->Agregarpallet('4')
+#5 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-28 00:10:49 --> Attempt to read property "pedido" on array
+#0 C:\xampp\htdocs\empaquesys\app\Views\Embarques\Vaddpallet.php(189): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 189)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('Embarques/Vaddp...', Array, true)
+#4 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(113): view('Embarques/Vaddp...', Array)
+#5 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Embarques->Agregarpallet('4')
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-28 00:12:18 --> Undefined array key "pedido"
+#0 C:\xampp\htdocs\empaquesys\app\Views\Embarques\Vaddpallet.php(189): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 189)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('Embarques/Vaddp...', Array, true)
+#4 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(113): view('Embarques/Vaddp...', Array)
+#5 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Embarques->Agregarpallet('4')
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-28 00:12:55 --> Undefined array key "pedido"
+#0 C:\xampp\htdocs\empaquesys\app\Views\Embarques\Vaddpallet.php(189): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 189)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('Embarques/Vaddp...', Array, true)
+#4 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(113): view('Embarques/Vaddp...', Array)
+#5 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Embarques->Agregarpallet('4')
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-28 00:14:04 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResult()
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('Embarques/Vaddp...', Array, true)
+#3 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(113): view('Embarques/Vaddp...', Array)
+#4 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Embarques->Agregarpallet('4')
+#5 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-28 00:27:25 --> syntax error, unexpected token "->", expecting identifier or variable or "{" or "$"
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('Embarques/Vaddp...', Array, true)
+#2 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(113): view('Embarques/Vaddp...', Array)
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Embarques->Agregarpallet('4')
+#4 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#5 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-28 00:27:45 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResultArray()
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('Embarques/Vaddp...', Array, true)
+#3 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(113): view('Embarques/Vaddp...', Array)
+#4 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Embarques->Agregarpallet('4')
+#5 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-04-28 00:30:34 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*, sum(cantidad) as quantity_sum
+FROM `t_pallet_embarque`
+WHERE `embarque_id`...' at line 1
+CRITICAL - 2022-04-28 00:30:34 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*, sum(cantidad) as quantity_sum
+FROM `t_pallet_embarque`
+WHERE `embarque_id`...' at line 1
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, GROUP...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, GROUP...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, GROUP...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *, GROUP...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(108): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->toxpedido(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Embarques->Agregarpallet('4')
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-04-28 00:31:46 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*, sum(cantidad) as quantity_sum
+FROM `t_pallet_embarque`
+WHERE `embarque_id`...' at line 1
+CRITICAL - 2022-04-28 00:31:46 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*, sum(cantidad) as quantity_sum
+FROM `t_pallet_embarque`
+WHERE `embarque_id`...' at line 1
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, GROUP...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, GROUP...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, GROUP...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *, GROUP...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(108): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->toxpedido(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Embarques->Agregarpallet('4')
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-04-28 00:38:03 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*, sum(cantidad) as quantity_sum
+FROM `t_pallet_embarque`
+WHERE `embarque_id`...' at line 1
+CRITICAL - 2022-04-28 00:38:03 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*, sum(cantidad) as quantity_sum
+FROM `t_pallet_embarque`
+WHERE `embarque_id`...' at line 1
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, GROUP...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, GROUP...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, GROUP...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *, GROUP...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(108): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->toxpedido(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Embarques->Agregarpallet('4')
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-04-28 00:40:21 --> Array to string conversion
+#0 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(98): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 98)
+#1 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->toxpedido(Array)
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Embarques->Agregarpallet('4')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#4 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-28 00:47:38 --> syntax error, unexpected single-quoted string ":", expecting ")"
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Memb...')
+#2 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(98): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Memb...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Embarques->Agregarpallet('4')
+#4 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#5 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-28 00:50:19 --> syntax error, unexpected token ":", expecting ")"
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Memb...')
+#2 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(98): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Memb...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Embarques->Agregarpallet('4')
+#4 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#5 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-28 00:53:29 --> syntax error, unexpected token ":", expecting ")"
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Memb...')
+#2 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(98): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Memb...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Embarques->Agregarpallet('4')
+#4 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#5 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-28 00:54:50 --> syntax error, unexpected token ":", expecting ")"
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Memb...')
+#2 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(98): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Memb...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Embarques->Agregarpallet('4')
+#4 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#5 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-28 00:54:53 --> syntax error, unexpected token ":", expecting ")"
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Memb...')
+#2 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(98): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Memb...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Embarques->Agregarpallet('4')
+#4 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#5 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-28 00:56:29 --> Array to string conversion
+#0 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(98): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 98)
+#1 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->toxpedido(Array)
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Embarques->Agregarpallet('4')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#4 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-28 00:57:56 --> Array to string conversion
+#0 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(98): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 98)
+#1 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->toxpedido(Array)
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Embarques->Agregarpallet('4')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#4 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-28 01:17:42 --> Array to string conversion
+#0 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(98): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 98)
+#1 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->toxpedido(Array)
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Embarques->Agregarpallet('4')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#4 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-28 01:27:36 --> Array to string conversion
+#0 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(98): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 98)
+#1 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->toxpedido(Array)
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Embarques->Agregarpallet('4')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#4 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-28 01:32:38 --> Array to string conversion
+#0 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(98): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 98)
+#1 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->toxpedido(Array)
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Embarques->Agregarpallet('4')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#4 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-28 01:34:26 --> syntax error, unexpected single-quoted string "" group by pedido "
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Memb...')
+#2 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(98): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Memb...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Embarques->Agregarpallet('4')
+#4 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#5 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-28 01:39:46 --> Undefined variable $builder
+#0 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(98): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 98)
+#1 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->toxpedido(Array)
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Embarques->Agregarpallet('4')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#4 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2022-04-28 01:49:08 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '} group by pedido' at line 1
+CRITICAL - 2022-04-28 01:49:08 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '} group by pedido' at line 1
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('select *, GROUP...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select *, GROUP...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select *, GROUP...')
+#3 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(100): CodeIgniter\Database\BaseConnection->query('select *, GROUP...')
+#4 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->toxpedido(Array)
+#5 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Embarques->Agregarpallet('4')
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-28 01:52:28 --> Array to string conversion
+#0 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(97): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 97)
+#1 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->toxpedido(Array)
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Embarques->Agregarpallet('4')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#4 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-28 01:57:57 --> Undefined variable $builder
+#0 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 101)
+#1 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->toxpedido(Array)
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Embarques->Agregarpallet('4')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#4 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2022-04-28 01:58:15 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 4
+CRITICAL - 2022-04-28 01:58:15 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 4
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT (select ...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT (select ...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT (select ...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT (select ...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(104): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->toxpedido(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Embarques->Agregarpallet('4')
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-04-28 01:58:54 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 4
+CRITICAL - 2022-04-28 01:58:54 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 4
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT (select ...', 0)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT (select ...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT (select ...')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT (select ...', Array, false)
+#4 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(104): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->toxpedido(Array)
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Embarques->Agregarpallet('4')
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#8 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-04-28 01:59:21 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResult()
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('Embarques/Vaddp...', Array, true)
+#3 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(113): view('Embarques/Vaddp...', Array)
+#4 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Embarques->Agregarpallet('4')
+#5 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-28 02:00:09 --> Array to string conversion
+#0 C:\xampp\htdocs\empaquesys\app\Models\Membarques.php(97): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 97)
+#1 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(109): App\Models\Membarques->toxpedido(Array)
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Embarques->Agregarpallet('4')
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#4 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-28 02:01:44 --> Undefined array key 0
+#0 C:\xampp\htdocs\empaquesys\app\Views\Embarques\Vaddpallet.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 7)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('Embarques/Vaddp...', Array, true)
+#4 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(112): view('Embarques/Vaddp...', Array)
+#5 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Embarques->Agregarpallet('4')
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}

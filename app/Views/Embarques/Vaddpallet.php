@@ -57,11 +57,11 @@
                             <div class="card-body">
                                 <h5 class="card-title">Numero de Pallet <p class="text-center"><strong>Pedido</strong></p>
                                 </h5>
-                                
+
                                 <p class="text-center">Calibre - Cantidad.</p>
                                 <p class="text-end">Marca de Caja - Hidrotermico - Peso Pallet </p>
-                               
-                               
+
+
                             </div>
                         </div>
                     </div>
@@ -193,9 +193,9 @@
                             </div>
                         </div>
                     <?php endforeach; ?>
-                    
+
                 </div>
-                 
+
             </div>
         </div>
     </section>

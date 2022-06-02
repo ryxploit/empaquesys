@@ -99,15 +99,17 @@ class Embarques extends BaseController {
         $id = [
             'id_embarques' => $id_embarques
         ];
+
+        $idw = $id_embarques;
         $respuesta = $Modelo->obtener_embarque($id);
         $data = array(
             'title' => 'Agregar Pallet',
             'datos' => $respuesta,
             'listarpedidos' => $Modelo->listarpedidos(),
-            'listarpallet' => $Modelo->listarpallet($id),
-            'listartotalpallet' => $Modelo->listartotalpallet2($id),
-            'totalxpedido' => $Modelo->toxpedido($id),
-            'sumaTotal' => $Modelo->sumarTotalpallet($id)
+            'listarpallet' => $Modelo->listarpallet($idw),
+            'listartotalpallet' => $Modelo->listartotalpallet2($idw),
+            'totalxpedido' => $Modelo->toxpedido($idw),
+            'sumaTotal' => $Modelo->sumarTotalpallet($idw)
         );
         echo view('Headers/Head', $data);
         echo view('Embarques/Vaddpallet', $data);
@@ -125,7 +127,7 @@ class Embarques extends BaseController {
             'cantidad' => $this->request->getPost('cantidad'),
             'calibre' => $this->request->getPost('calibre'),
             'hidrotermico' => $this->request->getPost('hidrotermico')
-            
+
         ];
 
         $Modelo = new Membarques();
@@ -239,7 +241,7 @@ class Embarques extends BaseController {
               ');
         }
     }
-    
+
      public function Eliminar_embarque($id_embarques) {
         // code...
         $data = [
@@ -392,7 +394,7 @@ class Embarques extends BaseController {
         $pdf->Cell(22, 8, 'Total', 1, 0, 'L');
         $pdf->Cell(22, 8, 'Peso bruto', 1, 0, 'L');
         $pdf->Cell(22, 8, 'Marca', 1, 1, 'L');
-       
+
         $number = 1;
         foreach ($listarpallet->getResult() as $key):
             $pdf->SetFont('Arial', '', 8);
@@ -401,59 +403,59 @@ class Embarques extends BaseController {
         $valores = explode(';', $key->todos);
         //$valores = array($key->todos);
         //print_r($valores);
-       
+
             $pdf->Cell(13, 8, $number++, 1, 0, 'C'); //$number++
             $pdf->Cell(27, 8, $key->numero_pallet, 1, 0, 'C');
            // $pdf->Cell(80, 8, $key->todos, 1, 0, 'C');
             if($key->calibre == 4){
             $pdf->Cell(12, 8, $key->cantidad, 1, 0, 'C');
             } else {
-              $pdf->Cell(12, 8, '', 1, 0, 'C');  
+              $pdf->Cell(12, 8, '', 1, 0, 'C');
             }
             if($key->calibre == 5){
             $pdf->Cell(12, 8, $key->cantidad, 1, 0, 'C');
             }else {
-              $pdf->Cell(12, 8, '', 1, 0, 'C');  
+              $pdf->Cell(12, 8, '', 1, 0, 'C');
             }
             if($key->calibre == 9){
             $pdf->Cell(12, 8, $key->cantidad, 1, 0, 'C');
             }else {
-              $pdf->Cell(12, 8, '', 1, 0, 'C');  
+              $pdf->Cell(12, 8, '', 1, 0, 'C');
             }
             if($key->calibre == 10){
             $pdf->Cell(12, 8, $key->cantidad, 1, 0, 'C');
             }else {
-              $pdf->Cell(12, 8, '', 1, 0, 'C');  
+              $pdf->Cell(12, 8, '', 1, 0, 'C');
             }
             if($key->calibre == 11){
             $pdf->Cell(12, 8, $key->cantidad, 1, 0, 'C');
             }else {
-              $pdf->Cell(12, 8, '', 1, 0, 'C');  
+              $pdf->Cell(12, 8, '', 1, 0, 'C');
             }
             if($key->calibre == 12){
             $pdf->Cell(12, 8, $key->cantidad, 1, 0, 'C');
             }else {
-              $pdf->Cell(12, 8, '', 1, 0, 'C');  
+              $pdf->Cell(12, 8, '', 1, 0, 'C');
             }
             if($key->calibre == 13){
             $pdf->Cell(12, 8, $key->cantidad, 1, 0, 'C');
             }else {
-              $pdf->Cell(12, 8, '', 1, 0, 'C');  
+              $pdf->Cell(12, 8, '', 1, 0, 'C');
             }
             if($key->calibre == 14){
             $pdf->Cell(12, 8, $key->cantidad, 1, 0, 'C');
             }else {
-              $pdf->Cell(12, 8, '', 1, 0, 'C');  
+              $pdf->Cell(12, 8, '', 1, 0, 'C');
             }
             $pdf->Cell(22, 8, $key->total, 1, 0, 'L');
             $pdf->Cell(22, 8, $key->peso_pallet, 1, 0, 'C');
             $pdf->Cell(22, 8, $key->marca, 1, 1, 'C');
-            
+
 
         endforeach;
 
         $pdf->Ln();
-        
+
         $pdf->SetFont('Arial', 'B', 15);
         $pdf->Setfillcolor(42, 226, 141);
         $pdf->SetTextColor(255, 255, 255);
@@ -469,58 +471,58 @@ class Embarques extends BaseController {
         $pdf->Cell(12, 8, '12', 1, 0, 'C');
         $pdf->Cell(12, 8, '13', 1, 0, 'C');
         $pdf->Cell(12, 8, '14', 1, 1, 'C');
-       
-       
+
+
         foreach ($listarpallet->getResult() as $key):
             $pdf->SetFont('Arial', '', 8);
 
-       
-            
+
+
             if($key->calibre == 4){
             $pdf->Cell(12, 8, $key->total, 1, 0, 'C');
             } else {
-              $pdf->Cell(12, 8, '', 1, 0, 'C');  
+              $pdf->Cell(12, 8, '', 1, 0, 'C');
             }
             if($key->calibre == 5){
             $pdf->Cell(12, 8, $key->total, 1, 0, 'C');
             }else {
-              $pdf->Cell(12, 8, '', 1, 0, 'C');  
+              $pdf->Cell(12, 8, '', 1, 0, 'C');
             }
             if($key->calibre == 9){
             $pdf->Cell(12, 8, $key->total, 1, 0, 'C');
             }else {
-              $pdf->Cell(12, 8, '', 1, 0, 'C');  
+              $pdf->Cell(12, 8, '', 1, 0, 'C');
             }
             if($key->calibre == 10){
             $pdf->Cell(12, 8, $key->total, 1, 0, 'C');
             }else {
-              $pdf->Cell(12, 8, '', 1, 0, 'C');  
+              $pdf->Cell(12, 8, '', 1, 0, 'C');
             }
             if($key->calibre == 11){
             $pdf->Cell(12, 8, $key->total, 1, 0, 'C');
             }else {
-              $pdf->Cell(12, 8, '', 1, 0, 'C');  
+              $pdf->Cell(12, 8, '', 1, 0, 'C');
             }
             if($key->calibre == 12){
             $pdf->Cell(12, 8, $key->total, 1, 0, 'C');
             }else {
-              $pdf->Cell(12, 8, '', 1, 0, 'C');  
+              $pdf->Cell(12, 8, '', 1, 0, 'C');
             }
             if($key->calibre == 13){
             $pdf->Cell(12, 8, $key->total, 1, 0, 'C');
             }else {
-              $pdf->Cell(12, 8, '', 1, 0, 'C');  
+              $pdf->Cell(12, 8, '', 1, 0, 'C');
             }
             if($key->calibre == 14){
             $pdf->Cell(12, 8, $key->total, 1, 1, 'C');
             }else {
-              $pdf->Cell(12, 8, '', 1, 1, 'C');  
+              $pdf->Cell(12, 8, '', 1, 1, 'C');
             }
-            
+
 
         endforeach;
-        
-        
+
+
         $pdf->Ln();
 
         $pdf->SetFont('Arial', 'B', 9);
