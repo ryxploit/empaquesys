@@ -7,7 +7,7 @@ use CodeIgniter\Model;
 class Mrastreos extends Model
 {
     // ...
-    public function listarpedidos()
+    public function listarpedidos() 
     {
       // code...
       $query = $this->db->query("SELECT * FROM t_pedidos");
@@ -34,6 +34,17 @@ class Mrastreos extends Model
       $query = $this->db->table('t_rastreos');
       $query->where($data);
       return  $query->get()->getResultArray();
+    }
+    
+    public function listarpalletArray($data)
+    {
+      // code...
+      $builder = $this->db->table('t_rastreos');
+      $builder->select('*');
+      $builder->join('t_pallet', 't_pallet.codigo_rastreo = t_rastreos.codigo');
+      $builder->where('id_rastreo', $data);
+      $query = $builder->get()->getResultArray();;
+      return $query;
     }
 
     public function listarlotes()

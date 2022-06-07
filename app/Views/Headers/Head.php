@@ -165,7 +165,27 @@
 
                           </ul>
                       </li>
+                      <?php }elseif (session('type') == 'EMBARQUES') {
+                        // code...
+                      ?>
+                       <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="bi bi-box-seam"></i>
+                                <span>Embarques</span>
+                            </a>
+                            <ul class="submenu ">
 
+                                <li class="submenu-item ">
+                                    <a href="<?php echo base_url('Embarques') ?>"><i class="bi bi-card-list"></i>
+                                        <span>Ver Packing list</span></a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="<?php echo base_url('Embarques/Agregarembarque') ?>"><i
+                                            class="bi bi-clipboard-plus"></i> <span>Crear embarque</span></a>
+                                </li>
+
+                            </ul>
+                        </li>
                     <?php }elseif (session('type') == 'RASTREO') {
                       // code...
                     ?>

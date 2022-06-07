@@ -194,7 +194,7 @@
                     </h4>
                     <h4>
                         AWB:
-                        <small class="text-muted"></small>
+                        <small class="text-muted"><?php echo $sumaCajas[0]['cantidad']; ?></small>
                     </h4>
                     <h4>
                         Observaciones:

@@ -12,7 +12,7 @@ class Rastreo extends BaseController {
         $Modelo = new Mrastreos();
         $data = array(
             'title' => 'Hoja de rastreo',
-            'listarhrastreo' => $Modelo->listarhrastreo()
+            'listarhrastreo' => $Modelo->listarhrastreo() 
         );
         echo view('Headers/Head', $data);
         echo view('Rastreo/Vhrastreo', $data);
@@ -343,6 +343,7 @@ class Rastreo extends BaseController {
 
         $Modelo = new Mrastreos();
         $respuestaPallet = $Modelo->listarpallet($data);
+        $respuestaPalletArray = $Modelo->listarpalletArray($data);
         $respuestaHrastreo = $Modelo->rastreoobtener($data);
         // code...
         $pdf = new FPDF('P', 'mm', 'letter');
@@ -362,7 +363,7 @@ class Rastreo extends BaseController {
 
         $pdf->Cell(22, 8, utf8_decode('Fecha: '), 0, 0, 'L');
         $pdf->SetFont('Arial', '', 9);
-        $pdf->Cell(22, 8, $respuestaHrastreo[0]['fecha'], 2, 0, 'L');
+        $pdf->Cell(22, 8, $respuestaPalletArray[0]['fecha'], 2, 0, 'L');
         $pdf->SetFont('Arial', 'B', 9);
         $pdf->Cell(22, 8, utf8_decode('Codigo: '), 0, 0, 'L');
         $pdf->SetFont('Arial', '', 9);
