@@ -14,7 +14,7 @@
                         </h4>
                         <h4>
                             Dirección:
-                            <small class="text-muted"> </small>
+                            <small class="text-muted"> </small> 
                         </h4>
                         <h4>
                             País:

@@ -5,7 +5,7 @@ namespace App\Controllers;
 use App\Models\Membarques;
 use Fpdf\Fpdf;
 
-class Embarques extends BaseController {
+class Embarques extends BaseController { 
 
     public function index() {
         # code...

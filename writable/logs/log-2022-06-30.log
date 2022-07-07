@@ -1,0 +1,95 @@
+CRITICAL - 2022-06-30 15:01:12 --> Undefined array key 0
+#0 C:\xampp\htdocs\empaquesys\app\Views\Embarques\VlistPackig.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 61)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('Embarques/Vlist...', Array, true)
+#4 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(34): view('Embarques/Vlist...', Array)
+#5 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Embarques->Packing('ASA')
+#6 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#7 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-30 15:04:01 --> A non-numeric value encountered
+#0 C:\xampp\htdocs\empaquesys\app\Controllers\Rastreo.php(503): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\xampp\\htdocs...', 503)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Rastreo->pdf('11')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-30 15:05:50 --> Undefined array key 0
+#0 C:\xampp\htdocs\empaquesys\app\Controllers\Rastreo.php(366): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 366)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Rastreo->pdf('12')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-30 15:17:34 --> A non-numeric value encountered
+#0 C:\xampp\htdocs\empaquesys\app\Controllers\Rastreo.php(503): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\xampp\\htdocs...', 503)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Rastreo->pdf('11')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-30 15:23:52 --> A non-numeric value encountered
+#0 C:\xampp\htdocs\empaquesys\app\Controllers\Rastreo.php(503): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\xampp\\htdocs...', 503)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Rastreo->pdf('11')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-30 15:23:54 --> A non-numeric value encountered
+#0 C:\xampp\htdocs\empaquesys\app\Controllers\Rastreo.php(503): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\xampp\\htdocs...', 503)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Rastreo->pdf('11')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-30 15:24:25 --> A non-numeric value encountered
+#0 C:\xampp\htdocs\empaquesys\app\Controllers\Rastreo.php(503): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\xampp\\htdocs...', 503)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Rastreo->pdf('11')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-30 15:28:06 --> A non-numeric value encountered
+#0 C:\xampp\htdocs\empaquesys\app\Controllers\Rastreo.php(503): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\xampp\\htdocs...', 503)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Rastreo->pdf('11')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-30 15:28:08 --> A non-numeric value encountered
+#0 C:\xampp\htdocs\empaquesys\app\Controllers\Rastreo.php(503): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\xampp\\htdocs...', 503)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Rastreo->pdf('11')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-30 15:33:08 --> A non-numeric value encountered
+#0 C:\xampp\htdocs\empaquesys\app\Controllers\Rastreo.php(503): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\xampp\\htdocs...', 503)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Rastreo->pdf('26')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-30 15:33:32 --> A non-numeric value encountered
+#0 C:\xampp\htdocs\empaquesys\app\Controllers\Rastreo.php(503): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\xampp\\htdocs...', 503)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Rastreo->pdf('21')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-30 15:34:52 --> Undefined property: stdClass::$totalPP
+#0 C:\xampp\htdocs\empaquesys\app\Controllers\Rastreo.php(506): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 506)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Rastreo->pdf('21')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-30 15:35:51 --> A non-numeric value encountered
+#0 C:\xampp\htdocs\empaquesys\app\Controllers\Rastreo.php(503): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\xampp\\htdocs...', 503)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Rastreo->pdf('21')
+#2 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}

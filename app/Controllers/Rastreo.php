@@ -498,9 +498,9 @@ class Rastreo extends BaseController {
         $pdf->Cell(20, 8, 'Pallet', 1, 0, 'L');
         $pdf->Cell(22, 8, 'Cantidad', 1, 1, 'L');
 
-        $totalP = 0;
+        $totalPP = 0;
         foreach ($respuestatotalpallet as $key):
-            $totalP += $key->total;
+            $totalPP += $key->total_pallet;
             $pdf->SetFont('Arial', '', 8);
             $pdf->Cell(20, 8, $key->pallet, 1, 0, 'L');
             $pdf->Cell(22, 8, $key->total, 1, 1, 'C');
@@ -509,7 +509,7 @@ class Rastreo extends BaseController {
         $pdf->SetFont('Arial', 'B', 9);
         $pdf->Setfillcolor(42, 226, 141);
         $pdf->SetTextColor(255, 255, 255);
-        $pdf->Cell(42, 5, ' total de Cajas:  ' . $totalP, 2, 1, 'L', 1);
+        $pdf->Cell(42, 5, ' total de Cajas:  ' . $totalPP, 2, 1, 'L', 1);
         $pdf->SetTextColor(0, 0, 0);
 
         $this->response->setHeader('Content-Type', 'application/pdf');

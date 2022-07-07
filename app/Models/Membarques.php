@@ -16,7 +16,7 @@ class Membarques extends Model {
 
     public function listarhembarques() {
         // code...
-        $builder = $this->db->table('t_embarques');
+        $builder = $this->db->table('t_embarques'); 
         $builder->select('*');
         return $builder->get()->getResult();
     }

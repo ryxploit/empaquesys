@@ -246,7 +246,7 @@ class Lotes extends BaseController {
             $pdf->Cell(28, 8, $key->productor, 1, 0, 'L');
             $pdf->Cell(28, 8, utf8_decode($key->registro), 1, 0, 'L');
             $pdf->Cell(22, 8, $key->folio, 1, 0, 'L');
-            $pdf->Cell(18, 8, $key->nombre_huerta, 1, 0, 'L');
+            $pdf->Cell(18, 8, utf8_decode($key->nombre_huerta), 1, 0, 'L');
             $pdf->Cell(18, 8, utf8_decode($key->hidrotermico), 1, 0, 'L');
             $pdf->Cell(18, 8, utf8_decode($key->ubicacion), 1, 0, 'L');
             $pdf->Cell(11, 8, utf8_decode($key->lote), 1, 0, 'L');
