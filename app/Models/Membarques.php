@@ -78,6 +78,7 @@ class Membarques extends Model {
         $builder->select("* , GROUP_CONCAT(calibre, ' - ',cantidad, '<br>') AS todos");
         $builder->where('embarque_id', $id);
         $builder->groupBy('numero_pallet');
+        $builder->orderBy('id_embarques_pallet');
         $query = $builder->get()->getResult();
         return $query;
     }

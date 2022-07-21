@@ -1,0 +1,18 @@
+CRITICAL - 2022-07-21 15:49:39 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(29): CodeIgniter\Model->__call('listarcalibre_p...', Array)
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Embarques->Packing('PM22')
+#4 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#5 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-07-21 15:50:24 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\empaquesys\app\Controllers\Embarques.php(29): CodeIgniter\Model->__call('listarcalibre_p...', Array)
+#3 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Embarques->Packing('PM22')
+#4 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+#5 C:\xampp\htdocs\empaquesys\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\empaquesys\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}

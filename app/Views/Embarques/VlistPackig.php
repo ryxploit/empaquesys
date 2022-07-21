@@ -160,7 +160,7 @@
                                         ?></td>
                                     <td><?php echo $key->total; ?></td>
                                     <td><?php echo $key->peso_pallet; ?></td>
-                                    <td><?php echo $key->marca; ?></td>
+                                    <td><?php echo $key->marca_caja; ?></td>
                                     
                                 </tr>
                             <?php endforeach; ?>
