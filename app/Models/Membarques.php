@@ -16,7 +16,7 @@ class Membarques extends Model {
 
     public function listarhembarques() {
         // code...
-        $builder = $this->db->table('t_embarques'); 
+        $builder = $this->db->table('t_embarques');
         $builder->select('*');
         return $builder->get()->getResult();
     }
@@ -86,18 +86,19 @@ class Membarques extends Model {
     public function sumarTotalpallet($id) {
         // code...
         $builder = $this->db->table('t_pallet_embarque');
-            $builder->select("* ,SUM(cantidad) AS total, GROUP_CONCAT(DISTINCT calibre,' - ',cantidad, '<br>') AS todoss");
+        $builder->select("* ,SUM(cantidad) AS total, GROUP_CONCAT(DISTINCT calibre,' - ',cantidad, '<br>') AS todoss");
         $builder->where('embarque_id', $id);
         $builder->groupBy('pedido');
         $query = $builder->get()->getResult();
         return $query;
     }
-    public function toxpedido($id){
+
+    public function toxpedido($id) {
         //code...
         $db = db_connect();
-        $sql = 'select *, GROUP_CONCAT(calibre, ":" ,quantity_sum SEPARATOR " <br> " ) As todoss,SUM(quantity_sum) AS total FROM (SELECT *,sum(cantidad) as quantity_sum from t_pallet_embarque GROUP BY pedido,calibre) a WHERE embarque_id = "' . $id .  '" group by pedido ';
-       $query = $db->query($sql);
-         return $query;
+        $sql = 'select *, GROUP_CONCAT(calibre, ":" ,quantity_sum SEPARATOR " <br> " ) As todoss,SUM(quantity_sum) AS total FROM (SELECT *,sum(cantidad) as quantity_sum from t_pallet_embarque GROUP BY pedido,calibre) a WHERE embarque_id = "' . $id . '" group by pedido ';
+        $query = $db->query($sql);
+        return $query;
     }
 
     public function sumarcalibre($id) {
@@ -141,7 +142,15 @@ class Membarques extends Model {
     public function listarpallet_packing($pedido) {
         // code...
         $db = $this->db;
-        $query = $db->query('select *, SUM(e.cantidad) AS total,GROUP_CONCAT(e.calibre,";",e.cantidad) AS todos FROM t_pallet_embarque e JOIN t_pedidos p ON e.pedido = p.codigo_embarque WHERE e.pedido = "' . $pedido . '" GROUP BY e.calibre , e.numero_pallet; ');
+        $query = $db->query('select *, SUM(e.cantidad) AS total,GROUP_CONCAT(e.calibre,";",e.cantidad) AS todos FROM t_pallet_embarque e JOIN t_pedidos p ON e.pedido = p.codigo_embarque WHERE e.pedido = "' . $pedido . '" GROUP BY  e.numero_pallet ORDER BY e.id_embarques_pallet; ');
+
+        return $query;
+    }
+
+    public function awb_packing($pedido) {
+        // code...
+        $db = $this->db;
+        $query = $db->query('select *, SUM(e.cantidad) AS total,GROUP_CONCAT(e.calibre,";",e.cantidad) AS todos FROM t_pallet_embarque e JOIN t_pedidos p ON e.pedido = p.codigo_embarque WHERE e.pedido = "' . $pedido . '" GROUP BY  e.numero_pallet; ');
 
         return $query;
     }

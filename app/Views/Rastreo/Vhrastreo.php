@@ -26,7 +26,7 @@
                   <a class="btn btn-warning" href="<?php echo base_url('Rastreo/Obtenerrastreo/'.$key->id_rastreo); ?>" role="button">Agregar Pallets</a>
                   <a class="btn btn-primary" href="<?php echo base_url('Rastreo/Obtenerhrastreo/'.$key->id_rastreo); ?>" role="button">Modificar</a>
                   <a class="btn btn-warning delete" id="<?php echo $key->id_rastreo;?>" role="button">Borrar</a>
-                  <a class="btn btn-primary" href="<?php echo base_url('Rastreo/pdf/'.$key->id_rastreo); ?>" role="button">Inprimir Hoja</a>
+                  <a class="btn btn-primary" href="<?php echo base_url('Rastreo/pdf/'.$key->id_rastreo); ?>" role="button">Imprimir Hoja</a>
                 </div>
               </td>
             </tr>

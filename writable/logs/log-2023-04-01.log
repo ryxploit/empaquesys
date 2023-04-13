@@ -1,0 +1,638 @@
+INFO - 2023-04-01 19:10:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 19:11:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 19:51:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 19:51:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 19:52:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 19:52:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-01 19:52:25 --> Undefined variable $calibre_cantidad
+in APPPATH\Views\Embarques\VlistPackig.php on line 110.
+ 1 APPPATH\Views\Embarques\VlistPackig.php(110): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $calibre_cantidad', 'C:\\xampp\\htdocs\\empaquesys\\app\\Views\\Embarques\\VlistPackig.php', 110)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\empaquesys\\app\\Views\\Embarques\\VlistPackig.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Embarques/VlistPackig', [], true)
+ 5 APPPATH\Controllers\Embarques.php(35): view('Embarques/VlistPackig', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->Packing('EM22002')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+INFO - 2023-04-01 22:51:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-01 22:51:40 --> Undefined variable $calibre_cantidad
+in APPPATH\Views\Embarques\VlistPackig.php on line 110.
+ 1 APPPATH\Views\Embarques\VlistPackig.php(110): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $calibre_cantidad', 'C:\\xampp\\htdocs\\empaquesys\\app\\Views\\Embarques\\VlistPackig.php', 110)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\empaquesys\\app\\Views\\Embarques\\VlistPackig.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Embarques/VlistPackig', [], true)
+ 5 APPPATH\Controllers\Embarques.php(35): view('Embarques/VlistPackig', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->Packing('EM22002')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+INFO - 2023-04-01 22:51:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-01 22:51:58 --> Undefined variable $calibre_cantidad
+in APPPATH\Views\Embarques\VlistPackig.php on line 110.
+ 1 APPPATH\Views\Embarques\VlistPackig.php(110): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $calibre_cantidad', 'C:\\xampp\\htdocs\\empaquesys\\app\\Views\\Embarques\\VlistPackig.php', 110)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\empaquesys\\app\\Views\\Embarques\\VlistPackig.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Embarques/VlistPackig', [], true)
+ 5 APPPATH\Controllers\Embarques.php(35): view('Embarques/VlistPackig', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->Packing('EM22002')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+INFO - 2023-04-01 22:52:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 22:52:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 22:52:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 22:52:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 22:52:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 22:52:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 22:52:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 22:52:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-01 22:52:19 --> Undefined variable $calibre_cantidad
+in APPPATH\Views\Embarques\VlistPackig.php on line 110.
+ 1 APPPATH\Views\Embarques\VlistPackig.php(110): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $calibre_cantidad', 'C:\\xampp\\htdocs\\empaquesys\\app\\Views\\Embarques\\VlistPackig.php', 110)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\empaquesys\\app\\Views\\Embarques\\VlistPackig.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Embarques/VlistPackig', [], true)
+ 5 APPPATH\Controllers\Embarques.php(35): view('Embarques/VlistPackig', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->Packing('EM22002')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+INFO - 2023-04-01 22:58:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-01 22:58:15 --> Attempt to read property "todos" on array
+in APPPATH\Views\Embarques\VlistPackig.php on line 107.
+ 1 APPPATH\Views\Embarques\VlistPackig.php(107): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "todos" on array', 'C:\\xampp\\htdocs\\empaquesys\\app\\Views\\Embarques\\VlistPackig.php', 107)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\empaquesys\\app\\Views\\Embarques\\VlistPackig.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Embarques/VlistPackig', [], true)
+ 5 APPPATH\Controllers\Embarques.php(35): view('Embarques/VlistPackig', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->Packing('EM22002')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+INFO - 2023-04-01 22:59:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-01 22:59:24 --> Undefined array key "todos"
+in APPPATH\Views\Embarques\VlistPackig.php on line 107.
+ 1 APPPATH\Views\Embarques\VlistPackig.php(107): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "todos"', 'C:\\xampp\\htdocs\\empaquesys\\app\\Views\\Embarques\\VlistPackig.php', 107)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\empaquesys\\app\\Views\\Embarques\\VlistPackig.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Embarques/VlistPackig', [], true)
+ 5 APPPATH\Controllers\Embarques.php(35): view('Embarques/VlistPackig', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->Packing('EM22002')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+INFO - 2023-04-01 23:01:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-01 23:01:26 --> Cannot use [] for reading
+in APPPATH\Views\Embarques\VlistPackig.php on line 107.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2023-04-01 23:02:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-01 23:02:17 --> Undefined variable $calibre_cantidad
+in APPPATH\Views\Embarques\VlistPackig.php on line 110.
+ 1 APPPATH\Views\Embarques\VlistPackig.php(110): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $calibre_cantidad', 'C:\\xampp\\htdocs\\empaquesys\\app\\Views\\Embarques\\VlistPackig.php', 110)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\empaquesys\\app\\Views\\Embarques\\VlistPackig.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Embarques/VlistPackig', [], true)
+ 5 APPPATH\Controllers\Embarques.php(35): view('Embarques/VlistPackig', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->Packing('EM22002')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+INFO - 2023-04-01 23:03:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 23:04:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-04-01 23:08:25 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 310.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:08:25 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 314.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:08:25 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 318.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:08:25 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 322.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:08:25 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 327.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:08:25 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 331.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:08:25 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 336.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:08:25 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 340.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:08:25 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 345.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:08:25 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 349.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:08:25 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 354.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:08:25 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 358.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:08:25 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 363.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:08:25 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 367.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:08:25 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 371.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:08:25 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 530.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:08:25 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 534.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:08:25 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 538.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:08:25 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 545.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:08:25 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 549.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:08:25 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 553.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:08:25 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 557.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:21:12 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 310.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:21:12 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 314.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:21:12 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 318.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:21:12 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 322.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:21:12 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 327.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:21:12 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 331.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:21:12 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 336.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:21:12 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 340.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:21:12 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 345.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:21:12 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 349.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:21:12 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 354.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:21:12 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 358.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:21:12 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 363.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:21:12 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 367.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:21:12 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 371.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:21:12 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 509.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:21:12 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 513.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:21:12 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 517.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:21:12 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 524.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:21:12 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 528.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:21:12 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 532.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:21:12 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 536.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:47:20 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 310.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:47:20 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 314.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:47:20 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 318.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:47:20 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 322.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:47:20 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 327.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:47:20 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 331.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:47:20 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 336.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:47:20 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 340.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:47:20 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 345.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:47:20 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 349.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:47:20 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 354.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:47:20 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 358.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:47:20 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 363.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:47:20 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 367.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:47:20 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 371.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:47:20 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 509.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:47:20 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 513.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:47:20 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 517.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:47:20 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 524.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:47:20 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 528.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:47:20 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 532.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:47:20 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 536.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+INFO - 2023-04-01 23:47:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-04-01 23:47:47 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 310.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:47:47 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 314.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:47:47 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 318.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:47:47 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 322.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:47:47 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 327.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:47:47 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 331.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:47:47 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 336.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:47:47 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 340.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:47:47 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 345.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:47:47 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 349.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:47:47 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 354.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:47:47 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 358.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:47:47 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 363.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:47:47 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 367.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:47:47 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 371.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:47:47 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 509.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:47:47 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 513.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:47:47 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 517.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:47:47 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 524.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:47:47 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 528.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:47:47 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 532.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')
+WARNING - 2023-04-01 23:47:47 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Embarques.php on line 536.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Embarques->pdf_packing('EM22002')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Embarques))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\empaquesys\\public\\index.php')

@@ -1,0 +1,43 @@
+crear virtual host para red local
+
+https://www.cloudways.com/blog/configure-virtual-host-on-windows-10-for-wordpress/
+
+-RUTA:
+C:\xampp\apache\conf\extra\httpd-vhosts.conf
+
+-ABRIR CON BLOC DE NOTAS
+
+-PEGAR ESTO AL ULTIMO DEL ARCHIVO
+
+NameVirtualHost *:80
+<VirtualHost *:80>
+    ServerName empaquesys.local
+    DocumentRoot "C:/xampp/htdocs/empaquesys/public"
+    <Directory "C:/xampp/htdocs/empaquesys/public">
+ 	Options Indexes FollowSymLinks MultiViews
+            	AllowOverride All
+            	Order allow,deny
+            	allow from all
+   </Directory>
+</VirtualHost>
+
+-GUARDAR Y ABRIR LA SIGUIENTE RUTA 
+
+C:\Windows\System32\drivers\etc
+
+-ANTES DE ABRIR ARCHIVO host DARLE PERMISOS con click derecho propiedades ,seguridad ,editar  ahi palomeas todo y a todos apicar y aceptar.
+
+127.0.0.1      empaquesys.local
+
+TU IP  empaquesys.local
+
+-PARA VER EN OTRAS MAQUINAS DE LA MISMA RED PODER 
+
+TU IP  empaquesys.local
+
+-EN TU host de las otras maquinas y en el navegador solo abrir con espaquesys.local en otras pcs tiene que ser la ip de donde esta instalado el xampp
+
+
+
+
+

@@ -5,7 +5,7 @@ namespace App\Controllers;
 use App\Models\Membarques;
 use Fpdf\Fpdf;
 
-class Embarques extends BaseController { 
+class Embarques extends BaseController {
 
     public function index() {
         # code...
@@ -28,6 +28,7 @@ class Embarques extends BaseController {
             'listarpallet' => $Modelo->listarpallet_packing($pedido),
             'totalP' => $Modelo->listarpallet_packing($pedido),
             'datos' => $Modelo->listarpallet_packing($pedido)->getResultArray(),
+            'awb' => $Modelo->awb_packing($pedido)->getResultArray(),
             'sumaCajas' => $Modelo->sumaCajas_packing($pedido)->getResultArray()
         );
         echo view('Headers/Head', $data);
@@ -127,7 +128,6 @@ class Embarques extends BaseController {
             'cantidad' => $this->request->getPost('cantidad'),
             'calibre' => $this->request->getPost('calibre'),
             'hidrotermico' => $this->request->getPost('hidrotermico')
-
         ];
 
         $Modelo = new Membarques();
@@ -242,7 +242,7 @@ class Embarques extends BaseController {
         }
     }
 
-     public function Eliminar_embarque($id_embarques) {
+    public function Eliminar_embarque($id_embarques) {
         // code...
         $data = [
             'id_embarques' => $id_embarques
@@ -289,6 +289,7 @@ class Embarques extends BaseController {
         $totalP = $Modelo->listarpallet_packing($pedido);
         $datos = $Modelo->listarpallet_packing($pedido)->getResultArray();
         $sumaCajas = $Modelo->sumaCajas_packing($pedido)->getResultArray();
+        $awb = $Modelo->awb_packing($pedido)->getResultArray();
 
         // code...
         $pdf = new FPDF('L', 'mm', 'letter');
@@ -380,7 +381,7 @@ class Embarques extends BaseController {
 
         $pdf->SetTextColor(0, 0, 0);
         $pdf->SetFont('Arial', 'B', 9);
-        $pdf->Cell(13, 8, 'PN', 1, 0, 'C');
+        $pdf->Cell(13, 8, '#', 1, 0, 'C');
         $pdf->Cell(27, 8, 'Numero de Pallet', 1, 0, 'C');
         //$pdf->Cell(80, 8, 'Calibre - Cantidad', 1, 0, 'C');
         $pdf->Cell(12, 8, '4', 1, 0, 'C');
@@ -400,57 +401,33 @@ class Embarques extends BaseController {
             $pdf->SetFont('Arial', '', 8);
 
             // code...
-        $valores = explode(';', $key->todos);
-        //$valores = array($key->todos);
-        //print_r($valores);
+            $valores = explode(';', $key->todos);
+            //$valores = array($key->todos);
+            //print_r($valores);
+            $calibres_cantidad = explode(',', $key->todos); // Separar calibres y cantidad
+            $cantidad_calibres = array(); // Array para almacenar cantidad de cada calibre
+            foreach ($calibres_cantidad as $calibre_cantidad) {
+                $calibre = explode(';', $calibre_cantidad)[0]; // Obtener calibre
+                $cantidad = explode(';', $calibre_cantidad)[1]; // Obtener cantidad
+                $cantidad_calibres[$calibre] = $cantidad; // Almacenar cantidad por calibre
+            }
 
             $pdf->Cell(13, 8, $number++, 1, 0, 'C'); //$number++
             $pdf->Cell(27, 8, $key->numero_pallet, 1, 0, 'C');
-           // $pdf->Cell(80, 8, $key->todos, 1, 0, 'C');
-            if($key->calibre == 4){
-            $pdf->Cell(12, 8, $key->cantidad, 1, 0, 'C');
-            } else {
-              $pdf->Cell(12, 8, '', 1, 0, 'C');
-            }
-            if($key->calibre == 5){
-            $pdf->Cell(12, 8, $key->cantidad, 1, 0, 'C');
-            }else {
-              $pdf->Cell(12, 8, '', 1, 0, 'C');
-            }
-            if($key->calibre == 9){
-            $pdf->Cell(12, 8, $key->cantidad, 1, 0, 'C');
-            }else {
-              $pdf->Cell(12, 8, '', 1, 0, 'C');
-            }
-            if($key->calibre == 10){
-            $pdf->Cell(12, 8, $key->cantidad, 1, 0, 'C');
-            }else {
-              $pdf->Cell(12, 8, '', 1, 0, 'C');
-            }
-            if($key->calibre == 11){
-            $pdf->Cell(12, 8, $key->cantidad, 1, 0, 'C');
-            }else {
-              $pdf->Cell(12, 8, '', 1, 0, 'C');
-            }
-            if($key->calibre == 12){
-            $pdf->Cell(12, 8, $key->cantidad, 1, 0, 'C');
-            }else {
-              $pdf->Cell(12, 8, '', 1, 0, 'C');
-            }
-            if($key->calibre == 13){
-            $pdf->Cell(12, 8, $key->cantidad, 1, 0, 'C');
-            }else {
-              $pdf->Cell(12, 8, '', 1, 0, 'C');
-            }
-            if($key->calibre == 14){
-            $pdf->Cell(12, 8, $key->cantidad, 1, 0, 'C');
-            }else {
-              $pdf->Cell(12, 8, '', 1, 0, 'C');
-            }
+            // $pdf->Cell(80, 8, $key->todos, 1, 0, 'C');
+
+            $pdf->Cell(12, 8, isset($cantidad_calibres[4]) ? $cantidad_calibres[4] : '', 1, 0, 'C');
+            $pdf->Cell(12, 8, isset($cantidad_calibres[5]) ? $cantidad_calibres[5] : '', 1, 0, 'C');
+            $pdf->Cell(12, 8, isset($cantidad_calibres[9]) ? $cantidad_calibres[9] : '', 1, 0, 'C');
+            $pdf->Cell(12, 8, isset($cantidad_calibres[10]) ? $cantidad_calibres[10] : '', 1, 0, 'C');
+            $pdf->Cell(12, 8, isset($cantidad_calibres[11]) ? $cantidad_calibres[11] : '', 1, 0, 'C');
+            $pdf->Cell(12, 8, isset($cantidad_calibres[12]) ? $cantidad_calibres[12] : '', 1, 0, 'C');
+            $pdf->Cell(12, 8, isset($cantidad_calibres[13]) ? $cantidad_calibres[13] : '', 1, 0, 'C');
+            $pdf->Cell(12, 8, isset($cantidad_calibres[14]) ? $cantidad_calibres[14] : '', 1, 0, 'C');
+
             $pdf->Cell(22, 8, $key->total, 1, 0, 'L');
             $pdf->Cell(22, 8, $key->peso_pallet, 1, 0, 'C');
             $pdf->Cell(22, 8, $key->marca, 1, 1, 'C');
-
 
         endforeach;
 
@@ -472,56 +449,28 @@ class Embarques extends BaseController {
         $pdf->Cell(12, 8, '13', 1, 0, 'C');
         $pdf->Cell(12, 8, '14', 1, 1, 'C');
 
-
         foreach ($listarpallet->getResult() as $key):
             $pdf->SetFont('Arial', '', 8);
 
-
-
-            if($key->calibre == 4){
-            $pdf->Cell(12, 8, $key->total, 1, 0, 'C');
-            } else {
-              $pdf->Cell(12, 8, '', 1, 0, 'C');
-            }
-            if($key->calibre == 5){
-            $pdf->Cell(12, 8, $key->total, 1, 0, 'C');
-            }else {
-              $pdf->Cell(12, 8, '', 1, 0, 'C');
-            }
-            if($key->calibre == 9){
-            $pdf->Cell(12, 8, $key->total, 1, 0, 'C');
-            }else {
-              $pdf->Cell(12, 8, '', 1, 0, 'C');
-            }
-            if($key->calibre == 10){
-            $pdf->Cell(12, 8, $key->total, 1, 0, 'C');
-            }else {
-              $pdf->Cell(12, 8, '', 1, 0, 'C');
-            }
-            if($key->calibre == 11){
-            $pdf->Cell(12, 8, $key->total, 1, 0, 'C');
-            }else {
-              $pdf->Cell(12, 8, '', 1, 0, 'C');
-            }
-            if($key->calibre == 12){
-            $pdf->Cell(12, 8, $key->total, 1, 0, 'C');
-            }else {
-              $pdf->Cell(12, 8, '', 1, 0, 'C');
-            }
-            if($key->calibre == 13){
-            $pdf->Cell(12, 8, $key->total, 1, 0, 'C');
-            }else {
-              $pdf->Cell(12, 8, '', 1, 0, 'C');
-            }
-            if($key->calibre == 14){
-            $pdf->Cell(12, 8, $key->total, 1, 1, 'C');
-            }else {
-              $pdf->Cell(12, 8, '', 1, 1, 'C');
+            $calibres_cantidad = explode(',', $key->todos); // Separar calibres y cantidad
+            $cantidad_calibres = array(); // Array para almacenar cantidad de cada calibre
+            foreach ($calibres_cantidad as $calibre_cantidad) {
+                $calibre = explode(';', $calibre_cantidad)[0]; // Obtener calibre
+                $cantidad = explode(';', $calibre_cantidad)[1]; // Obtener cantidad
+                $cantidad_calibres[$calibre] = $cantidad; // Almacenar cantidad por calibre
             }
 
+
+            $pdf->Cell(12, 8, isset($cantidad_calibres[4]) ? $cantidad_calibres[4] : '', 1, 0, 'C');
+            $pdf->Cell(12, 8, isset($cantidad_calibres[5]) ? $cantidad_calibres[5] : '', 1, 0, 'C');
+            $pdf->Cell(12, 8, isset($cantidad_calibres[9]) ? $cantidad_calibres[9] : '', 1, 0, 'C');
+            $pdf->Cell(12, 8, isset($cantidad_calibres[10]) ? $cantidad_calibres[10] : '', 1, 0, 'C');
+            $pdf->Cell(12, 8, isset($cantidad_calibres[11]) ? $cantidad_calibres[11] : '', 1, 0, 'C');
+            $pdf->Cell(12, 8, isset($cantidad_calibres[12]) ? $cantidad_calibres[12] : '', 1, 0, 'C');
+            $pdf->Cell(12, 8, isset($cantidad_calibres[13]) ? $cantidad_calibres[13] : '', 1, 0, 'C');
+            $pdf->Cell(12, 8, isset($cantidad_calibres[14]) ? $cantidad_calibres[14] : '', 1, 1, 'C');
 
         endforeach;
-
 
         $pdf->Ln();
 
@@ -547,7 +496,7 @@ class Embarques extends BaseController {
         $pdf->SetFont('Arial', 'B', 9);
         $pdf->Cell(22, 8, utf8_decode('AWB: '), 0, 0, 'L');
         $pdf->SetFont('Arial', '', 9);
-        $pdf->Cell(22, 8, '  ', 2, 1, 'L');
+        $pdf->Cell(22, 8, $awb[0]['total'], 2, 1, 'L');
         $pdf->SetFont('Arial', 'B', 9);
         $pdf->Cell(30, 8, utf8_decode('Observaciones: '), 0, 0, 'L');
         $pdf->SetFont('Arial', '', 9);

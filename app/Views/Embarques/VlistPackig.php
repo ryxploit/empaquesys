@@ -22,17 +22,17 @@
                         </h4>
                         <h4>
                             Transportador:
-                            <small class="text-muted"> <?php //echo $datos[0]['hora_embarque'];   ?></small>
+                            <small class="text-muted"> <?php //echo $datos[0]['hora_embarque'];    ?></small>
                         </h4>
                         <h4>
                             Compania:
-                            <small class="text-muted"> <?php //echo $datos[0]['chofer']; ?></small>
+                            <small class="text-muted"> <?php //echo $datos[0]['chofer'];  ?></small>
                         </h4>
                     </div>
                     <div class="col-md-4">
                         <h4>
                             Destino:
-                            <small class="text-muted"> <?php //echo $datos[0]['chofer']; ?></small>
+                            <small class="text-muted"> <?php //echo $datos[0]['chofer'];  ?></small>
                         </h4>
                         <h4>
                             Temp ºC:
@@ -40,11 +40,11 @@
                         </h4>
                         <h4>
                             Humedad:
-                            <small class="text-muted"> <?php //echo $datos[0]['chofer']; ?></small> 
+                            <small class="text-muted"> <?php //echo $datos[0]['chofer'];  ?></small> 
                         </h4>
                         <h4>
                             Factura:
-                            <small class="text-muted"> <?php //echo $datos[0]['chofer']; ?></small>
+                            <small class="text-muted"> <?php //echo $datos[0]['chofer'];  ?></small>
                         </h4>
                         <h4>
                             Fecha:
@@ -77,11 +77,11 @@
                 <br>
                 <br>
                 <div class="table-responsive">
-                    <table class="table ">
+                    <table class="table table table-striped">
                         <thead>
                             <tr>
                                 <th>#</th>
-                                <th>Numero de Pallet</th>
+                                <th class="text-center">Numero de Pallet</th>
                                 <th class="text-center">4</th>
                                 <th class="text-center">5</th>
                                 <th class="text-center">9</th>
@@ -90,80 +90,46 @@
                                 <th class="text-center">12</th>
                                 <th class="text-center">13</th>
                                 <th class="text-center">14</th>
-                                <th>Total</th>
-                                <th>Peso bruto</th>
-                                <th>Marca </th>
+                                <th class="text-center">Total</th>
+                                <th class="text-center">Peso bruto</th>
+                                <th class="text-center">Marca </th>
 
                             </tr>
                         </thead>
                         <tbody>
+
+
                             <?php $number = 1;
-                            foreach ($listarpallet->getResult() as $key): ?>
-                                <tr>
+
+                            foreach ($listarpallet->getResult() as $key):
+                                ?>
+
+                                <?php
+                                $calibres_cantidad = explode(',', $key->todos); // Separar calibres y cantidad
+                                $cantidad_calibres = array(); // Array para almacenar cantidad de cada calibre
+                                foreach ($calibres_cantidad as $calibre_cantidad) {
+                                    $calibre = explode(';', $calibre_cantidad)[0]; // Obtener calibre
+                                    $cantidad = explode(';', $calibre_cantidad)[1]; // Obtener cantidad
+                                    $cantidad_calibres[$calibre] = $cantidad; // Almacenar cantidad por calibre
+                                }
+                                ?>
+                                <tr class="text-center">
                                     <td><?php echo $number++; ?></td>
                                     <td><?php echo $key->numero_pallet; ?></td>
-                                    <td><?php
-                                        if ($key->calibre == 4) {
-                                            echo $key->cantidad;
-                                        } else {
-                                            echo '';
-                                        }
-                                        ?></td>
-                                    <td><?php
-                                        if ($key->calibre == 5) {
-                                            echo $key->cantidad;
-                                        } else {
-                                            echo '';
-                                        }
-                                        ?></td>
-                                    <td><?php
-                                        if ($key->calibre == 9) {
-                                            echo $key->cantidad;
-                                        } else {
-                                            echo '';
-                                        }
-                                        ?></td>
-                                    <td><?php
-                                        if ($key->calibre == 10) {
-                                            echo $key->cantidad;
-                                        } else {
-                                            echo '';
-                                        }
-                                        ?></td>
-                                    <td><?php
-                                        if ($key->calibre == 11) {
-                                            echo $key->cantidad;
-                                        } else {
-                                            echo '';
-                                        }
-                                        ?></td>
-                                    <td><?php
-                                        if ($key->calibre == 12) {
-                                            echo $key->cantidad;
-                                        } else {
-                                            echo '';
-                                        }
-                                        ?></td>
-                                    <td><?php
-                                        if ($key->calibre == 13) {
-                                            echo $key->cantidad;
-                                        } else {
-                                            echo '';
-                                        }
-                                        ?></td>
-                                    <td><?php
-                                        if ($key->calibre == 14) {
-                                            echo $key->cantidad;
-                                        } else {
-                                            echo '';
-                                        }
-                                        ?></td>
+                                    <td><?php echo isset($cantidad_calibres[4]) ? $cantidad_calibres[4] : ''; ?></td>
+                                    <td><?php echo isset($cantidad_calibres[5]) ? $cantidad_calibres[5] : ''; ?></td>
+                                    <td><?php echo isset($cantidad_calibres[9]) ? $cantidad_calibres[9] : ''; ?></td>
+                                    <td><?php echo isset($cantidad_calibres[10]) ? $cantidad_calibres[10] : ''; ?></td>
+                                    <td><?php echo isset($cantidad_calibres[11]) ? $cantidad_calibres[11] : ''; ?></td>
+                                    <td><?php echo isset($cantidad_calibres[12]) ? $cantidad_calibres[12] : ''; ?></td>
+                                    <td><?php echo isset($cantidad_calibres[13]) ? $cantidad_calibres[13] : ''; ?></td>
+                                    <td><?php echo isset($cantidad_calibres[14]) ? $cantidad_calibres[14] : ''; ?></td>
                                     <td><?php echo $key->total; ?></td>
                                     <td><?php echo $key->peso_pallet; ?></td>
                                     <td><?php echo $key->marca_caja; ?></td>
-                                    
+
                                 </tr>
-                            <?php endforeach; ?>
+<?php endforeach; ?>
                         </tbody>
                     </table>
                 </div>
@@ -194,7 +160,7 @@
                     </h4>
                     <h4>
                         AWB:
-                        <small class="text-muted"><?php echo $sumaCajas[0]['cantidad']; ?></small>
+                        <small class="text-muted"><?php echo $awb[0]['total']; ?></small>
                     </h4>
                     <h4>
                         Observaciones:

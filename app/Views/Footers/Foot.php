@@ -48,11 +48,11 @@
 
 
 
-<script src="<?php echo base_url('assets/js/jspdf.umd.min.js'); ?>"></script>
-<script src="<?php echo base_url('assets/js/html2pdf.min.js'); ?>"></script>
+<script src="<?php echo base_url('assets/js/printThis.js'); ?>"></script>
+
 
 <script src="<?php echo base_url('assets/js/main.js'); ?>"></script>
-<script src="<?php echo base_url('assets/js/jQuery.print.min.js'); ?>"></script>
+
 </body>
 
 </html>

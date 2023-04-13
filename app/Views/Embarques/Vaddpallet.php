@@ -92,7 +92,7 @@
                             <th>Marca de caja</th>
                             <th>Cantidad </th>
                             <th>Calibre</th>
-                            <th>Hidrotermicol</th>
+                            <th>Hidrotermico</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -172,7 +172,7 @@
                 </div>
                 <div class="row p-3">
                     <?php foreach ($listarpallet as $key): ?>
-                        <div class="card text-dark bg-warning  col-5 mx-3 border border-warning" style="width: 14rem;height:12rem;">
+                        <div class="card text-dark bg-warning  col-5 mx-3 border border-warning" >
                             <div class="card-body">
                                 <h6 class="card-title"><?php echo $key->numero_pallet; ?>&nbsp;&nbsp;&nbsp;<?php echo $key->termografo_pallet; ?><p class="text-center"><strong><?php echo $key->pedido; ?></strong></p>
                                 </h6>
@@ -256,11 +256,12 @@
                                         <option>SI</option>
                                         <option>NO</option>
                                     </select>
-                                </fieldset>
+
                             </div>
                         </div>
                         <input type="hidden" name="id_embarques_pallet" id="id_embarques_pallet" value="">
                     </div>
+                    </fieldset>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
@@ -274,7 +275,7 @@
 
 <section class="section">
     <div class="card">
-        <button type="button" class="btn btn-primary btn-lg" name="button"  onclick="printPRE('content')"  id="print" >Imprimir</button>
+        <button type="button" class="btn btn-primary btn-lg" name="button"    id="print_btn" >Imprimir</button>
     </div>
 </section>
 
@@ -357,18 +358,17 @@
 
 
 <script>
-          function printPRE(content) {
+    $(document).ready(function () {
+        $('#print_btn').click(function () {
+          $('#content').printThis(
+                  {
+    debug: true,               // show the iframe for debugging
+    importCSS: true,            // import parent page css
+    importStyle: false
+    
+   
+});
+        });
+      });
 
-              var contenido= document.getElementById(content).innerHTML;
-              var contenidoOriginal= document.body.innerHTML;
-
-              document.body.innerHTML = contenido;
-
-              window.print();
-
-              document.body.innerHTML = contenidoOriginal;
-
-              location.reload();
-          }
-
-        </script>
+</script>
