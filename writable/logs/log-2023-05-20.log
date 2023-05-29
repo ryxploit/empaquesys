@@ -1,0 +1,200 @@
+INFO - 2023-05-20 19:10:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 19:12:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 19:12:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 19:13:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 19:13:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 19:15:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-20 19:15:16 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Rastreo.php on line 365.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Rastreo->pdf('11')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-05-20 19:15:16 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Rastreo.php on line 369.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Rastreo->pdf('11')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-05-20 19:15:16 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Rastreo.php on line 373.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Rastreo->pdf('11')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-05-20 19:15:16 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Rastreo.php on line 377.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Rastreo->pdf('11')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-05-20 19:15:16 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Rastreo.php on line 382.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Rastreo->pdf('11')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-05-20 19:15:16 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Rastreo.php on line 386.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Rastreo->pdf('11')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-05-20 19:15:16 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Rastreo.php on line 391.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Rastreo->pdf('11')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-05-20 19:15:16 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Rastreo.php on line 395.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Rastreo->pdf('11')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-05-20 19:15:16 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Rastreo.php on line 412.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Rastreo->pdf('11')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-05-20 19:15:16 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Rastreo.php on line 424.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Rastreo->pdf('11')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-05-20 19:15:16 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Rastreo.php on line 427.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Rastreo->pdf('11')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-05-20 19:15:16 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Rastreo.php on line 424.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Rastreo->pdf('11')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-05-20 19:15:16 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Rastreo.php on line 427.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Rastreo->pdf('11')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-05-20 19:15:16 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Rastreo.php on line 424.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Rastreo->pdf('11')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-05-20 19:15:16 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Rastreo.php on line 427.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Rastreo->pdf('11')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-05-20 19:15:16 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Rastreo.php on line 424.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Rastreo->pdf('11')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-05-20 19:15:16 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Rastreo.php on line 427.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Rastreo->pdf('11')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-05-20 19:15:16 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Rastreo.php on line 424.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Rastreo->pdf('11')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-05-20 19:15:16 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Rastreo.php on line 427.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Rastreo->pdf('11')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-05-20 19:15:16 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Rastreo.php on line 424.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Rastreo->pdf('11')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-05-20 19:15:16 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Rastreo.php on line 427.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Rastreo->pdf('11')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-05-20 19:15:16 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Rastreo.php on line 424.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Rastreo->pdf('11')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-05-20 19:15:16 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Rastreo.php on line 427.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Rastreo->pdf('11')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-05-20 19:15:16 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Rastreo.php on line 424.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Rastreo->pdf('11')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-05-20 19:15:16 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Rastreo.php on line 427.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Rastreo->pdf('11')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-05-20 19:15:16 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Rastreo.php on line 424.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Rastreo->pdf('11')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-05-20 19:15:16 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Rastreo.php on line 427.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Rastreo->pdf('11')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-05-20 19:15:16 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Rastreo.php on line 424.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Rastreo->pdf('11')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-05-20 19:15:16 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Rastreo.php on line 427.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Rastreo->pdf('11')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-05-20 19:15:16 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Rastreo.php on line 424.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Rastreo->pdf('11')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-05-20 19:15:16 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Rastreo.php on line 427.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Rastreo->pdf('11')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-05-20 19:15:16 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Rastreo.php on line 424.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Rastreo->pdf('11')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-05-20 19:15:16 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Rastreo.php on line 427.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Rastreo->pdf('11')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-05-20 19:15:16 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Rastreo.php on line 452.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Rastreo->pdf('11')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-05-20 19:15:16 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Rastreo.php on line 461.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Rastreo->pdf('11')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-05-20 19:15:16 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Rastreo.php on line 461.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Rastreo->pdf('11')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-05-20 19:15:16 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Rastreo.php on line 461.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Rastreo->pdf('11')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-05-20 19:15:16 --> [DEPRECATED] Function utf8_decode() is deprecated in APPPATH\Controllers\Rastreo.php on line 461.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Rastreo->pdf('11')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rastreo))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-20 19:23:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 19:23:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 19:25:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-20 19:26:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

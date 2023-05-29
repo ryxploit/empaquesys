@@ -360,15 +360,15 @@
 <script>
     $(document).ready(function () {
         $('#print_btn').click(function () {
-          $('#content').printThis(
-                  {
-    debug: true,               // show the iframe for debugging
-    importCSS: true,            // import parent page css
-    importStyle: false
-    
-   
-});
+            $('#content').printThis(
+                    {
+                        debug: true, // show the iframe for debugging
+                        importCSS: true, // import parent page css
+                        importStyle: true
+
+
+                    });
         });
-      });
+    });
 
 </script>

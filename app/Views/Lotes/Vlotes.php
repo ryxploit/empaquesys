@@ -23,9 +23,9 @@
                                 <td><?php echo $key->lote; ?></td>
                                 <td><?php echo $key->folio; ?></td>
                                 <td><?php echo $key->ubicacion; ?></td>
-                                 <td id="total" ><?php echo $key->numero_cajas; ?></td>
+                                <td id="total" ><?php echo $key->numero_cajas; ?></td>
                                 <td class="text-end">
-                                   
+
                                     <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
                                         <a class="btn btn-primary"
                                            href="<?php echo base_url('Lotes/Obtenerlote/' . $key->id_lotes); ?>"
@@ -41,9 +41,10 @@
                 </table>
             </div>
             <div class="card-footer">
-                 <a class="btn btn-primary btn-lg"
-                                           href="<?php echo base_url('Lotes/Pdf_lotes/'); ?>"
-                                           role="button">Imprimir Lotes</a>
+                <a class="btn btn-primary btn-lg"
+                   href="<?php echo base_url('Lotes/Pdf_lotes/'); ?>"
+                   role="button">Imprimir Lotes</a>
+                
             </div>
         </div>
 
@@ -80,13 +81,15 @@
 
 <script>
 
-    
-        var sum = 0;
-        $('#total').each(function () {
-            sum += parseFloat($(this).text());
-        });
-        //$('#resultado_total').val(sum.toFixed(2));
-        console.log(sum)
-    
+
+    var sum = 0;
+    $('#total').each(function () {
+        sum += parseFloat($(this).text());
+    });
+    //$('#resultado_total').val(sum.toFixed(2));
+    console.log(sum)
+
+
+
 
 </script>

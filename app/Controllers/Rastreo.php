@@ -225,6 +225,7 @@ class Rastreo extends BaseController {
             'marca' => $this->request->getPost('marca'),
             'pallet' => $this->request->getPost('pallet'),
             'tamaño' => $this->request->getPost('tamaño'),
+            'peso' => $this->request->getPost('peso'),
             'hidrotermico' => $this->request->getPost('hidrotermico'),
             'total' => $this->request->getPost('total'),
             'folio' => $this->request->getPost('folio'),
@@ -439,7 +440,7 @@ class Rastreo extends BaseController {
         $pdf->SetFont('Arial', 'B', 15);
         $pdf->Setfillcolor(42, 226, 141);
         $pdf->SetTextColor(255, 255, 255);
-        $pdf->Cell(167, 8, 'Lista de Lotes', 2, 1, 'C', 1);
+        $pdf->Cell(188, 8, 'Lista de Lotes', 2, 1, 'C', 1);
         $pdf->SetTextColor(0, 0, 0);
 
         $pdf->SetFont('Arial', 'B', 9);
@@ -465,7 +466,7 @@ class Rastreo extends BaseController {
         $pdf->SetFont('Arial', 'B', 15);
         $pdf->Setfillcolor(42, 226, 141);
         $pdf->SetTextColor(255, 255, 255);
-        $pdf->Cell(42, 8, 'Lista total pallet', 2, 1, 'C', 1);
+        $pdf->Cell(42, 8, 'Lista total Cajas', 2, 1, 'C', 1);
         $pdf->SetTextColor(0, 0, 0);
 
         $pdf->SetFont('Arial', 'B', 9);
@@ -491,7 +492,7 @@ class Rastreo extends BaseController {
         $pdf->SetFont('Arial', 'B', 15);
         $pdf->Setfillcolor(42, 226, 141);
         $pdf->SetTextColor(255, 255, 255);
-        $pdf->Cell(42, 8, 'Lista total Cajas', 2, 1, 'C', 1);
+        $pdf->Cell(42, 8, 'Lista total Pallets', 2, 1, 'C', 1);
         $pdf->SetTextColor(0, 0, 0);
 
         $pdf->SetFont('Arial', 'B', 9);

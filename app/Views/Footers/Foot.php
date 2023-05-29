@@ -30,19 +30,21 @@
 
 
 <script type="text/javascript">
-//$(document).ready(function() {
-//  $('#table1').DataTable( {
-//      dom: 'Bfrtip',
-//      buttons: [
-//          'print'
-//      ]
-//  } );
-//} );
-
 
                     // Simple Datatable
                     let table1 = document.querySelector('#table1');
                     let dataTable = new simpleDatatables.DataTable(table1);
+
+                    $(".cvs").click(function () {
+                        // Export the current page as a .csv file
+                        dataTable.export({
+                            type: "csv",
+                            download: true,
+                            filename: "my-csv-file",
+                            skipColumn: [6]
+                        });
+                    });
+
 
 </script>
 
