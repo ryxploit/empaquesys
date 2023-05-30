@@ -86,10 +86,10 @@ class Mrastreos extends Model {
     public function listarlote($dato) {
         // code...
         $builder = $this->db->table('t_lotes');
-        $builder->select('*');
+        $builder->select('* ,SUM(t_pallet.total) AS totalD');
         $builder->join('t_pallet', 't_lotes.lote = t_pallet.lote');
         $builder->where('codigo_rastreo', $dato);
-        $builder->groupBy('corredor');
+        $builder->groupBy('t_pallet.folio');
         $query = $builder->get()->getResult();
         return $query;
     }

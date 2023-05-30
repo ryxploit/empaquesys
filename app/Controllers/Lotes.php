@@ -219,7 +219,7 @@ class Lotes extends BaseController {
         $pdf->SetFont('Arial', 'B', 15);
         $pdf->Setfillcolor(42, 226, 141);
         $pdf->SetTextColor(255, 255, 255);
-        $pdf->Cell(249, 8, 'Lista de Lotes por fechas', 2, 1, 'C', 1);
+        $pdf->Cell(207, 8, 'Lista de Lotes por fechas', 2, 1, 'C', 1);
 
         $pdf->SetTextColor(0, 0, 0);
         $pdf->SetFont('Arial', 'B', 7);
