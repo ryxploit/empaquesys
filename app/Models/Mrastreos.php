@@ -70,14 +70,10 @@ class Mrastreos extends Model {
     public function listartotalpallet($data) {
         // code...
         $builder = $this->db->table('t_rastreos');
-        $builder->select('p.pallet,p.total,count(*) as total_pallet');
+        $builder->select('p.pallet,p.total,count(p.total) as xx');
         $builder->from('t_rastreos r');
         $builder->join('t_pallet p', 'p.codigo_rastreo=r.codigo');
         $builder->where('r.id_rastreo', $data);
-        //$builder->order_by('p.pallet', 'ASC');
-        $builder->groupBy('p.pallet');
-        $builder->groupBy('p.total');
-        
 
         $query = $builder->get()->getResult();
         return $query;
@@ -90,6 +86,17 @@ class Mrastreos extends Model {
         $builder->join('t_pallet', 't_lotes.lote = t_pallet.lote');
         $builder->where('codigo_rastreo', $dato);
         $builder->groupBy('t_pallet.folio');
+        $query = $builder->get()->getResult();
+        return $query;
+    }
+
+    public function sumlotepa($dato) {
+        // code...
+        $builder = $this->db->table('t_lotes');
+        $builder->select('* ,SUM(t_pallet.total) AS totalCJ');
+        $builder->join('t_pallet', 't_lotes.lote = t_pallet.lote');
+        $builder->where('codigo_rastreo', $dato);
+
         $query = $builder->get()->getResult();
         return $query;
     }

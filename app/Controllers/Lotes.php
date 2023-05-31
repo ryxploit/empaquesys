@@ -233,7 +233,7 @@ class Lotes extends BaseController {
         $pdf->Cell(45, 8, 'Ubicacion', 1, 0, 'L');
         $pdf->Cell(11, 8, 'Lote', 1, 0, 'L');
        
-        $pdf->Cell(20, 8, 'Total', 1, 0, 'L');
+        $pdf->Cell(20, 8, 'Peso', 1, 0, 'L');
         $pdf->Cell(30, 8, 'Muestra', 1, 1, 'L');
        
 
