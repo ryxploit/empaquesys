@@ -70,11 +70,11 @@ class Mrastreos extends Model {
     public function listartotalpallet($data) {
         // code...
         $builder = $this->db->table('t_rastreos');
-        $builder->select('p.pallet,p.total,count(p.total) as xx');
+        $builder->select('p.pallet,p.total,count(DISTINCT p.pallet) as xx');
         $builder->from('t_rastreos r');
         $builder->join('t_pallet p', 'p.codigo_rastreo=r.codigo');
         $builder->where('r.id_rastreo', $data);
-
+        //$builder->groupBy('p.pallet');
         $query = $builder->get()->getResult();
         return $query;
     }

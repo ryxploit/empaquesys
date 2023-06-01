@@ -196,7 +196,7 @@ class Lotes extends BaseController {
         $Modelo = new Mlotes();
 
         $listar = $Modelo->listarlotes_fecha();
-        $sumacajas =$Modelo->listarsuma_fecha();
+        $sumacajas = $Modelo->listarsuma_fecha();
 
         // code...
         $pdf = new FPDF('L', 'mm', 'letter');
@@ -213,8 +213,8 @@ class Lotes extends BaseController {
         $pdf->SetTextColor(0, 0, 0);
         $pdf->Ln();
         $pdf->SetFont('Arial', 'B', 9);
-        
-         $pdf->Ln();
+
+        $pdf->Ln();
 
         $pdf->SetFont('Arial', 'B', 15);
         $pdf->Setfillcolor(42, 226, 141);
@@ -224,40 +224,39 @@ class Lotes extends BaseController {
         $pdf->SetTextColor(0, 0, 0);
         $pdf->SetFont('Arial', 'B', 7);
         $pdf->Cell(14, 8, 'Fecha', 1, 0, 'L');
-        
+
         $pdf->Cell(12, 8, '# Cajas', 1, 0, 'L');
-        
+
         $pdf->Cell(28, 8, utf8_decode('Registro'), 1, 0, 'L');
         $pdf->Cell(22, 8, 'folio', 1, 0, 'L');
         $pdf->Cell(24, 8, 'N.Huerta', 1, 0, 'L');
         $pdf->Cell(45, 8, 'Ubicacion', 1, 0, 'L');
         $pdf->Cell(11, 8, 'Lote', 1, 0, 'L');
-       
+
         $pdf->Cell(20, 8, 'Peso', 1, 0, 'L');
         $pdf->Cell(30, 8, 'Muestra', 1, 1, 'L');
-       
 
         foreach ($listar as $key):
             $pdf->SetFont('Arial', '', 6);
             $pdf->Cell(14, 8, $key->fecha, 1, 0, 'L');
-            
+
             $pdf->Cell(12, 8, $key->numero_cajas, 1, 0, 'L');
-            
+
             $pdf->Cell(28, 8, utf8_decode($key->registro), 1, 0, 'L');
             $pdf->Cell(22, 8, $key->folio, 1, 0, 'L');
             $pdf->Cell(24, 8, utf8_decode($key->nombre_huerta), 1, 0, 'L');
             $pdf->Cell(45, 8, utf8_decode($key->ubicacion), 1, 0, 'L');
             $pdf->Cell(11, 8, utf8_decode($key->lote), 1, 0, 'L');
-            
+
             $pdf->Cell(20, 8, utf8_decode($key->total), 1, 0, 'L');
             $pdf->Cell(30, 8, utf8_decode($key->muestra), 1, 1, 'L');
-            
+
         endforeach;
-        
-         $pdf->Ln();
+
+        $pdf->Ln();
 
         $pdf->AddPage();
-        
+
         $pdf->SetFont('Arial', 'B', 8);
         $pdf->Setfillcolor(42, 226, 141);
         $pdf->SetTextColor(255, 255, 255);
@@ -275,9 +274,6 @@ class Lotes extends BaseController {
         endforeach;
 
         $pdf->Ln();
-        
-
-       
 
         $this->response->setHeader('Content-Type', 'application/pdf');
         $pdf->Output('bitacora_lotes_' . date_default_timezone_set('UTC') . '.pdf', "I");
