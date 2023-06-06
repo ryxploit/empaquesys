@@ -50,4 +50,4 @@ Options -Indexes
 
 #activar modo desarrollo
 
-#SetEnv CI_ENVIRONMENT development
+SetEnv CI_ENVIRONMENT development

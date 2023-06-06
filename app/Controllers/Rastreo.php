@@ -482,7 +482,7 @@ class Rastreo extends BaseController {
 
             $pdf->SetFont('Arial', '', 8);
             $pdf->Cell(20, 8, $key->xx, 1, 0, 'L');
-            $pdf->Cell(22, 8, $key->total, 1, 1, 'C');
+            $pdf->Cell(22, 8, $key->yy, 1, 1, 'C');
         endforeach;
 
         $pdf->Ln();

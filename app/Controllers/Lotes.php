@@ -219,38 +219,33 @@ class Lotes extends BaseController {
         $pdf->SetFont('Arial', 'B', 15);
         $pdf->Setfillcolor(42, 226, 141);
         $pdf->SetTextColor(255, 255, 255);
-        $pdf->Cell(207, 8, 'Lista de Lotes por fechas', 2, 1, 'C', 1);
+        $pdf->Cell(231, 8, 'Lista de Lotes por fechas', 2, 1, 'C', 1);
 
         $pdf->SetTextColor(0, 0, 0);
         $pdf->SetFont('Arial', 'B', 7);
         $pdf->Cell(14, 8, 'Fecha', 1, 0, 'L');
-
         $pdf->Cell(12, 8, '# Cajas', 1, 0, 'L');
-
         $pdf->Cell(28, 8, utf8_decode('Registro'), 1, 0, 'L');
         $pdf->Cell(22, 8, 'folio', 1, 0, 'L');
         $pdf->Cell(24, 8, 'N.Huerta', 1, 0, 'L');
         $pdf->Cell(45, 8, 'Ubicacion', 1, 0, 'L');
         $pdf->Cell(11, 8, 'Lote', 1, 0, 'L');
-
         $pdf->Cell(20, 8, 'Peso', 1, 0, 'L');
+        $pdf->Cell(25, 8, 'Corredor', 1, 0, 'L');
         $pdf->Cell(30, 8, 'Muestra', 1, 1, 'L');
 
         foreach ($listar as $key):
             $pdf->SetFont('Arial', '', 6);
             $pdf->Cell(14, 8, $key->fecha, 1, 0, 'L');
-
             $pdf->Cell(12, 8, $key->numero_cajas, 1, 0, 'L');
-
             $pdf->Cell(28, 8, utf8_decode($key->registro), 1, 0, 'L');
             $pdf->Cell(22, 8, $key->folio, 1, 0, 'L');
             $pdf->Cell(24, 8, utf8_decode($key->nombre_huerta), 1, 0, 'L');
             $pdf->Cell(45, 8, utf8_decode($key->ubicacion), 1, 0, 'L');
             $pdf->Cell(11, 8, utf8_decode($key->lote), 1, 0, 'L');
-
             $pdf->Cell(20, 8, utf8_decode($key->total), 1, 0, 'L');
+            $pdf->Cell(25, 8, utf8_decode($key->corredor), 1, 0, 'L');
             $pdf->Cell(30, 8, utf8_decode($key->muestra), 1, 1, 'L');
-
         endforeach;
 
         $pdf->Ln();

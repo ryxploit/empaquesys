@@ -2,6 +2,11 @@ crear virtual host para red local
 
 https://www.cloudways.com/blog/configure-virtual-host-on-windows-10-for-wordpress/
 
+-configurar composer insertar lineas en php.ini
+extension=php_intl.dll
+
+extension=zip
+
 -RUTA:
 C:\xampp\apache\conf\extra\httpd-vhosts.conf
 
